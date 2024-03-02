@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/explore"
+        android:title= "@string/tab_1"
+        android:icon="@drawable/baseline_travel_explore_24"/>
+
+    <item
+        android:id="@+id/cluster"
+        android:title= "@string/tab_2"
+        android:icon="@drawable/baseline_bubble_chart_24"/>
+
+    <item
+        android:id="@+id/trends"
+        android:title= "@string/tab_3"
+        android:icon="@drawable/baseline_data_exploration_24"/>
+
+    <item
+        android:id="@+id/about"
+        android:title= "@string/tab_4"
+        android:icon="@drawable/baseline_info_24"/>
+
+</menu>

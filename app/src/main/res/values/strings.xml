@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SeisMap PH</string>
+    <string name="tab_1">Explore</string>
+    <string name="tab_2">Clusters</string>
+    <string name="tab_3">Trends</string>
+    <string name="tab_4">About</string>
+    <string name="fab">Your Location</string>
+
+    <string name="clusterTag">Cluster Category:</string>
+    <string name="locationTag">Location:</string>
+    <string name="timeStamp">Date:</string>
+    <string name="magnitudeTag">Magnitude:</string>
+    <string name="depthTag">Depth:</string>
+    <string name="earthquakeTag">Earthquake Details</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+</resources>
