@@ -6,12 +6,54 @@
     <string name="tab_4">About</string>
     <string name="fab">Your Location</string>
 
+    <!-- Cluster Fragment Strings -->
     <string name="clusterTag">Cluster Category:</string>
     <string name="locationTag">Location:</string>
     <string name="timeStamp">Date:</string>
     <string name="magnitudeTag">Magnitude:</string>
     <string name="depthTag">Depth:</string>
     <string name="earthquakeTag">Earthquake Details</string>
+
+    <!-- Preference Fragment Titles -->
+    <string name="customize">Dataset Customization</string>
+    <string name="magnitude">Magnitude</string>
+    <string name="max_magnitude">Maximum Magnitude</string>
+    <string name="depth">Depth</string>
+    <string name="depthDescription">Shallow or deep</string>
+    <string name="magnitudeDescription">Specific magnitude range</string>
+    <string name="date">Date Inclusion</string>
+    <string name="dateDescription">Timeline focus</string>
+    <string name="hours">Specific Hours</string>
+
+    <string name="algorithm">Algorithm Customization</string>
+    <string name="tsa">Time Series Analysis</string>
+    <string name="tsa1">ARIMA</string>
+    <string name="tsa2">SARIMA</string>
+    <string name="tsa3">LSTM</string>
+
+    <string name="clustering">Clustering Analysis</string>
+    <string name="clusteringdescription"> Group Detection</string>
+    <string name="clustering1">DBSCAN</string>
+    <string name="clustering2">Mini Batch K-Means</string>
+
+    <string name="choose_algo">Choose an Algorithm</string>
+
+    <!-- Placeholders -->
+
+    <string name="minimum">min</string>
+    <string name="maximum">max</string>
+    <string name="dash">-</string>
+    <string-array name="min">
+        <item>1.0</item>
+        <item>2.0</item>
+        <item>3.0</item>
+        <item>4.0</item>
+        <item>5.0</item>
+        <item>6.0</item>
+        <item>7.6</item>
+    </string-array>
+
+    <!-- Root Preferences -->
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>

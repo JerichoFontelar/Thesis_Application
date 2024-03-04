@@ -186,22 +186,33 @@ public class ExploreFragment extends Fragment {
 
 
         //Floating Action Button Initiation
-        FloatingActionButton fab = view
-                .findViewById(R.id.floatingActionButton);
+        FloatingActionButton fabLocation = view
+                .findViewById(R.id.fab_location);
+        FloatingActionButton fabSetting = view
+                .findViewById(R.id.fab_settings);
         //Bottom Navigation Initialization
         BottomAppBar bar = view.findViewById(R.id.bottomAppBar);
 
 
-        fab.setOnClickListener(new View.OnClickListener() {
+        fabLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
             showDialog();
 
             }
         });
+
+        fabSetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(requireContext(), SettingsActivity.class));
+            }
+        });
         // Inflate the layout for this fragment
         return view;
     }
+
+
 
     private void showDialog(){
         final Dialog dialog = new Dialog(requireContext());

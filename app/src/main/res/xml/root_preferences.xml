@@ -1,35 +1,52 @@
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory app:title="@string/messages_header">
+    <PreferenceCategory app:title="@string/customize">
 
         <EditTextPreference
-            app:key="signature"
-            app:title="@string/signature_title"
+            app:key="earthquake_magnitude"
+            app:title="@string/magnitude"
+            app:defaultValue="@string/magnitudeDescription"
             app:useSimpleSummaryProvider="true" />
 
-        <ListPreference
-            app:defaultValue="reply"
+        <EditTextPreference
+            app:defaultValue="@string/depthDescription"
+            app:key="earthquake_depth"
+            app:title="@string/depth"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="@string/dateDescription"
             app:entries="@array/reply_entries"
-            app:entryValues="@array/reply_values"
-            app:key="reply"
-            app:title="@string/reply_title"
+            app:key="earthquake_date"  app:title="@string/date"
             app:useSimpleSummaryProvider="true" />
 
     </PreferenceCategory>
 
-    <PreferenceCategory app:title="@string/sync_header">
+    <PreferenceCategory app:title="@string/algorithm">
 
-        <SwitchPreferenceCompat
-            app:key="sync"
-            app:title="@string/sync_title" />
+        <ListPreference
+            app:defaultValue="@string/clusteringdescription"
+            app:key="cluster_algorithm"
+            app:title="@string/clustering"
+            app:useSimpleSummaryProvider="true"
+            app:summary="@string/choose_algo" />
 
-        <SwitchPreferenceCompat
-            app:dependency="sync"
-            app:key="attachment"
-            app:summaryOff="@string/attachment_summary_off"
-            app:summaryOn="@string/attachment_summary_on"
-            app:title="@string/attachment_title" />
 
+        <ListPreference
+            app:defaultValue="@string/choose_algo"
+            app:key="tsa_algorithm"
+            app:title="@string/tsa"
+            app:useSimpleSummaryProvider="true"
+            app:summary="@string/choose_algo" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="About">
+        <Preference
+            android:summary="1.0.0"
+            android:title="Version" />
     </PreferenceCategory>
 
 </PreferenceScreen>
