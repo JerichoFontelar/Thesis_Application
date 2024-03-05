@@ -1,13 +1,26 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory app:title="@string/customize">
+
+    <PreferenceCategory
+        app:title="@string/blank">
+        <EditTextPreference
+            app:key="blank"
+            app:title="@string/blank"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory
+        app:title="@string/customize">
 
         <EditTextPreference
             app:key="earthquake_magnitude"
             app:title="@string/magnitude"
             app:defaultValue="@string/magnitudeDescription"
-            app:useSimpleSummaryProvider="true" />
+            app:useSimpleSummaryProvider="true"
+            android:dialogTitle="@string/magnitude"
+            android:inputType="numberDecimal"
+            />
+
 
         <EditTextPreference
             app:defaultValue="@string/depthDescription"
@@ -18,7 +31,8 @@
         <EditTextPreference
             app:defaultValue="@string/dateDescription"
             app:entries="@array/reply_entries"
-            app:key="earthquake_date"  app:title="@string/date"
+            app:key="earthquake_date"
+            app:title="@string/date"
             app:useSimpleSummaryProvider="true" />
 
     </PreferenceCategory>
@@ -30,7 +44,8 @@
             app:key="cluster_algorithm"
             app:title="@string/clustering"
             app:useSimpleSummaryProvider="true"
-            app:summary="@string/choose_algo" />
+            android:entries="@array/cluster_options"
+            android:entryValues="@array/cluster_values"/>
 
 
         <ListPreference
@@ -38,8 +53,22 @@
             app:key="tsa_algorithm"
             app:title="@string/tsa"
             app:useSimpleSummaryProvider="true"
-            app:summary="@string/choose_algo" />
+            android:entries="@array/time_series_options"
+            android:entryValues="@array/time_series_values"/>
 
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory app:title="@string/datasetCategory">
+
+    <ListPreference
+        app:key="dataset_source"
+        app:title="@string/datasetSource"
+        app:useSimpleSummaryProvider="true"
+        android:entries="@array/data_source_options"
+        android:entryValues="@array/data_source_values"
+        />
 
     </PreferenceCategory>
 

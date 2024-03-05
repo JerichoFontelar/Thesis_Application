@@ -119,7 +119,7 @@ public class ExploreFragment extends Fragment {
 
         // Set map tile source, enable zoom controls, and multi-touch zooming
         map.setTileSource(TileSourceFactory.MAPNIK);
-        map.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.NEVER);
+        map.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.SHOW_AND_FADEOUT);
         map.setMultiTouchControls(true);
 
         //request permission

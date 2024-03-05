@@ -38,8 +38,16 @@
 
     <string name="choose_algo">Choose an Algorithm</string>
 
+    <string name="datasetCategory">Dataset</string>
+    <string name="datasetSource">Source</string>
+
+    <string name="settingsActivity">Data Filters</string>
+
+    <string name="blank">   </string>
+
     <!-- Placeholders -->
 
+    <string name="magnitude_dialog">Choose min and max values for magnitude</string>
     <string name="minimum">min</string>
     <string name="maximum">max</string>
     <string name="dash">-</string>
@@ -52,6 +60,41 @@
         <item>6.0</item>
         <item>7.6</item>
     </string-array>
+
+
+    <string-array name="cluster_options">
+        <item>DBSCAN</item>
+        <item>Mini Batch K-Means</item>
+    </string-array>
+
+    <string-array name="cluster_values">
+        <item>dbscan</item>
+        <item>kmeans</item>
+    </string-array>
+
+    <string-array name="time_series_options">
+        <item>LSTM</item>
+        <item>ARIMA</item>
+        <item>SARIMA</item>
+    </string-array>
+
+    <string-array name="time_series_values">
+        <item>lstm</item>
+        <item>arima</item>
+        <item>sarima</item>
+    </string-array>
+
+    <string-array name="data_source_options">
+        <item>PHIVOLCS</item>
+        <item>USGS</item>
+    </string-array>
+
+    <string-array name="data_source_values">
+        <item>phivolcs</item>
+        <item>usgs</item>
+    </string-array>
+
+
 
     <!-- Root Preferences -->
     <!-- Preference Titles -->
