@@ -4,18 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="360dp"
-    android:layout_gravity="center_horizontal"
     android:background="@drawable/custom_numberpicker_dialog"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,41 +24,42 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:gravity="center_horizontal"
-            android:text="@string/magnitudeDescription"
+            android:text="@string/depth_dialog"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="0dp"
             android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
             android:padding="5dp"
-            android:text="@string/magnitude_range"
+            android:text="@string/depth_range"
             android:textColor="@color/gray"
             android:textSize="13sp" />
 
         <TextView
-            android:id="@+id/minimum_magnitude"
+            android:id="@+id/minimum_depth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="85dp"
             android:text="@string/blank"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:layout_marginTop="85dp"
+            android:layout_gravity="center_horizontal"/>
 
 
         <com.google.android.material.slider.RangeSlider
-            android:id="@+id/rangeSlider"
+            android:id="@+id/depth_slider"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:layout_marginTop="160dp"
             android:layout_marginBottom="60dp"
-            android:stepSize=".1000000000000000"
-            android:valueFrom="1"
-            android:valueTo="7.4"
-            app:values="@array/mag_range"
+            android:layout_gravity="center"
+            android:stepSize="1"
+            android:valueFrom="0"
+            android:valueTo="1068"
+            app:values="@array/depth_range"
             tools:ignore="SpeakableTextPresentCheck" />
 
 

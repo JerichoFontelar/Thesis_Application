@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="360dp"
+    android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal"
     android:background="@drawable/custom_numberpicker_dialog"
     android:orientation="vertical">
@@ -12,10 +12,6 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginBottom="8dp"
         android:orientation="vertical"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,46 +20,51 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
             android:gravity="center_horizontal"
-            android:text="@string/magnitudeDescription"
+            android:padding="5dp"
+            android:text="@string/date_dialog"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
         <TextView
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
             android:padding="5dp"
-            android:text="@string/magnitude_range"
+            android:text="@string/date_range"
             android:textColor="@color/gray"
-            android:textSize="13sp" />
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <TextView
-            android:id="@+id/minimum_magnitude"
+            android:id="@+id/starting_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="85dp"
             android:text="@string/blank"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-        <com.google.android.material.slider.RangeSlider
-            android:id="@+id/rangeSlider"
-            android:layout_width="280dp"
+        <Button
+            android:id="@+id/datePickerButton"
+            android:layout_width="210dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="160dp"
-            android:layout_marginBottom="60dp"
-            android:stepSize=".1000000000000000"
-            android:valueFrom="1"
-            android:valueTo="7.4"
-            app:values="@array/mag_range"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:layout_marginTop="122dp"
+            android:text="@string/date_picker" />
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

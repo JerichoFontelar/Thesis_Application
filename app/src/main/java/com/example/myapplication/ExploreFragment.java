@@ -23,6 +23,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
+import androidx.preference.Preference;
 
 import android.provider.Settings;
 import android.util.Log;
@@ -83,6 +84,8 @@ import java.util.regex.Pattern;
 
 public class ExploreFragment extends Fragment {
 
+    private PreferenceManager preferenceManager;
+    private Preference magnitudeDialog, depthDialog, dateRangeDialog;
     private final int REQUEST_PERMISSIONS_REQUEST_CODE = 1;
     private MyLocationNewOverlay mLocationOverlay;
     private MapView map = null;
@@ -215,6 +218,7 @@ public class ExploreFragment extends Fragment {
 
 
     private void showDialog(){
+
         final Dialog dialog = new Dialog(requireContext());
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.layout_bottom_sheet);

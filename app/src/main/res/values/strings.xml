@@ -20,7 +20,7 @@
     <string name="max_magnitude">Maximum Magnitude</string>
     <string name="depth">Depth</string>
     <string name="depthDescription">Shallow or deep</string>
-    <string name="magnitudeDescription">Specific magnitude range</string>
+    <string name="magnitudeDescription">Specify a magnitude range</string>
     <string name="date">Date Inclusion</string>
     <string name="dateDescription">Timeline focus</string>
     <string name="hours">Specific Hours</string>
@@ -48,17 +48,26 @@
     <!-- Placeholders -->
 
     <string name="magnitude_dialog">Choose min and max values for magnitude</string>
-    <string name="minimum">min</string>
-    <string name="maximum">max</string>
-    <string name="dash">-</string>
-    <string-array name="min">
-        <item>1.0</item>
-        <item>2.0</item>
+    <string name="magnitude_range">Magnitude Range</string>
+
+    <string name="depth_dialog">Choose min and max values for depth (km)</string>
+    <string name="depth_range">Depth Range</string>
+
+    <string name="date_dialog">Choose start and end dates for timeline focus</string>
+    <string name="date_range">Date Range</string>
+    <string name="date_picker">Open Date Picker</string>
+
+    <string name="dash_int">%d - %d</string>
+    <string name="dash_float">%.1f - %.1f</string>
+    <string name="dash_string">%s to %s</string>
+    <string-array name="mag_range">
         <item>3.0</item>
-        <item>4.0</item>
-        <item>5.0</item>
-        <item>6.0</item>
-        <item>7.6</item>
+        <item>7.4</item>
+    </string-array>
+
+    <string-array name="depth_range">
+        <item>0</item>
+        <item>1068</item>
     </string-array>
 
 
@@ -66,6 +75,10 @@
         <item>DBSCAN</item>
         <item>Mini Batch K-Means</item>
     </string-array>
+
+    <!-- Custom Dialog-->
+    <string name="apply">Apply</string>
+    <string name="restore_default">Restore to Default</string>
 
     <string-array name="cluster_values">
         <item>dbscan</item>

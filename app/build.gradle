@@ -65,6 +65,12 @@ dependencies {
     //Numberpicker optional library support
     //implementation 'androidx.preference:preference:1.2.0-rc01'
 
+    //custom button outline
+    implementation 'com.google.android.material:material:1.11.0'
+
+    //custom seekbar
+    //implementation 'com.github.Jay-Goo:RangeSeekBar:2.0.1'
+
 
 
 }
