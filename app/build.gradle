@@ -49,12 +49,12 @@ dependencies {
 
     //osmbonuspack
     implementation 'com.github.MKergall:osmbonuspack:6.9.0'
-    implementation 'org.apache.commons:commons-lang3:3.8.1'
+    implementation 'org.apache.commons:commons-lang3:3.14.0'
     implementation 'com.google.code.gson:gson:2.10.1'
-    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
 
     //location provider
-    implementation 'com.google.android.gms:play-services-location:21.1.0'
+    implementation 'com.google.android.gms:play-services-location:21.2.0'
 
     //Geojsonlayer library
     implementation 'com.google.maps.android:android-maps-utils:3.8.2'
@@ -71,6 +71,17 @@ dependencies {
     //custom seekbar
     //implementation 'com.github.Jay-Goo:RangeSeekBar:2.0.1'
 
+    //Room implementation
+    implementation "androidx.room:room-runtime:2.6.1"
+    annotationProcessor "androidx.room:room-compiler:2.6.1"
+    def sqlite_version = "2.4.0"
+
+    // Java language implementation
+    implementation "androidx.sqlite:sqlite:$sqlite_version"
+
+    //RxJava for Async events
+    implementation "io.reactivex.rxjava3:rxjava:3.1.8"
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.2'
 
 
 }

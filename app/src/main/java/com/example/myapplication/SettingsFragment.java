@@ -9,10 +9,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.core.util.Pair;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.PreferenceManager;
 
 import com.google.android.material.datepicker.CalendarConstraints;
 import com.google.android.material.datepicker.MaterialDatePicker;
@@ -27,30 +30,35 @@ import java.util.concurrent.atomic.AtomicLong;
 public class SettingsFragment extends PreferenceFragmentCompat {
 
     SharedPreferences earthquake_setting;
+    private SharedPreferenceDataSource sharedPrefDataSource;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.root_preferences, rootKey);
 
-        //Creation of Preference
-        earthquake_setting = requireActivity().getSharedPreferences("shared_setting", MODE_PRIVATE);
 
-        // Find specific Preferences Object by name
+        // Get SharedPreferences from context
+        SharedPreferences sharedPreferences = requireActivity().getSharedPreferences("earthquake_setting", MODE_PRIVATE);
+
+        // Get singleton instance of data source
+        sharedPrefDataSource = SharedPreferenceDataSource.getInstance(sharedPreferences);
+
+        //Magnitude
         Preference magnitudeDialog = (Preference) findPreference("magnitude_dialog");
-        Float minDefaultValue = earthquake_setting.getFloat("min_magnitude", 3.0F);
-        Float maxDefaultValue = earthquake_setting.getFloat("max_magnitude", 7.4F);
+        double minDefaultValue = sharedPrefDataSource.getMagnitudeRange()[0];
+        double maxDefaultValue = sharedPrefDataSource.getMagnitudeRange()[1];
         magnitudeDialog.setSummary(String.format(Locale.getDefault(), "%.1f - %.1f", minDefaultValue, maxDefaultValue));
 
-
+        //Depth
         Preference depthDialog = (Preference) findPreference("depth_dialog");
-        int minDepth = earthquake_setting.getInt("min_depth", 0);
-        int maxDepth = earthquake_setting.getInt("max_depth", 1063);
-        depthDialog.setSummary(String.format(Locale.getDefault(), "%s - %s", minDepth, maxDepth));
+        int minDepth = sharedPrefDataSource.getDepthRange()[0];
+        int maxDepth = sharedPrefDataSource.getDepthRange()[1];
+        depthDialog.setSummary(String.format(Locale.getDefault(), "%s - %s km", minDepth, maxDepth));
 
-
+        //Date Range
         Preference dateRangeDialog = (Preference) findPreference("date_dialog");
-        long defaultStartDate = earthquake_setting.getLong("start_date", 1483200000000L);
-        long defaultEndDate = earthquake_setting.getLong("end_date", 1704038340000L);
+        long defaultStartDate = sharedPrefDataSource.getLongDateRange()[0];
+        long defaultEndDate = sharedPrefDataSource.getLongDateRange()[1];
 
         // Create a Date object from milliseconds
         Date sdate = new Date(defaultStartDate);
@@ -67,6 +75,28 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         String formattedDate2 = sdf.format(edate);
 
         dateRangeDialog.setSummary(String.format(Locale.getDefault(), "%s to %s", formattedDate1, formattedDate2));
+
+
+        ListPreference clusterAlgorithmPreference = (ListPreference) findPreference("cluster_algorithm");
+
+        ListPreference timeSeriesPreference = (ListPreference) findPreference("tsa_algorithm");
+
+        timeSeriesPreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                //String value = newValue.toString();
+                preference.setSummary(newValue.toString());
+                sharedPrefDataSource.setTimeSeriesAlgorithm(newValue.toString());
+                return true;
+            }
+        });
+        clusterAlgorithmPreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                sharedPrefDataSource.setClusteringAlgorithm(newValue.toString());
+                return true;
+            }
+        });
 
 
         magnitudeDialog.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
@@ -108,9 +138,9 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         //List<Float> defaultValues = rangeSlider.getValues();
 
         // Extract minimum and maximum values (if applicable)
-        Float minDefaultValue = earthquake_setting.getFloat("min_magnitude", 3.0F);
-        Float maxDefaultValue = earthquake_setting.getFloat("max_magnitude", 7.4F);
-        rangeSlider.setValues(minDefaultValue, maxDefaultValue);
+        double minDefaultValue = sharedPrefDataSource.getMagnitudeRange()[0];
+        double maxDefaultValue = sharedPrefDataSource.getMagnitudeRange()[1];
+        rangeSlider.setValues((float) minDefaultValue, (float) maxDefaultValue);
         minimumMagnitudeText.setText(getString(R.string.dash_float, minDefaultValue, maxDefaultValue));
         magnitudePreference.setSummary(String.format(Locale.getDefault(), "%.1f - %.1f", minDefaultValue, maxDefaultValue));
 
@@ -129,14 +159,18 @@ public class SettingsFragment extends PreferenceFragmentCompat {
                         float max = rangeSlider.getValues().get(1);
 
                         // Save the selected values to SharedPreferences
-                        SharedPreferences.Editor editor = earthquake_setting.edit();
-                        editor.putFloat("min_magnitude", min);
-                        editor.putFloat("max_magnitude", max);
-                        editor.apply();
+                        sharedPrefDataSource.setMagnitudeRange(min, max);
 
 
                         //magnitudePreference.setText(String.format(Locale.getDefault(), "%s - %s", min, max));
                         magnitudePreference.setSummary(String.format(Locale.getDefault(), "%s - %s", min, max));
+
+                        String message = "Magnitude Range is now between " + min + " and " + max;
+                        int duration = Toast.LENGTH_SHORT; // You can also use Toast.LENGTH_LONG for a longer display
+
+                        Toast toast = Toast.makeText(getContext(), message, duration);
+                        toast.show();
+
                     }
                 });
 
@@ -175,8 +209,8 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         List<Float> defaultValues = rangeSlider.getValues();
 
         // Extract minimum and maximum values (if applicable)
-        int minDefaultValue = earthquake_setting.getInt("min_depth", 0);
-        int maxDefaultValue = earthquake_setting.getInt("max_depth", 1063);
+        int minDefaultValue = sharedPrefDataSource.getDepthRange()[0];
+        int maxDefaultValue = sharedPrefDataSource.getDepthRange()[1];
         rangeSlider.setValues((float) minDefaultValue, (float) maxDefaultValue);
         minimumDepthText.setText(getString(R.string.dash_int, minDefaultValue, maxDefaultValue));
 
@@ -197,14 +231,17 @@ public class SettingsFragment extends PreferenceFragmentCompat {
                         // Save the selected values to SharedPreferences
                         int minDepth = (int) min;
                         int maxDepth = (int) max;
-                        SharedPreferences.Editor editor = earthquake_setting.edit();
-                        editor.putInt("min_depth", minDepth);
-                        editor.putInt("max_depth", maxDepth);
-                        editor.apply();
+                        sharedPrefDataSource.setDepthRange(minDepth, maxDepth);
 
 
                         //magnitudePreference.setText(String.format(Locale.getDefault(), "%s - %s", min, max));
-                        depthPreference.setSummary(String.format(Locale.getDefault(), "%s - %s", minDepth, maxDepth));
+                        depthPreference.setSummary(String.format(Locale.getDefault(), "%s - %s km", minDepth, maxDepth));
+
+                        String message = "Depth Range is now between " + minDepth + " and " + maxDepth;
+                        int duration = Toast.LENGTH_SHORT;
+
+                        Toast toast = Toast.makeText(getContext(), message, duration);
+                        toast.show();
                     }
                 });
 
@@ -241,8 +278,8 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         View view = getLayoutInflater().inflate(R.layout.layout_datepicker_dialog, null);
 
 
-        long defaultStartDate = earthquake_setting.getLong("start_date", 1483200000000L);
-        long defaultEndDate = earthquake_setting.getLong("end_date", 1704038340000L);
+        long defaultStartDate = sharedPrefDataSource.getLongDateRange()[0];
+        long defaultEndDate = sharedPrefDataSource.getLongDateRange()[1];
 
         // Create a Date object from milliseconds
         Date sdate = new Date(defaultStartDate);
@@ -311,10 +348,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
-                SharedPreferences.Editor editor = earthquake_setting.edit();
-                editor.putLong("start_date", temp_start.get());
-                editor.putLong("end_date", temp_end.get());
-                editor.apply();
+                sharedPrefDataSource.setLongDateRange(temp_start.get(), temp_end.get());
             }
         });
 

@@ -54,11 +54,14 @@
     <PreferenceCategory app:title="@string/datasetCategory">
 
         <ListPreference
+            android:defaultValue="@string/phivolcs"
+            android:enabled="false"
             android:entries="@array/data_source_options"
             android:entryValues="@array/data_source_values"
             app:key="dataset_source"
             app:title="@string/datasetSource"
-            app:useSimpleSummaryProvider="true" />
+            app:useSimpleSummaryProvider="true"
+            />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="About">

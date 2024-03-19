@@ -97,6 +97,7 @@
         <item>sarima</item>
     </string-array>
 
+    <string name="phivolcs">PHIVOLCS</string>
     <string-array name="data_source_options">
         <item>PHIVOLCS</item>
         <item>USGS</item>
