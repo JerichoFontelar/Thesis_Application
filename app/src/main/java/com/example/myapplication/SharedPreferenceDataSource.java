@@ -35,7 +35,7 @@ public class SharedPreferenceDataSource {
 
     public double[] getMagnitudeRange() {
         double[] range = new double[2];
-        range[0] = sharedPreferences.getFloat("minMag", 3.0F);
+        range[0] = sharedPreferences.getFloat("minMag", 5.0F);
         range[1] = sharedPreferences.getFloat("maxMag", 7.4F);
         return range;
     }
@@ -49,7 +49,7 @@ public class SharedPreferenceDataSource {
     public int[] getDepthRange() {
         int[] range = new int[2];
         range[0] = sharedPreferences.getInt("minDepth", 0);
-        range[1] = sharedPreferences.getInt("maxDepth", 500);
+        range[1] = sharedPreferences.getInt("maxDepth", 199);
         return range;
     }
 

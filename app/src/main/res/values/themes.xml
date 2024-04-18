@@ -19,4 +19,9 @@
         <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
     </style>
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+
+    <style name="SplashScreenTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:statusBarColor"> @android:color/white</item>
+    </style>
 </resources>

@@ -12,6 +12,8 @@ import androidx.room.RoomDatabase;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.myapplication.databinding.ActivityMainBinding;
 import com.google.gson.Gson;
@@ -22,11 +24,21 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.List;
 
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.SSLSession;
+
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.disposables.CompositeDisposable;
 import io.reactivex.rxjava3.disposables.Disposable;
 import io.reactivex.rxjava3.schedulers.Schedulers;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
@@ -45,6 +57,94 @@ public class MainActivity extends AppCompatActivity {
 //        } catch (IOException e) {
 //            throw new RuntimeException(e);
 //        }
+
+        //okhttp
+//        OkHttpClient client = new OkHttpClient();
+//        Request request = new Request.Builder().url("https://192.168.43.133:5000/").build();
+//        TextView textView = findViewById(R.id.cluster_text);
+//        client.newCall(request).enqueue(new Callback() {
+//            @Override
+//            public void onFailure(Call call, IOException e) {
+//                try {
+//                    //Toast.makeText(getApplicationContext(), "Failed to connect to server", Toast.LENGTH_SHORT).show();
+//                    Log.d("MyTag", "Failed to connect to server", e);
+//                }catch (Exception ex) {
+//                    ex.printStackTrace();
+//                }
+//            }
+//
+//            @Override
+//            public void onResponse(Call call, Response response) throws IOException {
+//                if (response.isSuccessful()) {
+//                    textView.setText(response.body().string());
+//                    textView.setText(response.body().toString());
+//                }
+//            }
+//        });
+
+//        // Insecure approach for development only (not recommended for production)
+//        OkHttpClient client = new OkHttpClient.Builder()
+//                .hostnameVerifier(new HostnameVerifier() {
+//                    @Override
+//                    public boolean verify(String hostname, SSLSession session) {
+//                        return true; // Trust all hostnames
+//                    }
+//                })
+//                .build();
+//
+//
+//        //Retrofit Builder
+//        Retrofit retrofit = new Retrofit.Builder()
+//                .baseUrl("https://192.168.43.133:5000")
+//                .addConverterFactory(GsonConverterFactory.create())
+//                .client(client)
+//                .build();
+//
+//        //Instance for interface
+//        MyApiCall myAPICall = retrofit.create(MyApiCall.class);
+//        Call<DataModel> call = myAPICall.getData();
+//        TextView textView = (TextView) findViewById(R.id.cluster_text);
+//        //textView.setText("Hello");
+//
+//
+//
+//        call.enqueue(new Callback<DataModel>() {
+//            @Override
+//            public void onResponse(Call<DataModel> call, Response<DataModel> response) {
+//                if (response.code() != 200) {
+//                    Log.d("MyTag", "response.code() != 200");
+//                    // Handle non-successful response on the main thread:
+//                    runOnUiThread(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            textView.setText("Check the connection");
+//                        }
+//                    });
+//                } else {
+//                    // Parse response and update text view on the main thread:
+//                    runOnUiThread(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            if (textView != null) {
+//                                Log.d("MyTag", "Code passed in the not null block");
+//                                String jsony = "Title = " + response.body().getTitle() +
+//                                        "\n Body = " + response.body().getBody();
+//                                textView.setText(jsony);
+//                            } else {
+//                                Log.d("MyTag", "Code passed in else block");
+//                                // Handle the case where TextView is null (e.g., log an error)
+//                            }
+//                        }
+//                    });
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<DataModel> call, Throwable throwable) {
+//                Log.d("MyTag","passed in the failure block", throwable);
+//            }
+//        });
+
 
 
         replaceFragment(new ExploreFragment());

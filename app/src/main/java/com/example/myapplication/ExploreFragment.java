@@ -58,6 +58,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -143,7 +144,7 @@ public class ExploreFragment extends Fragment {
 //        GeoPoint geoPoint = new GeoPoint(currentLocation.getLatitude(),currentLocation.getLongitude());
 //        Marker marker = new Marker(map);
 //        marker.setPosition(geoPoint);
-        //marker.setIcon(R.drawable.home_pin_fill0_wght400_grad0_opsz24);
+//        marker.setIcon(R.drawable.home_pin_fill0_wght400_grad0_opsz24);
 
         this.mLocationOverlay = new MyLocationNewOverlay(new GpsMyLocationProvider(ctx), map);
         this.mLocationOverlay.enableMyLocation();
@@ -155,15 +156,25 @@ public class ExploreFragment extends Fragment {
         //map.getOverlays().addAll(markers);
         //map.invalidate();
 //
-//        KmlDocument kmlDocument = new KmlDocument();
-//        // Read data from a file
-//        FolderOverlay kmlOverlay = (FolderOverlay)kmlDocument
-//                .mKmlRoot
-//                .buildOverlay(map, null, null, kmlDocument);
-//
-//
-//
-//        map.getOverlays().add(kmlOverlay);
+
+        try {
+            KmlDocument kmlDocument = new KmlDocument();
+
+            // Read data from a file
+            FolderOverlay kmlOverlay = (FolderOverlay) kmlDocument
+                    .mKmlRoot
+                    .buildOverlay(map, null, null, kmlDocument);
+
+            File localFile = kmlDocument.getDefaultPathForAndroid(getContext(), "raw/active_faults_2015.json");
+            kmlDocument.saveAsGeoJSON(localFile);
+
+            map.getOverlays().add(kmlOverlay);
+        } catch (Exception e) {
+            // Handle exceptions here
+            e.printStackTrace();  // For debugging, print stack trace
+            Log.d("Map Error", e.getMessage());
+        }
+
 
 
 

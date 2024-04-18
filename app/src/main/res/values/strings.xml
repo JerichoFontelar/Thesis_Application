@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">SeisMap PH</string>
     <string name="tab_1">Explore</string>
-    <string name="tab_2">Clusters</string>
+    <string name="tab_2">Clustering</string>
     <string name="tab_3">Trends</string>
     <string name="tab_4">About</string>
     <string name="fab">Your Location</string>
