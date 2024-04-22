@@ -92,4 +92,9 @@ dependencies {
     //Gson converter
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
+    //cardview
+    implementation "androidx.cardview:cardview:1.0.0"
+
+    //wave progress bar
+    implementation 'com.github.cjhandroid:WaveProgressBar:v1.0.0'
 }

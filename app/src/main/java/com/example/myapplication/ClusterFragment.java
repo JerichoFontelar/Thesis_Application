@@ -7,6 +7,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.preference.PreferenceManager;
 import android.util.Log;
@@ -24,6 +26,7 @@ import org.osmdroid.views.CustomZoomButtonsController;
 import org.osmdroid.views.MapView;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLSession;
@@ -43,6 +46,15 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * create an instance of this fragment.
  */
 public class ClusterFragment extends Fragment {
+
+    RecyclerView recyclerView;
+    ArrayList<ParentModelClass> parentModelClassArrayList;
+    ArrayList<ChildModelClass> childModelClassArrayList;
+
+    ArrayList<ChildModelClass> bestModelAccordingToSS;
+    ArrayList<ChildModelClass> bestModelAccordingToDBI;
+    ArrayList<ChildModelClass> bestModelAccordingToMI;
+    ArrayList<ChildModelClass> latestList;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -91,8 +103,8 @@ public class ClusterFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        TextView textView = view.findViewById(R.id.cluster_text);
-        textView.setText("Hi");
+        //TextView textView = view.findViewById(R.id.cluster_text);
+        //textView.setText("Hi");
 
         // Insecure approach for development only (not recommended for production)
         OkHttpClient client = new OkHttpClient.Builder()
@@ -105,60 +117,127 @@ public class ClusterFragment extends Fragment {
                 .build();
 
         //Retrofit Builder
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://10.50.75.159:5000")
-                .addConverterFactory(GsonConverterFactory.create())
-                .client(client)
-                .build();
-
-        //Instance for interface
-        MyApiCall myAPICall = retrofit.create(MyApiCall.class);
-        Call<DataModel> call = myAPICall.getData();
+//        Retrofit retrofit = new Retrofit.Builder()
+//                .baseUrl("https://10.50.75.159:5000")
+//                .addConverterFactory(GsonConverterFactory.create())
+//                .client(client)
+//                .build();
+//
+//        //Instance for interface
+//        MyApiCall myAPICall = retrofit.create(MyApiCall.class);
+//        Call<DataModel> call = myAPICall.getData();
         //textView.setText("Hello");
-        call.enqueue(new Callback<DataModel>() {
-            @Override
-            public void onResponse(Call<DataModel> call, Response<DataModel> response) {
-                if (response.code() != 200) {
-                    Log.d("MyTag", "response.code() != 200");
-                    // Handle non-successful response on the main thread:
-                    getActivity().runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            textView.setText("Check the connection");
-                        }
-                    });
-                } else {
-                    // Parse response and update text view on the main thread:
-                    getActivity().runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            if (textView != null) {
-                                Log.d("MyTag", "Code passed in the not null block");
-                                String jsony = "Title = " + response.body().getTitle() +
-                                        "\n Body = " + response.body().getBody();
-                                retrievedData = jsony;
-                                textView.setText(jsony);
-                            } else {
-                                Log.d("MyTag", "Code passed in else block");
-                                // Handle the case where TextView is null (e.g., log an error)
-                            }
-                        }
-                    });
-                }
-            }
+//        call.enqueue(new Callback<DataModel>() {
+//            @Override
+//            public void onResponse(Call<DataModel> call, Response<DataModel> response) {
+//                if (response.code() != 200) {
+//                    Log.d("MyTag", "response.code() != 200");
+//                    // Handle non-successful response on the main thread:
+//                    getActivity().runOnUiThread(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            textView.setText("Check the connection");
+//                        }
+//                    });
+//                } else {
+//                    // Parse response and update text view on the main thread:
+//                    getActivity().runOnUiThread(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            if (textView != null) {
+//                                Log.d("MyTag", "Code passed in the not null block");
+//                                String jsony = "Title = " + response.body().getTitle() +
+//                                        "\n Body = " + response.body().getBody();
+//                                retrievedData = jsony;
+//                                textView.setText(jsony);
+//                            } else {
+//                                Log.d("MyTag", "Code passed in else block");
+//                                // Handle the case where TextView is null (e.g., log an error)
+//                            }
+//                        }
+//                    });
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<DataModel> call, Throwable throwable) {
+//                Log.d("MyTag","passed in the failure block", throwable);
+//            }
+//        });
 
-            @Override
-            public void onFailure(Call<DataModel> call, Throwable throwable) {
-                Log.d("MyTag","passed in the failure block", throwable);
-            }
-        });
+        recyclerView = getActivity().findViewById(R.id.rv_parent); // Find by ID
+        //recyclerView = recyclerView.findViewById(R.id.rv_parent);
+        childModelClassArrayList = new ArrayList<>();
+        parentModelClassArrayList = new ArrayList<>();
+        bestModelAccordingToDBI = new ArrayList<>();
+        bestModelAccordingToSS = new ArrayList<>();
+        bestModelAccordingToMI = new ArrayList<>();
+        latestList = new ArrayList<>();
+
+        ParentAdapter parentAdapter;
+
+
+        bestModelAccordingToSS.add(new ChildModelClass(R.drawable.cluster_model_logo));
+        bestModelAccordingToSS.add(new ChildModelClass(R.drawable.cluster_model_logo));
+        bestModelAccordingToSS.add(new ChildModelClass(R.drawable.cluster_model_logo));
+        bestModelAccordingToSS.add(new ChildModelClass(R.drawable.cluster_model_logo));
+        bestModelAccordingToSS.add(new ChildModelClass(R.drawable.cluster_model_logo));
+
+        parentModelClassArrayList.add(new ParentModelClass("Best Silhouette Score", bestModelAccordingToSS));
+
+        bestModelAccordingToDBI.add(new ChildModelClass(R.drawable.cluster_model_logo));
+        bestModelAccordingToDBI.add(new ChildModelClass(R.drawable.cluster_model_logo));
+        bestModelAccordingToDBI.add(new ChildModelClass(R.drawable.cluster_model_logo));
+        bestModelAccordingToDBI.add(new ChildModelClass(R.drawable.cluster_model_logo));
+        bestModelAccordingToDBI.add(new ChildModelClass(R.drawable.cluster_model_logo));
+
+        parentModelClassArrayList.add(new ParentModelClass("Best Davies-Bouldin Index", bestModelAccordingToDBI));
+
+        bestModelAccordingToMI.add(new ChildModelClass(R.drawable.cluster_model_logo));
+        bestModelAccordingToMI.add(new ChildModelClass(R.drawable.cluster_model_logo));
+        bestModelAccordingToMI.add(new ChildModelClass(R.drawable.cluster_model_logo));
+        bestModelAccordingToMI.add(new ChildModelClass(R.drawable.cluster_model_logo));
+        bestModelAccordingToMI.add(new ChildModelClass(R.drawable.cluster_model_logo));
+
+        parentModelClassArrayList.add(new ParentModelClass("Best Model Inertia", bestModelAccordingToMI));
+
+//        latestList.add(new ChildModelClass(R.drawable.cluster_model_logo));
+//        latestList.add(new ChildModelClass(R.drawable.cluster_model_logo));
+//        latestList.add(new ChildModelClass(R.drawable.cluster_model_logo));
+//        latestList.add(new ChildModelClass(R.drawable.cluster_model_logo));
+//        latestList.add(new ChildModelClass(R.drawable.cluster_model_logo));
+//
+//        parentModelClassArrayList.add(new ParentModelClass("Recommended Models", latestList));
+
+        parentAdapter = new ParentAdapter(parentModelClassArrayList, ClusterFragment.this.getContext());
+////        if (recyclerView != null) {
+//            recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+//            recyclerView.setAdapter(parentAdapter);
+//            parentAdapter.notifyDataSetChanged();
+//        } else {
+//            // Handle the case where recyclerView is null (e.g., log an error)
+//            Log.e("ClusterFragment", "RecyclerView not found!");
+//        }
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setAdapter(parentAdapter);
+        parentAdapter.notifyDataSetChanged();
+
+
+//        try {
+//            recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+//            recyclerView.setAdapter(parentAdapter);
+//            parentAdapter.notifyDataSetChanged();
+//        }catch (Exception e){
+//            Log.d("ClusterFragment", "RecyclerView not found!");
+//            Log.d("ClusterFragment", e.getMessage());
+//        }
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_cluster, container, false);
-        TextView textView = view.findViewById(R.id.cluster_text);
-        textView.setText("Hello");
+
 
         Activity act = requireActivity(); //Activity variable
         Context ctx = requireContext(); //Context ctx = getApplicationContext();;
@@ -173,12 +252,12 @@ public class ClusterFragment extends Fragment {
         map.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.SHOW_AND_FADEOUT);
         map.setMultiTouchControls(true);
 
+
         GeoPoint userPoint = new GeoPoint(12.85, 123.74);
         IMapController mapController = map.getController();
         mapController.animateTo(userPoint);
         //mapController.setCenter(userPoint);
-        mapController.zoomTo(7.0);//6.5
-
+        mapController.zoomTo(5.5);//6.5
 
         return view;
     }
@@ -186,6 +265,7 @@ public class ClusterFragment extends Fragment {
     public void setData(String data){
         retrievedData = data;
     }
+
 
 
 }

@@ -53,6 +53,7 @@ import org.osmdroid.views.overlay.FolderOverlay;
 import org.osmdroid.views.overlay.Marker;
 import org.osmdroid.views.overlay.mylocation.GpsMyLocationProvider;
 import org.osmdroid.views.overlay.mylocation.MyLocationNewOverlay;
+
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
@@ -68,11 +69,16 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Timer;
+import java.util.TimerTask;
 
+import cjh.WaveProgressBarlibrary.WaveProgressBar;
 
 
 public class ExploreFragment extends Fragment {
 
+    int progress = 0;
+    boolean started = false;
     private PreferenceManager preferenceManager;
     private Preference magnitudeDialog, depthDialog, dateRangeDialog;
     private final int REQUEST_PERMISSIONS_REQUEST_CODE = 1;
@@ -106,9 +112,7 @@ public class ExploreFragment extends Fragment {
         double[] magnitudeRange = sharedPrefDataSource.getMagnitudeRange();
         double minMag = magnitudeRange[0]; // Access the first element (index 0) for minimum value
         double maxMag = magnitudeRange[1]; // Access the second element (index 1) for maximum value
-        Log.d("MyFragment", "Magnitude Range: " + minMag + "-"+ maxMag);
-
-
+        Log.d("MyFragment", "Magnitude Range: " + minMag + "-" + maxMag);
 
 
         //Map initialization
@@ -116,7 +120,6 @@ public class ExploreFragment extends Fragment {
         getMap(map);
 
 
-        
         try {
             setDatabaseFromJson();
         } catch (IOException e) {
@@ -139,7 +142,7 @@ public class ExploreFragment extends Fragment {
         IMapController mapController = map.getController();
         mapController.animateTo(userPoint);
         //mapController.setCenter(userPoint);
-        mapController.zoomTo(7.0);//6.5
+        mapController.zoomTo(5.5);//6.5
 
 //        GeoPoint geoPoint = new GeoPoint(currentLocation.getLatitude(),currentLocation.getLongitude());
 //        Marker marker = new Marker(map);
@@ -149,7 +152,6 @@ public class ExploreFragment extends Fragment {
         this.mLocationOverlay = new MyLocationNewOverlay(new GpsMyLocationProvider(ctx), map);
         this.mLocationOverlay.enableMyLocation();
         map.getOverlays().add(this.mLocationOverlay);
-
 
 
         // Add all markers to the map
@@ -176,8 +178,6 @@ public class ExploreFragment extends Fragment {
         }
 
 
-
-
         //Floating Action Button Initiation
         FloatingActionButton fabLocation = view
                 .findViewById(R.id.fab_location);
@@ -187,10 +187,13 @@ public class ExploreFragment extends Fragment {
         BottomAppBar bar = view.findViewById(R.id.bottomAppBar);
 
 
+
+
+
         fabLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            showDialog();
+                showDialog();
 
             }
         });
@@ -205,17 +208,23 @@ public class ExploreFragment extends Fragment {
         return view;
     }
 
-    private void showDialog(){
+    private void showDialog() {
 
         final Dialog dialog = new Dialog(requireContext());
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.layout_bottom_sheet);
+        dialog.setContentView(R.layout.wave_progress);
+
 
         dialog.show();
         Objects.requireNonNull(dialog.getWindow()).setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
-        dialog.getWindow().setGravity(Gravity.BOTTOM);
+        dialog.getWindow().setGravity(Gravity.CENTER);
+
+    }
+
+    public void wave_progress(){
+
     }
 
     public void getLastLocation() {
@@ -227,7 +236,7 @@ public class ExploreFragment extends Fragment {
         task.addOnSuccessListener(new OnSuccessListener<Location>() {
             @Override
             public void onSuccess(Location location) {
-                if(location != null){
+                if (location != null) {
                     currentLocation = location;
                 }
             }
@@ -235,10 +244,11 @@ public class ExploreFragment extends Fragment {
     }
 
 
-    public void getMap(MapView mapView){
+    public void getMap(MapView mapView) {
         map = mapView;
     }
-    private void requestRuntimePermission(){
+
+    private void requestRuntimePermission() {
 
         Context context = requireActivity();
 
@@ -253,13 +263,13 @@ public class ExploreFragment extends Fragment {
                     WRITE_EXTERNAL_STORAGE_PERMISSION
             }, REQUEST_PERMISSIONS_REQUEST_CODE);
 
-        }else if((ActivityCompat.shouldShowRequestPermissionRationale(requireActivity(), FINE_LOCATION_PERMISSION))){
+        } else if ((ActivityCompat.shouldShowRequestPermissionRationale(requireActivity(), FINE_LOCATION_PERMISSION))) {
 
             AlertDialog.Builder builder = new AlertDialog.Builder((context));
             builder.setMessage("This app requires Location and Write permission for particular feature to work as expected.")
                     .setTitle("Permission Required")
                     .setCancelable(false)
-                    .setPositiveButton("Ok", (dialog, which) ->{
+                    .setPositiveButton("Ok", (dialog, which) -> {
                         ActivityCompat.requestPermissions(requireActivity(), new String[]{FINE_LOCATION_PERMISSION},
                                 REQUEST_PERMISSIONS_REQUEST_CODE);
                         dialog.dismiss();
@@ -268,13 +278,13 @@ public class ExploreFragment extends Fragment {
 
             builder.show();
 
-        }else if((ActivityCompat.shouldShowRequestPermissionRationale(requireActivity(), WRITE_EXTERNAL_STORAGE_PERMISSION))){
+        } else if ((ActivityCompat.shouldShowRequestPermissionRationale(requireActivity(), WRITE_EXTERNAL_STORAGE_PERMISSION))) {
 
             AlertDialog.Builder builder = new AlertDialog.Builder((context));
             builder.setMessage("This app requires Location and Write permission for particular feature to work as expected.")
                     .setTitle("Permission Required")
                     .setCancelable(false)
-                    .setPositiveButton("Ok", (dialog, which) ->{
+                    .setPositiveButton("Ok", (dialog, which) -> {
                         ActivityCompat.requestPermissions(requireActivity(), new String[]{WRITE_EXTERNAL_STORAGE_PERMISSION},
                                 REQUEST_PERMISSIONS_REQUEST_CODE);
                         dialog.dismiss();
@@ -283,24 +293,24 @@ public class ExploreFragment extends Fragment {
 
             builder.show();
 
-        } else{
+        } else {
             ActivityCompat.requestPermissions(requireActivity(), new String[]{FINE_LOCATION_PERMISSION},
-                REQUEST_PERMISSIONS_REQUEST_CODE);
+                    REQUEST_PERMISSIONS_REQUEST_CODE);
         }
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults){
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
         Context ctx = getContext();
         Activity act = getActivity();
 
 
-        if(requestCode==FINE_PERMISSION_CODE){
-            if(grantResults.length>0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+        if (requestCode == FINE_PERMISSION_CODE) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 getLastLocation();
-            }else {
+            } else {
                 Toast.makeText(ctx, "Location permission is denied, please allow the permission", Toast.LENGTH_SHORT).show();
             }
         }
@@ -335,8 +345,8 @@ public class ExploreFragment extends Fragment {
         long[] dateRange = sharedPrefDataSource.getLongDateRange();
 
         List<EarthquakeData> filteredData = new ArrayList<>();
-        Log.d("MyFragment", "Depth Range: " + depthRange[0] + "-"+ depthRange[1]);
-        Log.d("MyFragment", "Date Range: " + dateRange[0] + "-"+ dateRange[1]);
+        Log.d("MyFragment", "Depth Range: " + depthRange[0] + "-" + depthRange[1]);
+        Log.d("MyFragment", "Date Range: " + dateRange[0] + "-" + dateRange[1]);
         for (EarthquakeData earthquake : earthquakeDataArray) {
             double magnitude = earthquake.getMagnitude();
             int depth = earthquake.getDepth();
@@ -348,7 +358,7 @@ public class ExploreFragment extends Fragment {
                 filteredData.add(earthquake);
             }
         }
-        Log.d("MyFragment", "Earthquake: " + filteredData.size() );
+        Log.d("MyFragment", "Earthquake: " + filteredData.size());
 
         // Create markers and add them to mapview (assuming mapview is initialized)
         for (EarthquakeData earthquake : filteredData) {
@@ -405,6 +415,7 @@ public class ExploreFragment extends Fragment {
         int component = (int) (color1 + (fraction * (color2 - color1)));
         return Math.min(component, max); // Ensure component stays within 0-255 range
     }
+
     private int interpolateColor(int[] colors, double value) {
         // Ensure valid input (value between 0 and 1)
         if (value < 0 || value > 1) {

@@ -126,4 +126,13 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
+
+    <!-- Clustering Screen -->
+    <string name="model_description">Model Name</string>
+    <string name="model_choice">Choose a Clustering Model</string>
+    <string name="dbi_des">DBI:</string>
+    <string name="mi_des">MI:</string>
+    <string name="sil_des">SS:</string>
+    <string name="no_clusters">Clusters:</string>
+
 </resources>
