@@ -48,7 +48,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 444.0,
         "Degrees": " 43\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 121,
@@ -65,7 +65,7 @@
         "Province": "Marihatag (Surigao Del Sur)",
         "Distance": 55.0,
         "Degrees": " 78\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 125,
@@ -116,7 +116,7 @@
         "Province": "Tongkil (Sulu)",
         "Distance": 257.0,
         "Degrees": " 24\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 248,
@@ -133,7 +133,7 @@
         "Province": "Tongkil (Sulu)",
         "Distance": 235.0,
         "Degrees": " 26\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 258,
@@ -167,7 +167,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 113.0,
         "Degrees": " 75\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 319,
@@ -303,7 +303,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 275.0,
         "Degrees": " 59\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 450,
@@ -320,7 +320,7 @@
         "Province": "Palimbang (Sultan Kudarat)",
         "Distance": 43.0,
         "Degrees": " 16\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 480,
@@ -388,7 +388,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 186.0,
         "Degrees": " 36\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 518,
@@ -643,7 +643,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 285.0,
         "Degrees": " 11\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 766,
@@ -677,7 +677,7 @@
         "Province": "Malita (Davao Occidental)",
         "Distance": 47.0,
         "Degrees": " 55\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 777,
@@ -711,7 +711,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 299.0,
         "Degrees": " 05\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 790,
@@ -745,7 +745,7 @@
         "Province": "Luna (La Union)",
         "Distance": 0.0,
         "Degrees": "0 West",
-        "y": 2
+        "y": 1
     },
     {
         "id": 908,
@@ -762,7 +762,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 14.0,
         "Degrees": " 49\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 909,
@@ -779,7 +779,7 @@
         "Province": "Tarragona (Davao Oriental)",
         "Distance": 232.0,
         "Degrees": " 40\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 934,
@@ -813,7 +813,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 19.0,
         "Degrees": " 50\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 1026,
@@ -830,7 +830,7 @@
         "Province": " Palimbang (Sultan Kudarat)",
         "Distance": 75.0,
         "Degrees": " 08\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 1044,
@@ -898,7 +898,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 152.0,
         "Degrees": " 48\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 1077,
@@ -915,7 +915,7 @@
         "Province": "Sabtang (Batanes)",
         "Distance": 163.0,
         "Degrees": " 89\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 1153,
@@ -983,7 +983,7 @@
         "Province": "Sarangani\u00a0(Davao Occidental)",
         "Distance": 47.0,
         "Degrees": " 26\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 1254,
@@ -1017,7 +1017,7 @@
         "Province": " Governor Generoso (Davao Oriental)",
         "Distance": 157.0,
         "Degrees": " 47\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 1323,
@@ -1085,7 +1085,7 @@
         "Province": "Sarangani (Davao Del Occidental)",
         "Distance": 289.0,
         "Degrees": " 03\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 1377,
@@ -1459,7 +1459,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 155.0,
         "Degrees": " 58\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 1688,
@@ -1544,7 +1544,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 147.0,
         "Degrees": " 43\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 1711,
@@ -1646,7 +1646,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 91.0,
         "Degrees": " 79\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 1833,
@@ -1901,7 +1901,7 @@
         "Province": "San Marcelino (Zambales)",
         "Distance": 11.0,
         "Degrees": " 46\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 2154,
@@ -1918,7 +1918,7 @@
         "Province": "Bayabas (Surigao Del Sur)",
         "Distance": 54.0,
         "Degrees": " 55\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 2166,
@@ -1969,7 +1969,7 @@
         "Province": "Maasim (Sarangani)",
         "Distance": 45.0,
         "Degrees": " 43\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 2237,
@@ -1986,7 +1986,7 @@
         "Province": "Nasugbu (Batangas)",
         "Distance": 18.0,
         "Degrees": " 22\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 2310,
@@ -2071,7 +2071,7 @@
         "Province": "Masbate (Masbate)",
         "Distance": 6.0,
         "Degrees": " 85\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 2397,
@@ -2122,7 +2122,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 163.0,
         "Degrees": " 13\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 2498,
@@ -2207,7 +2207,7 @@
         "Province": "Santa Catalina (Ilocos Sur)",
         "Distance": 34.0,
         "Degrees": " 09\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 2705,
@@ -2258,7 +2258,7 @@
         "Province": "Nabunturan\u00a0(Compostela Valley)",
         "Distance": 35.0,
         "Degrees": " 49\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 2778,
@@ -2411,7 +2411,7 @@
         "Province": "Looc (Occidental Mindoro)",
         "Distance": 54.0,
         "Degrees": " 41\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 2901,
@@ -2462,7 +2462,7 @@
         "Province": "Hinoba-an (Negros Occidental)",
         "Distance": 30.0,
         "Degrees": " 52\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 3029,
@@ -2479,7 +2479,7 @@
         "Province": "Claveria (Cagayan)",
         "Distance": 31.0,
         "Degrees": " 52\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 3066,
@@ -2598,7 +2598,7 @@
         "Province": "Ormoc City (Leyte)",
         "Distance": 26.0,
         "Degrees": " 86\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 3301,
@@ -2785,7 +2785,7 @@
         "Province": "Looc (Occidental Mindoro)",
         "Distance": 19.0,
         "Degrees": " 30\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 3603,
@@ -2819,7 +2819,7 @@
         "Province": "Sagada (Mountain Province)",
         "Distance": 14.0,
         "Degrees": " 29\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 3607,
@@ -2853,7 +2853,7 @@
         "Province": "c (Occidental Mindoro)",
         "Distance": 35.0,
         "Degrees": " 30\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 3687,
@@ -2921,7 +2921,7 @@
         "Province": "Calayan (Cagayan)",
         "Distance": 132.0,
         "Degrees": " 58\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 3819,
@@ -2955,7 +2955,7 @@
         "Province": "Nasugbu (Batangas)",
         "Distance": 15.0,
         "Degrees": " 42\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 3845,
@@ -2972,7 +2972,7 @@
         "Province": "Kananga (Leyte)",
         "Distance": 5.0,
         "Degrees": " 45\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 3853,
@@ -3023,7 +3023,7 @@
         "Province": "San Juan (Batangas)",
         "Distance": 27.0,
         "Degrees": " 19\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 3888,
@@ -3159,7 +3159,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 3.0,
         "Degrees": " 09\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 4018,
@@ -3193,7 +3193,7 @@
         "Province": "Pantukan (Compostela Valley)",
         "Distance": 3.0,
         "Degrees": " 45\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 4074,
@@ -3312,7 +3312,7 @@
         "Province": " San Narciso (Zambales)",
         "Distance": 6.0,
         "Degrees": " 25 \u00b0 ",
-        "y": 3
+        "y": 2
     },
     {
         "id": 4118,
@@ -3329,7 +3329,7 @@
         "Province": " Sanchez-mira (Cagayan)",
         "Distance": 38.0,
         "Degrees": " 63 \u00b0 ",
-        "y": 2
+        "y": 1
     },
     {
         "id": 4119,
@@ -3346,7 +3346,7 @@
         "Province": " Governor Generoso (Davao\u00a0Oriental)",
         "Distance": 90.0,
         "Degrees": " 67 \u00b0 ",
-        "y": 3
+        "y": 2
     },
     {
         "id": 4139,
@@ -3380,7 +3380,7 @@
         "Province": "Labrador\u00a0(Pangasinan)",
         "Distance": 10.0,
         "Degrees": " 02\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 4146,
@@ -3431,7 +3431,7 @@
         "Province": "Capoocan (Leyte)",
         "Distance": 5.0,
         "Degrees": " 64\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 4262,
@@ -3448,7 +3448,7 @@
         "Province": "Palauig (Zambales)",
         "Distance": 82.0,
         "Degrees": " 62\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 4297,
@@ -3482,7 +3482,7 @@
         "Province": "Ozamis City (Misamis Occidental)",
         "Distance": 22.0,
         "Degrees": " 55\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 4363,
@@ -3516,7 +3516,7 @@
         "Province": "Pandan (Cataduanes)",
         "Distance": 62.0,
         "Degrees": " 29\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 4374,
@@ -3533,7 +3533,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 160.0,
         "Degrees": " 84\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 4449,
@@ -3550,7 +3550,7 @@
         "Province": "Lingayen (Pangasinan)",
         "Distance": 16.0,
         "Degrees": " 27\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 4459,
@@ -3567,7 +3567,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 54.0,
         "Degrees": " 70\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 4464,
@@ -3584,7 +3584,7 @@
         "Province": "Biri (Northern Samar)",
         "Distance": 35.0,
         "Degrees": " 36\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 4468,
@@ -3601,7 +3601,7 @@
         "Province": "Calapan City (Occidental Mindoro)",
         "Distance": 20.0,
         "Degrees": " 55\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 4486,
@@ -3669,7 +3669,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 22.0,
         "Degrees": " 59\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 4615,
@@ -3754,7 +3754,7 @@
         "Province": "Prieto Diaz (Sorsogon)",
         "Distance": 32.0,
         "Degrees": " 34\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 4764,
@@ -3788,7 +3788,7 @@
         "Province": "Mapanas (Northern Samar)",
         "Distance": 96.0,
         "Degrees": " 86\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 4837,
@@ -3805,7 +3805,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 106.0,
         "Degrees": " 25\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 4903,
@@ -3856,7 +3856,7 @@
         "Province": "Don Marcelino (Davao Occidental)",
         "Distance": 42.0,
         "Degrees": " 82\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 5006,
@@ -3924,7 +3924,7 @@
         "Province": " Capoocan (Leyte)",
         "Distance": 13.0,
         "Degrees": "S 42\u00b0 ",
-        "y": 2
+        "y": 1
     },
     {
         "id": 5111,
@@ -4111,7 +4111,7 @@
         "Province": "Caraga (Davao Oriental)",
         "Distance": 20.0,
         "Degrees": " 79\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 5343,
@@ -4230,7 +4230,7 @@
         "Province": "Jose Abad Santos\u00a0(Davao Occidental)",
         "Distance": 125.0,
         "Degrees": " 85\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 5519,
@@ -4315,7 +4315,7 @@
         "Province": "Cagwait (Surigao Del Sur)",
         "Distance": 60.0,
         "Degrees": " 65\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 5606,
@@ -4383,7 +4383,7 @@
         "Province": "Sarangani\u00a0(Davao Occidental)",
         "Distance": 204.0,
         "Degrees": " 31\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 5700,
@@ -4417,7 +4417,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 262.0,
         "Degrees": "\u00a028\u00b0\u00a0E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 5734,
@@ -4434,7 +4434,7 @@
         "Province": "Jabonga (Agusan Del Norte)",
         "Distance": 15.0,
         "Degrees": " 34\u00b0\u00a0E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 5736,
@@ -4451,7 +4451,7 @@
         "Province": "Atok (Benguet)",
         "Distance": 9.0,
         "Degrees": " 58\u00b0\u00a0E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 5772,
@@ -4553,7 +4553,7 @@
         "Province": "\u00a0Sarangani (Davao Occidental)",
         "Distance": 106.0,
         "Degrees": " 31\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 6016,
@@ -4570,7 +4570,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 136.0,
         "Degrees": " 87\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 6048,
@@ -4706,7 +4706,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 134.0,
         "Degrees": " 72\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 6270,
@@ -4774,7 +4774,7 @@
         "Province": "Santa Cruz (Zambales)",
         "Distance": 17.0,
         "Degrees": " 69\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 6372,
@@ -4859,7 +4859,7 @@
         "Province": "Looc (Occidental Mindoro)",
         "Distance": 15.0,
         "Degrees": " 75\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 6686,
@@ -4910,7 +4910,7 @@
         "Province": "T'boli (South Cotabato)",
         "Distance": 10.0,
         "Degrees": " 44\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 6710,
@@ -4961,7 +4961,7 @@
         "Province": "Rosario (Agusan del Sur)",
         "Distance": 7.0,
         "Degrees": " 42\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 6781,
@@ -4978,7 +4978,7 @@
         "Province": "Calintaan (Occidental Mindoro)",
         "Distance": 28.0,
         "Degrees": " 87\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 6813,
@@ -5063,7 +5063,7 @@
         "Province": "Biri (Northern Samar)",
         "Distance": 34.0,
         "Degrees": " 47\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 6922,
@@ -5131,7 +5131,7 @@
         "Province": "Casiguran (Aurora)",
         "Distance": 15.0,
         "Degrees": " 54\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 7110,
@@ -5216,7 +5216,7 @@
         "Province": " Calatagan (Batangas)",
         "Distance": 13.0,
         "Degrees": "N 67\u00b0 ",
-        "y": 1
+        "y": 3
     },
     {
         "id": 7268,
@@ -5267,7 +5267,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 10.0,
         "Degrees": " 65\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 7328,
@@ -5284,7 +5284,7 @@
         "Province": "Banaybanay (Davao Oriental)",
         "Distance": 12.0,
         "Degrees": " 20\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 7335,
@@ -5352,7 +5352,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 57.0,
         "Degrees": " 88\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 7359,
@@ -5369,7 +5369,7 @@
         "Province": "Pangantucan (Bukidnon)",
         "Distance": 24.0,
         "Degrees": " 44\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 7368,
@@ -5403,7 +5403,7 @@
         "Province": " Baras (Catanduanes)",
         "Distance": 20.0,
         "Degrees": "N 89\u00b0 ",
-        "y": 1
+        "y": 3
     },
     {
         "id": 7487,
@@ -5454,7 +5454,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 106.0,
         "Degrees": " 76\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 7641,
@@ -5471,7 +5471,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 18.0,
         "Degrees": " 04\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 7655,
@@ -5522,7 +5522,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 12.0,
         "Degrees": " 76\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 7774,
@@ -5539,7 +5539,7 @@
         "Province": "Rizal (Occidental Mindoro)",
         "Distance": 23.0,
         "Degrees": " 41\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 7803,
@@ -5590,7 +5590,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 27.0,
         "Degrees": " 35\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 7871,
@@ -5607,7 +5607,7 @@
         "Province": "San Felipe (Zambales)",
         "Distance": 8.0,
         "Degrees": " 60\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 7915,
@@ -5624,7 +5624,7 @@
         "Province": "Calayan (Cagayan)",
         "Distance": 40.0,
         "Degrees": " 48\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 7919,
@@ -5675,7 +5675,7 @@
         "Province": "Maasim (Sarangani)",
         "Distance": 6.0,
         "Degrees": " 14\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 7984,
@@ -5777,7 +5777,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 220.0,
         "Degrees": " 45\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 8066,
@@ -5828,7 +5828,7 @@
         "Province": "San Luis (Batangas)",
         "Distance": 8.0,
         "Degrees": " 45\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 8086,
@@ -5862,7 +5862,7 @@
         "Province": "Hinunangan (Southern Leyte)",
         "Distance": 6.0,
         "Degrees": " 41\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 8203,
@@ -5896,7 +5896,7 @@
         "Province": "Almeria (Biliran)",
         "Distance": 5.0,
         "Degrees": " 34\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 8220,
@@ -6049,7 +6049,7 @@
         "Province": "Surigao City (Surigao Del Norte)",
         "Distance": 16.0,
         "Degrees": " 42\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 8540,
@@ -6066,7 +6066,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 9.0,
         "Degrees": " 52\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 8556,
@@ -6117,7 +6117,7 @@
         "Province": "Don Marcelino (Davao Occidental)",
         "Distance": 65.0,
         "Degrees": " 16 W ",
-        "y": 2
+        "y": 1
     },
     {
         "id": 8620,
@@ -6134,7 +6134,7 @@
         "Province": "Ayungon (Negros Oriental)",
         "Distance": 19.0,
         "Degrees": " 54 W ",
-        "y": 2
+        "y": 1
     },
     {
         "id": 8650,
@@ -6151,7 +6151,7 @@
         "Province": "Hernani (Eastern Samar)",
         "Distance": 5.0,
         "Degrees": " 37 E ",
-        "y": 2
+        "y": 1
     },
     {
         "id": 8751,
@@ -6202,7 +6202,7 @@
         "Province": "Pandan (Catanduanes)",
         "Distance": 18.0,
         "Degrees": " 28 E ",
-        "y": 2
+        "y": 1
     },
     {
         "id": 8786,
@@ -6270,7 +6270,7 @@
         "Province": "Carmen (Bohol)",
         "Distance": 9.0,
         "Degrees": " 30 W ",
-        "y": 3
+        "y": 2
     },
     {
         "id": 8906,
@@ -6389,7 +6389,7 @@
         "Province": "Paluan (Occidental Mindoro)",
         "Distance": 45.0,
         "Degrees": " 81 E ",
-        "y": 3
+        "y": 2
     },
     {
         "id": 9018,
@@ -6576,7 +6576,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 188.0,
         "Degrees": " 66\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 9414,
@@ -6593,7 +6593,7 @@
         "Province": "Malapatan (Sarangani)",
         "Distance": 15.0,
         "Degrees": " 36\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 9416,
@@ -6627,7 +6627,7 @@
         "Province": "Palauig (Zambales)",
         "Distance": 21.0,
         "Degrees": " 53\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 9471,
@@ -6661,7 +6661,7 @@
         "Province": "Burgos (Surigao del Norte)",
         "Distance": 80.0,
         "Degrees": " 70\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 9524,
@@ -6763,7 +6763,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 72.0,
         "Degrees": " 64\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 9757,
@@ -6865,7 +6865,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 234.0,
         "Degrees": " 29\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 9792,
@@ -6950,7 +6950,7 @@
         "Province": "Sibagat (Agusan Del Norte)",
         "Distance": 4.0,
         "Degrees": " 36\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 9936,
@@ -6967,7 +6967,7 @@
         "Province": "Naga City (Cebu)",
         "Distance": 5.0,
         "Degrees": " 49\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 9939,
@@ -7035,7 +7035,7 @@
         "Province": "Loreto (Agusan Del Sur)",
         "Distance": 5.0,
         "Degrees": " 66\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 9977,
@@ -7052,7 +7052,7 @@
         "Province": "Babak (Davao Del Norte)",
         "Distance": 23.0,
         "Degrees": " 36\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 10011,
@@ -7069,7 +7069,7 @@
         "Province": "Hinatuan (Surigao Del Sur)",
         "Distance": 12.0,
         "Degrees": " 58\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 10033,
@@ -7086,7 +7086,7 @@
         "Province": "Siocon (Zamboanga Del Norte)",
         "Distance": 27.0,
         "Degrees": " 20\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 10055,
@@ -7171,7 +7171,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 75.0,
         "Degrees": " 52\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 10277,
@@ -7205,7 +7205,7 @@
         "Province": "Balungao (Pangasinan)",
         "Distance": 8.0,
         "Degrees": " 79\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 10305,
@@ -7239,7 +7239,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 212.0,
         "Degrees": " 64\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 10344,
@@ -7307,7 +7307,7 @@
         "Province": "Baculin (Davao Oriental)",
         "Distance": 4.0,
         "Degrees": " 15\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 10432,
@@ -7324,7 +7324,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 74.0,
         "Degrees": " 41\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 10495,
@@ -7341,7 +7341,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 29.0,
         "Degrees": " 52\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 10512,
@@ -7375,7 +7375,7 @@
         "Province": "Abra de Ilog (Occidental Mindoro)",
         "Distance": 21.0,
         "Degrees": " 78\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 10535,
@@ -7392,7 +7392,7 @@
         "Province": "Santa Cruz (Zambales)",
         "Distance": 20.0,
         "Degrees": " 18\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 10601,
@@ -7443,7 +7443,7 @@
         "Province": "Hinoba-an (Negros Occidental)",
         "Distance": 7.0,
         "Degrees": " 50\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 10730,
@@ -7477,7 +7477,7 @@
         "Province": "Kalamansig (Sultan Kudarat)",
         "Distance": 24.0,
         "Degrees": " 69\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 10768,
@@ -7528,7 +7528,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 19.0,
         "Degrees": " 45\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 10835,
@@ -7630,7 +7630,7 @@
         "Province": "Carasi (Ilocos Norte)",
         "Distance": 9.0,
         "Degrees": " 73\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 10993,
@@ -7681,7 +7681,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 135.0,
         "Degrees": " 40\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 11229,
@@ -7698,7 +7698,7 @@
         "Province": "Sabtang (Batanes)",
         "Distance": 59.0,
         "Degrees": " 70\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 11273,
@@ -7732,7 +7732,7 @@
         "Province": "Pintuyan (Southern Leyte)",
         "Distance": 14.0,
         "Degrees": " 51\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 11317,
@@ -7766,7 +7766,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 40.0,
         "Degrees": " 13\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 11339,
@@ -7783,7 +7783,7 @@
         "Province": "Danao (Bohol)",
         "Distance": 6.0,
         "Degrees": " 40 \u00b0E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 11367,
@@ -7817,7 +7817,7 @@
         "Province": "Magpet (North Cotabato)",
         "Distance": 27.0,
         "Degrees": " 44\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 11450,
@@ -7851,7 +7851,7 @@
         "Province": "Nasugbu (Batangas)",
         "Distance": 24.0,
         "Degrees": " 46\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 11476,
@@ -7885,7 +7885,7 @@
         "Province": "Cauayan (Negros Occidental)",
         "Distance": 8.0,
         "Degrees": " 23\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 11522,
@@ -7936,7 +7936,7 @@
         "Province": "Capoocan (Leyte)",
         "Distance": 8.0,
         "Degrees": " 28\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 11665,
@@ -7987,7 +7987,7 @@
         "Province": "Socorro (Surigao Del Norte)",
         "Distance": 13.0,
         "Degrees": " 46\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 11719,
@@ -8191,7 +8191,7 @@
         "Province": "Calubian (Leyte)",
         "Distance": 2.0,
         "Degrees": " 56\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 11910,
@@ -8208,7 +8208,7 @@
         "Province": "Lubang (Occidental Mindoro)",
         "Distance": 35.0,
         "Degrees": " 55\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 11924,
@@ -8225,7 +8225,7 @@
         "Province": "Prieto Diaz (Sorsogon)",
         "Distance": 28.0,
         "Degrees": " 20\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 11928,
@@ -8259,7 +8259,7 @@
         "Province": "Carigara (Leyte)",
         "Distance": 14.0,
         "Degrees": " 68\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 11952,
@@ -8412,7 +8412,7 @@
         "Province": "Cortes (Surigao Del Sur)",
         "Distance": 13.0,
         "Degrees": " 37\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 12230,
@@ -8446,7 +8446,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 112.0,
         "Degrees": " 25\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 12283,
@@ -8565,7 +8565,7 @@
         "Province": "Marihatag (Surigao Del Sur)",
         "Distance": 6.0,
         "Degrees": " 50\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 12473,
@@ -8599,7 +8599,7 @@
         "Province": "Sibagat (Agusan del Sur)",
         "Distance": 28.0,
         "Degrees": " 50\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 12533,
@@ -9075,7 +9075,7 @@
         "Province": "Tudela (Cebu)",
         "Distance": 20.0,
         "Degrees": " 73\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 13073,
@@ -9092,7 +9092,7 @@
         "Province": "Dagohoy (Bohol)",
         "Distance": 8.0,
         "Degrees": " 48\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 13112,
@@ -9109,7 +9109,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 6.0,
         "Degrees": " 88\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 13127,
@@ -9228,7 +9228,7 @@
         "Province": "Paluan (Occidental Mindoro)",
         "Distance": 20.0,
         "Degrees": " 28\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 13490,
@@ -9262,7 +9262,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 24.0,
         "Degrees": " 41 E ",
-        "y": 2
+        "y": 1
     },
     {
         "id": 13503,
@@ -9313,7 +9313,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 105.0,
         "Degrees": " 33\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 13585,
@@ -9330,7 +9330,7 @@
         "Province": "Calayan (Cagayan)",
         "Distance": 33.0,
         "Degrees": " 50\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 13606,
@@ -9347,7 +9347,7 @@
         "Province": "Anahawan (Southern Leyte)",
         "Distance": 3.0,
         "Degrees": " 28\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 13616,
@@ -9551,7 +9551,7 @@
         "Province": "Calayan (Cagayan)",
         "Distance": 21.0,
         "Degrees": " 89\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 13995,
@@ -9619,7 +9619,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 45.0,
         "Degrees": " 70\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 14052,
@@ -9636,7 +9636,7 @@
         "Province": "Almagro (Western Samar)",
         "Distance": 7.0,
         "Degrees": " 02\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 14067,
@@ -10214,7 +10214,7 @@
         "Province": "Baganga (Davao Oriental)",
         "Distance": 49.0,
         "Degrees": " 45\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 14554,
@@ -10248,7 +10248,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 27.0,
         "Degrees": " 47\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 14608,
@@ -10265,7 +10265,7 @@
         "Province": "San Julian (Eastern Samar)",
         "Distance": 28.0,
         "Degrees": " 65\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 14677,
@@ -10452,7 +10452,7 @@
         "Province": "Candelaria (Zambales)",
         "Distance": 27.0,
         "Degrees": " 63\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 15238,
@@ -10554,7 +10554,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 91.0,
         "Degrees": " 51\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 15400,
@@ -10656,7 +10656,7 @@
         "Province": "Victoria (Oriental Mindoro)",
         "Distance": 30.0,
         "Degrees": " 44\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 15582,
@@ -10673,7 +10673,7 @@
         "Province": "Pilar (Sorsogon)",
         "Distance": 9.0,
         "Degrees": " 24\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 15583,
@@ -10741,7 +10741,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 228.0,
         "Degrees": " 53\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 15749,
@@ -10792,7 +10792,7 @@
         "Province": "Don Marcelino (Davao Occidental)",
         "Distance": 111.0,
         "Degrees": " 31\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 15871,
@@ -10894,7 +10894,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 92.0,
         "Degrees": " 20\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 15974,
@@ -10928,7 +10928,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 124.0,
         "Degrees": " 36\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 15985,
@@ -11217,7 +11217,7 @@
         "Province": "Burgos (Ilocos Norte)",
         "Distance": 22.0,
         "Degrees": " 60\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 16237,
@@ -11353,7 +11353,7 @@
         "Province": "Roseller Lim (Zamboanga Sibugay)",
         "Distance": 13.0,
         "Degrees": " 13\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 16536,
@@ -11370,7 +11370,7 @@
         "Province": "Dagohoy (Bohol)",
         "Distance": 4.0,
         "Degrees": " 73\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 16640,
@@ -11404,7 +11404,7 @@
         "Province": "Baculin (Davao Oriental)",
         "Distance": 73.0,
         "Degrees": " 81\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 16763,
@@ -11608,7 +11608,7 @@
         "Province": "Tudela (Cebu)",
         "Distance": 7.0,
         "Degrees": " 47\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 17013,
@@ -11659,7 +11659,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 108.0,
         "Degrees": " 48\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 17148,
@@ -11829,7 +11829,7 @@
         "Province": "Marihatag (Surigao Del Sur)",
         "Distance": 22.0,
         "Degrees": " 79\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 17397,
@@ -11880,7 +11880,7 @@
         "Province": "Carrascal (Surigao Del Sur)",
         "Distance": 8.0,
         "Degrees": " 67\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 17535,
@@ -12084,7 +12084,7 @@
         "Province": "Mawab (Compostela Valley)",
         "Distance": 4.0,
         "Degrees": " 29\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 17932,
@@ -12101,7 +12101,7 @@
         "Province": "Santa Catalina (Ilocos Sur)",
         "Distance": 28.0,
         "Degrees": " 17\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 17956,
@@ -12186,7 +12186,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 22.0,
         "Degrees": " 51\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 18160,
@@ -12220,7 +12220,7 @@
         "Province": "Botolan (Zambales)",
         "Distance": 26.0,
         "Degrees": " 25\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 18286,
@@ -12254,7 +12254,7 @@
         "Province": "Ormoc City (Leyte)",
         "Distance": 11.0,
         "Degrees": " 77\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 18327,
@@ -12288,7 +12288,7 @@
         "Province": "Tagbilaran City",
         "Distance": 33.0,
         "Degrees": " 20\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 18389,
@@ -12339,7 +12339,7 @@
         "Province": "Catubig (Northern Samar)",
         "Distance": 13.0,
         "Degrees": "outh\u00b0 ",
-        "y": 3
+        "y": 2
     },
     {
         "id": 18428,
@@ -12407,7 +12407,7 @@
         "Province": "Carrascal (Surigao Del Sur)",
         "Distance": 12.0,
         "Degrees": " 72\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 18516,
@@ -12441,7 +12441,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 144.0,
         "Degrees": " 66\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 18639,
@@ -12458,7 +12458,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 136.0,
         "Degrees": " 71\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 18687,
@@ -12509,7 +12509,7 @@
         "Province": "Kiamba (Sarangani)",
         "Distance": 20.0,
         "Degrees": " 43\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 18768,
@@ -12679,7 +12679,7 @@
         "Province": "Don Marcelino (Davao Occidental)",
         "Distance": 32.0,
         "Degrees": " 76\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 18939,
@@ -12730,7 +12730,7 @@
         "Province": "Cagwait (Surigao Del Sur)",
         "Distance": 53.0,
         "Degrees": " 17\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 18983,
@@ -12764,7 +12764,7 @@
         "Province": "Loreto (Dinagat)",
         "Distance": 33.0,
         "Degrees": " 31\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 19028,
@@ -12781,7 +12781,7 @@
         "Province": "Loreto (Dinagat)",
         "Distance": 29.0,
         "Degrees": " 50\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 19032,
@@ -12815,7 +12815,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 346.0,
         "Degrees": " 49\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 19058,
@@ -12832,7 +12832,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 14.0,
         "Degrees": " 45\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 19109,
@@ -12883,7 +12883,7 @@
         "Province": "Tingloy (Batangas)",
         "Distance": 15.0,
         "Degrees": " 15\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 19149,
@@ -12900,7 +12900,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 38.0,
         "Degrees": " 74\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 19152,
@@ -12917,7 +12917,7 @@
         "Province": "Valencia City (Bukidnon)",
         "Distance": 11.0,
         "Degrees": " 72\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 19162,
@@ -12985,7 +12985,7 @@
         "Province": "Mabalacat (Pampanga)",
         "Distance": 3.0,
         "Degrees": " 87\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 19262,
@@ -13036,7 +13036,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 36.0,
         "Degrees": " 23\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 19368,
@@ -13138,7 +13138,7 @@
         "Province": "Tulunan (Cotabato)",
         "Distance": 17.0,
         "Degrees": " 62\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 19459,
@@ -13682,7 +13682,7 @@
         "Province": "Magsingal (Ilocos Sur)",
         "Distance": 11.0,
         "Degrees": " 78\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 20113,
@@ -13750,7 +13750,7 @@
         "Province": "Divilacan (Isabela)",
         "Distance": 30.0,
         "Degrees": " 22\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 20236,
@@ -14073,7 +14073,7 @@
         "Province": "Tulunan (Cotabato)",
         "Distance": 12.0,
         "Degrees": " 47\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 20635,
@@ -14090,7 +14090,7 @@
         "Province": "Tulunan (Cotabato)",
         "Distance": 10.0,
         "Degrees": " 56\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 20758,
@@ -14226,7 +14226,7 @@
         "Province": "La Castellana (Negros Occidental)",
         "Distance": 4.0,
         "Degrees": " 11\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 20982,
@@ -14294,7 +14294,7 @@
         "Province": "Bayabas (Surigao Del Sur)",
         "Distance": 6.0,
         "Degrees": " 77\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 21148,
@@ -14345,7 +14345,7 @@
         "Province": "Baler (Aurora)",
         "Distance": 34.0,
         "Degrees": " 72\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 21574,
@@ -14481,7 +14481,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 26.0,
         "Degrees": " 75\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 22025,
@@ -14515,7 +14515,7 @@
         "Province": "Tarragona (Davao Oriental)",
         "Distance": 55.0,
         "Degrees": " 74\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 22200,
@@ -14583,7 +14583,7 @@
         "Province": "Guiuan (Eastern Samar)",
         "Distance": 44.0,
         "Degrees": " 76\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 22275,
@@ -14719,7 +14719,7 @@
         "Province": "Tulunan (Cotabato)",
         "Distance": 10.0,
         "Degrees": " 30\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 22820,
@@ -14872,7 +14872,7 @@
         "Province": "Makilala (Cotabato)",
         "Distance": 11.0,
         "Degrees": " 40\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 23184,
@@ -15195,7 +15195,7 @@
         "Province": "Matanao (Davao Del Sur)",
         "Distance": 15.0,
         "Degrees": " 25\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 24120,
@@ -15331,7 +15331,7 @@
         "Province": "Lubang (Occidental Mindoro)",
         "Distance": 19.0,
         "Degrees": " 50\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 24524,
@@ -15399,7 +15399,7 @@
         "Province": "Agno (Pangasinan)",
         "Distance": 83.0,
         "Degrees": " 20\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 24885,
@@ -15467,7 +15467,7 @@
         "Province": "Carasi (Ilocos Norte)",
         "Distance": 5.0,
         "Degrees": " 29\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 24966,
@@ -15535,7 +15535,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 12.0,
         "Degrees": " 59\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 25449,
@@ -15654,7 +15654,7 @@
         "Province": "Malungon (Sarangani)",
         "Distance": 23.0,
         "Degrees": " 49\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 26202,
@@ -15671,7 +15671,7 @@
         "Province": "Paluan (Occidental Mindoro)",
         "Distance": 23.0,
         "Degrees": " 46\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 26214,
@@ -15722,7 +15722,7 @@
         "Province": "Isulan (Sultan Kudarat)",
         "Distance": 8.0,
         "Degrees": " 23\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 26286,
@@ -15756,7 +15756,7 @@
         "Province": "Santa Fe (Nueva Vizcaya)",
         "Distance": 5.0,
         "Degrees": " 49\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 26430,
@@ -15773,7 +15773,7 @@
         "Province": "Bolinao (Pangasinan)",
         "Distance": 46.0,
         "Degrees": " 19\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 26447,
@@ -15824,7 +15824,7 @@
         "Province": "Siocon (Zamboanga Del Norte)",
         "Distance": 25.0,
         "Degrees": " 79\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 26582,
@@ -15909,7 +15909,7 @@
         "Province": "Makilala (Cotabato)",
         "Distance": 4.0,
         "Degrees": " 16\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 26762,
@@ -16249,7 +16249,7 @@
         "Province": "Mutia (Zamboanga Del Norte)",
         "Distance": 12.0,
         "Degrees": " 56\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 27547,
@@ -16266,7 +16266,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 28.0,
         "Degrees": " 51\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 27592,
@@ -16402,7 +16402,7 @@
         "Province": "Luzurriaga (Valencia) (Negros Oriental)",
         "Distance": 12.0,
         "Degrees": " 41\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 27849,
@@ -16419,7 +16419,7 @@
         "Province": "Kiblawan (Davao Del Sur)",
         "Distance": 25.0,
         "Degrees": " 40\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 27872,
@@ -16453,7 +16453,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 52.0,
         "Degrees": " 54\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 27958,
@@ -16487,7 +16487,7 @@
         "Province": "Marihatag (Surigao Del Sur)",
         "Distance": 15.0,
         "Degrees": " 45\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 27972,
@@ -16929,7 +16929,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 77.0,
         "Degrees": " 23\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 28975,
@@ -16980,7 +16980,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 108.0,
         "Degrees": " 29\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 29190,
@@ -17014,7 +17014,7 @@
         "Province": "Do\u00c3\u00b1a Remedios Trinidad (Bulacan)",
         "Distance": 19.0,
         "Degrees": " 26\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 29296,
@@ -17031,7 +17031,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 10.0,
         "Degrees": " 74\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 29300,
@@ -17048,7 +17048,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 123.0,
         "Degrees": " 64\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 29321,
@@ -17099,7 +17099,7 @@
         "Province": "Alcoy (Cebu)",
         "Distance": 9.0,
         "Degrees": " 39\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 29590,
@@ -17167,7 +17167,7 @@
         "Province": "Alabel (Sarangani)",
         "Distance": 24.0,
         "Degrees": " 31\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 29812,
@@ -17184,7 +17184,7 @@
         "Province": "San Luis (Batangas)",
         "Distance": 10.0,
         "Degrees": " 46\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 29837,
@@ -17201,7 +17201,7 @@
         "Province": "Naval (Biliran)",
         "Distance": 7.0,
         "Degrees": " 17\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 29955,
@@ -17218,7 +17218,7 @@
         "Province": "Caraga (Davao Oriental)",
         "Distance": 35.0,
         "Degrees": " 73\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 30013,
@@ -17252,7 +17252,7 @@
         "Province": "Abra De Ilog (Occidental Mindoro)",
         "Distance": 18.0,
         "Degrees": " 01\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 30116,
@@ -17269,7 +17269,7 @@
         "Province": "Abra De Ilog (Occidental Mindoro)",
         "Distance": 14.0,
         "Degrees": " 76\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 30126,
@@ -17286,7 +17286,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 18.0,
         "Degrees": " 58\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 30144,
@@ -17354,7 +17354,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 44.0,
         "Degrees": " 31\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 30443,
@@ -17422,7 +17422,7 @@
         "Province": "Baganga (Davao Oriental)",
         "Distance": 76.0,
         "Degrees": " 72\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 30572,
@@ -17473,7 +17473,7 @@
         "Province": "Dinalungan (Aurora)",
         "Distance": 11.0,
         "Degrees": " 29\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 30597,
@@ -17490,7 +17490,7 @@
         "Province": "Cortes (Surigao Del Sur)",
         "Distance": 44.0,
         "Degrees": " 09\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 30615,
@@ -17609,7 +17609,7 @@
         "Province": "Koronadal City (South Cotabato)",
         "Distance": 6.0,
         "Degrees": " 62\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 31019,
@@ -17660,7 +17660,7 @@
         "Province": "Calayan (Cagayan)",
         "Distance": 36.0,
         "Degrees": " 79\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 31168,
@@ -17728,7 +17728,7 @@
         "Province": "Dinagat (Dinagat Islands)",
         "Distance": 18.0,
         "Degrees": " 23\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 31310,
@@ -17864,7 +17864,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 178.0,
         "Degrees": " 81\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 31509,
@@ -17915,7 +17915,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 13.0,
         "Degrees": " 44\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 31654,
@@ -17983,7 +17983,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 20.0,
         "Degrees": " 47\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 31737,
@@ -18017,7 +18017,7 @@
         "Province": "Tarragona (Davao Oriental)",
         "Distance": 148.0,
         "Degrees": " 38\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 31808,
@@ -18034,7 +18034,7 @@
         "Province": "Don Marcelino (Davao Occidental)",
         "Distance": 58.0,
         "Degrees": " 34\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 31838,
@@ -18068,7 +18068,7 @@
         "Province": "Bayabas (Surigao Del Sur)",
         "Distance": 79.0,
         "Degrees": " 47\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 31990,
@@ -18102,7 +18102,7 @@
         "Province": "Valderrama (Antique)",
         "Distance": 16.0,
         "Degrees": " 45\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 32073,
@@ -18153,7 +18153,7 @@
         "Province": "Mabini (Batangas)",
         "Distance": 7.0,
         "Degrees": " 36\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 32166,
@@ -18170,7 +18170,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 65.0,
         "Degrees": " 57\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 32182,
@@ -18221,7 +18221,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 22.0,
         "Degrees": " 35\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 32297,
@@ -18323,7 +18323,7 @@
         "Province": "Bayabas (Surigao Del Sur)",
         "Distance": 24.0,
         "Degrees": " 17\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 32416,
@@ -18357,7 +18357,7 @@
         "Province": "Mapanas (Northern Samar)",
         "Distance": 24.0,
         "Degrees": " 24\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 32539,
@@ -18374,7 +18374,7 @@
         "Province": "Mabini (Bohol)",
         "Distance": 20.0,
         "Degrees": " 23\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 32560,
@@ -18408,7 +18408,7 @@
         "Province": "Sinait (Ilocos Sur)",
         "Distance": 12.0,
         "Degrees": " 62\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 32602,
@@ -18425,7 +18425,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 23.0,
         "Degrees": " 45\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 32605,
@@ -18442,7 +18442,7 @@
         "Province": "Burdeos (Quezon)",
         "Distance": 47.0,
         "Degrees": " 49\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 32632,
@@ -18476,7 +18476,7 @@
         "Province": "Hinatuan (Surigao Del Sur)",
         "Distance": 31.0,
         "Degrees": " 40\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 32659,
@@ -18493,7 +18493,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 2.0,
         "Degrees": " 79\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 32692,
@@ -18527,7 +18527,7 @@
         "Province": "San Miguel (Bohol)",
         "Distance": 8.0,
         "Degrees": " 52\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 32706,
@@ -18578,7 +18578,7 @@
         "Province": "Cortes (Surigao Del Sur)",
         "Distance": 46.0,
         "Degrees": " 22\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 32776,
@@ -18612,7 +18612,7 @@
         "Province": "Casiguran (Aurora)",
         "Distance": 25.0,
         "Degrees": " 43\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 32805,
@@ -18833,7 +18833,7 @@
         "Province": "Maribojoc (Bohol)",
         "Distance": 2.0,
         "Degrees": " 88\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 33116,
@@ -18850,7 +18850,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 161.0,
         "Degrees": " 38\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 33124,
@@ -18901,7 +18901,7 @@
         "Province": "Gattaran (Cagayan)",
         "Distance": 9.0,
         "Degrees": " 40\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 33226,
@@ -18969,7 +18969,7 @@
         "Province": "San Felipe (Zambales)",
         "Distance": 26.0,
         "Degrees": " 07\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 33392,
@@ -19054,7 +19054,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 111.0,
         "Degrees": " 58\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 33592,
@@ -19071,7 +19071,7 @@
         "Province": "Manay (Davao Oriental)",
         "Distance": 99.0,
         "Degrees": " 30\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 33632,
@@ -19139,7 +19139,7 @@
         "Province": "Cataingan (Masbate)",
         "Distance": 5.0,
         "Degrees": " 16\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 33667,
@@ -19156,7 +19156,7 @@
         "Province": "Bayabas (Surigao Del Sur)",
         "Distance": 58.0,
         "Degrees": " 32\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 33731,
@@ -19173,7 +19173,7 @@
         "Province": "Catigbian (Bohol)",
         "Distance": 6.0,
         "Degrees": " 23\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 33758,
@@ -19207,7 +19207,7 @@
         "Province": "Luna (La Union)",
         "Distance": 31.0,
         "Degrees": " 54\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 33765,
@@ -19377,7 +19377,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 9.0,
         "Degrees": " 67\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 34099,
@@ -19411,7 +19411,7 @@
         "Province": "Guihulngan (Negros Oriental)",
         "Distance": 7.0,
         "Degrees": " 09\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 34145,
@@ -19428,7 +19428,7 @@
         "Province": "San Miguel (Bohol)",
         "Distance": 4.0,
         "Degrees": " 26\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 34206,
@@ -19445,7 +19445,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 31.0,
         "Degrees": " 54\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 34222,
@@ -19598,7 +19598,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 133.0,
         "Degrees": " 23\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 34459,
@@ -19615,7 +19615,7 @@
         "Province": "Bagumbayan (Sultan Kudarat)",
         "Distance": 17.0,
         "Degrees": " 60\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 34462,
@@ -19632,7 +19632,7 @@
         "Province": "Hinatuan (Surigao Del Sur)",
         "Distance": 35.0,
         "Degrees": " 22\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 34492,
@@ -19649,7 +19649,7 @@
         "Province": "Kadingilan (Bukidnon)",
         "Distance": 11.0,
         "Degrees": " 12\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 34514,
@@ -19785,7 +19785,7 @@
         "Province": "Claveria (Masbate)",
         "Distance": 20.0,
         "Degrees": " 04\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 34621,
@@ -19802,7 +19802,7 @@
         "Province": "Biri (Northern Samar)",
         "Distance": 34.0,
         "Degrees": " 89\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 34641,
@@ -19853,7 +19853,7 @@
         "Province": "Baganga (Davao Oriental)",
         "Distance": 82.0,
         "Degrees": " 19\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 34700,
@@ -20244,7 +20244,7 @@
         "Province": "Bayabas (Surigao Del Sur)",
         "Distance": 41.0,
         "Degrees": " 05\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 35069,
@@ -20261,7 +20261,7 @@
         "Province": "Bayabas (Surigao Del Sur)",
         "Distance": 74.0,
         "Degrees": " 61\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 35078,
@@ -20312,7 +20312,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 23.0,
         "Degrees": " 23\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 35216,
@@ -20567,7 +20567,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 27.0,
         "Degrees": " 70\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 35678,
@@ -20618,7 +20618,7 @@
         "Province": "Loreto (Dinagat Islands)",
         "Distance": 25.0,
         "Degrees": " 14\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 35727,
@@ -20635,7 +20635,7 @@
         "Province": "Hinatuan (Surigao Del Sur)",
         "Distance": 36.0,
         "Degrees": " 33\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 35768,
@@ -20703,7 +20703,7 @@
         "Province": "Bayabas (Surigao Del Sur)",
         "Distance": 50.0,
         "Degrees": " 43\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 35949,
@@ -20720,7 +20720,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 32.0,
         "Degrees": " 18\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 36008,
@@ -20737,7 +20737,7 @@
         "Province": "Baras (Catanduanes)",
         "Distance": 91.0,
         "Degrees": " 28\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 36013,
@@ -20771,7 +20771,7 @@
         "Province": "Hinatuan (Surigao Del Sur)",
         "Distance": 46.0,
         "Degrees": " 26\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 36017,
@@ -20907,7 +20907,7 @@
         "Province": "Bayabas (Surigao Del Sur)",
         "Distance": 36.0,
         "Degrees": " 70\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 36189,
@@ -20941,7 +20941,7 @@
         "Province": "San Antonio (Zambales)",
         "Distance": 64.0,
         "Degrees": " 06\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 36281,
@@ -20992,7 +20992,7 @@
         "Province": "Hernani (Eastern Samar)",
         "Distance": 12.0,
         "Degrees": " 76\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 36521,
@@ -21094,7 +21094,7 @@
         "Province": "Bayabas (Surigao Del Sur)",
         "Distance": 75.0,
         "Degrees": " 78\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 36675,
@@ -21162,7 +21162,7 @@
         "Province": "Dasol (Pangasinan)",
         "Distance": 2.0,
         "Degrees": " 23\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 36720,
@@ -21179,7 +21179,7 @@
         "Province": "Luna (La Union)",
         "Distance": 21.0,
         "Degrees": " 22\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 36762,
@@ -21366,7 +21366,7 @@
         "Province": "Tulunan (Cotabato)",
         "Distance": 16.0,
         "Degrees": " 20\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 37104,
@@ -21383,7 +21383,7 @@
         "Province": "New Bataan (Davao De Oro)",
         "Distance": 23.0,
         "Degrees": " 77\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 37111,
@@ -21400,7 +21400,7 @@
         "Province": "Talim Island - Brgy. Habagatan (Binangonan) (Rizal)",
         "Distance": 10.0,
         "Degrees": " 56\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 37159,
@@ -21519,7 +21519,7 @@
         "Province": "Hinatuan (Surigao Del Sur)",
         "Distance": 25.0,
         "Degrees": " 63\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 37307,
@@ -21655,7 +21655,7 @@
         "Province": "Cortes (Surigao Del Sur)",
         "Distance": 49.0,
         "Degrees": " 26\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 37618,
@@ -21689,7 +21689,7 @@
         "Province": "Initao (Misamis Oriental)",
         "Distance": 1.0,
         "Degrees": " 78\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 37756,
@@ -21723,7 +21723,7 @@
         "Province": "Glan (Sarangani)",
         "Distance": 35.0,
         "Degrees": " 13\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 37817,
@@ -21774,7 +21774,7 @@
         "Province": "Marihatag (Surigao Del Sur)",
         "Distance": 35.0,
         "Degrees": " 04\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 37835,
@@ -21791,7 +21791,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 20.0,
         "Degrees": " 26\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 37848,
@@ -21825,7 +21825,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 183.0,
         "Degrees": " 57\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 37879,
@@ -21876,7 +21876,7 @@
         "Province": "San Francisco (Quezon)",
         "Distance": 16.0,
         "Degrees": " 22\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 37884,
@@ -21893,7 +21893,7 @@
         "Province": "Burgos (Ilocos Norte)",
         "Distance": 1.0,
         "Degrees": " 71\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 37885,
@@ -21927,7 +21927,7 @@
         "Province": "San Francisco (Quezon)",
         "Distance": 26.0,
         "Degrees": " 68\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 38030,
@@ -21978,7 +21978,7 @@
         "Province": "Buenavista (Marinduque)",
         "Distance": 25.0,
         "Degrees": " 48\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 38056,
@@ -21995,7 +21995,7 @@
         "Province": "Bucloc (Abra)",
         "Distance": 7.0,
         "Degrees": " 54\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 38123,
@@ -22114,7 +22114,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 7.0,
         "Degrees": " 43\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 38247,
@@ -22216,7 +22216,7 @@
         "Province": "Bayabas (Surigao Del Sur)",
         "Distance": 22.0,
         "Degrees": " 13\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 38384,
@@ -22233,7 +22233,7 @@
         "Province": "Alabel (Sarangani)",
         "Distance": 13.0,
         "Degrees": " 87\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 38397,
@@ -22267,7 +22267,7 @@
         "Province": "Guiuan (Eastern Samar)",
         "Distance": 102.0,
         "Degrees": " 87\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 38460,
@@ -22284,7 +22284,7 @@
         "Province": "Lebak (Sultan Kudarat)",
         "Distance": 46.0,
         "Degrees": " 17\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 38553,
@@ -22301,7 +22301,7 @@
         "Province": "Infanta (Pangasinan)",
         "Distance": 10.0,
         "Degrees": " 89\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 38604,
@@ -22318,7 +22318,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 9.0,
         "Degrees": " 21\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 38636,
@@ -22352,7 +22352,7 @@
         "Province": "Ayungon (Negros Oriental)",
         "Distance": 9.0,
         "Degrees": " 53\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 38742,
@@ -22454,7 +22454,7 @@
         "Province": "Los Ba\u00c3\u00b1os (Laguna)",
         "Distance": 8.0,
         "Degrees": " 38\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 38856,
@@ -22471,7 +22471,7 @@
         "Province": "Cagwait (Surigao Del Sur)",
         "Distance": 19.0,
         "Degrees": " 83\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 38864,
@@ -22539,7 +22539,7 @@
         "Province": "Calayan (Cagayan)",
         "Distance": 9.0,
         "Degrees": " 66\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 38979,
@@ -22556,7 +22556,7 @@
         "Province": "Pasuquin (Ilocos Norte)",
         "Distance": 33.0,
         "Degrees": " 68\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 38984,
@@ -22607,7 +22607,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 257.0,
         "Degrees": " 63\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 39013,
@@ -22624,7 +22624,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 229.0,
         "Degrees": " 64\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 39022,
@@ -22641,7 +22641,7 @@
         "Province": "Bamban (Tarlac)",
         "Distance": 27.0,
         "Degrees": " 72\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 39027,
@@ -22658,7 +22658,7 @@
         "Province": "San Miguel (Surigao Del Sur)",
         "Distance": 6.0,
         "Degrees": " 67\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 39061,
@@ -22726,7 +22726,7 @@
         "Province": "Capoocan (Leyte)",
         "Distance": 10.0,
         "Degrees": " 74\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 39170,
@@ -22760,7 +22760,7 @@
         "Province": "Biliran (Biliran)",
         "Distance": 13.0,
         "Degrees": " 55\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 39245,
@@ -22811,7 +22811,7 @@
         "Province": "Veruela (Agusan Del Sur)",
         "Distance": 7.0,
         "Degrees": " 42\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 39344,
@@ -22828,7 +22828,7 @@
         "Province": "Dalupiri Island (Calayan) (Cagayan)",
         "Distance": 30.0,
         "Degrees": " 38\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 39362,
@@ -22862,7 +22862,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 28.0,
         "Degrees": " 85\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 39404,
@@ -22879,7 +22879,7 @@
         "Province": "Matanao (Davao Del Sur)",
         "Distance": 8.0,
         "Degrees": " 39\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 39438,
@@ -22981,7 +22981,7 @@
         "Province": "Dalupiri Island (Calayan) (Cagayan)",
         "Distance": 19.0,
         "Degrees": " 22\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 39666,
@@ -22998,7 +22998,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 15.0,
         "Degrees": " 29\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 39709,
@@ -23015,7 +23015,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 11.0,
         "Degrees": " 32\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 39840,
@@ -23117,7 +23117,7 @@
         "Province": "Tarragona (Davao Oriental)",
         "Distance": 54.0,
         "Degrees": " 32\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 40041,
@@ -23134,7 +23134,7 @@
         "Province": "Calape (Bohol)",
         "Distance": 3.0,
         "Degrees": " 66\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 40075,
@@ -23202,7 +23202,7 @@
         "Province": "Magsaysay (Davao Del Sur)",
         "Distance": 2.0,
         "Degrees": " 50\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 40167,
@@ -23406,7 +23406,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 11.0,
         "Degrees": " 72\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 40581,
@@ -23423,7 +23423,7 @@
         "Province": "Talakag (Bukidnon)",
         "Distance": 7.0,
         "Degrees": " 30\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 40736,
@@ -23525,7 +23525,7 @@
         "Province": "Claver (Surigao Del Norte)",
         "Distance": 9.0,
         "Degrees": " 49\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 40835,
@@ -23542,7 +23542,7 @@
         "Province": "Cabanglasan (Bukidnon)",
         "Distance": 13.0,
         "Degrees": " 39\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 40852,
@@ -23610,7 +23610,7 @@
         "Province": "Don Marcelino (Davao Occidental)",
         "Distance": 77.0,
         "Degrees": " 54\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 40894,
@@ -23678,7 +23678,7 @@
         "Province": "San Miguel (Bohol)",
         "Distance": 15.0,
         "Degrees": " 51\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 40947,
@@ -23695,7 +23695,7 @@
         "Province": "Anda (Bohol)",
         "Distance": 9.0,
         "Degrees": " 20\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 41016,
@@ -23712,7 +23712,7 @@
         "Province": "Nueva Era (Ilocos Norte)",
         "Distance": 9.0,
         "Degrees": " 19\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 41030,
@@ -23950,7 +23950,7 @@
         "Province": "City Of Guihulngan (Negros Oriental)",
         "Distance": 11.0,
         "Degrees": " 10\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 41410,
@@ -24001,7 +24001,7 @@
         "Province": "City Of Bayugan (Agusan Del Sur)",
         "Distance": 8.0,
         "Degrees": " 65\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 41532,
@@ -24018,7 +24018,7 @@
         "Province": "Socorro (Surigao Del Norte)",
         "Distance": 20.0,
         "Degrees": " 33\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 41544,
@@ -24035,7 +24035,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 252.0,
         "Degrees": " 19\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 41600,
@@ -24086,7 +24086,7 @@
         "Province": "Mabalacat City (Pampanga)",
         "Distance": 5.0,
         "Degrees": " 45\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 41638,
@@ -24120,7 +24120,7 @@
         "Province": "Santa Cruz (Occidental Mindoro)",
         "Distance": 30.0,
         "Degrees": " 21\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 41780,
@@ -24137,7 +24137,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 35.0,
         "Degrees": " 81\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 41843,
@@ -24171,7 +24171,7 @@
         "Province": "Hinatuan (Surigao Del Sur)",
         "Distance": 46.0,
         "Degrees": " 38\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 41971,
@@ -24239,7 +24239,7 @@
         "Province": "Abra De Ilog (Occidental Mindoro)",
         "Distance": 17.0,
         "Degrees": " 59\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 42056,
@@ -24273,7 +24273,7 @@
         "Province": "Catmon (Cebu)",
         "Distance": 4.0,
         "Degrees": " 22\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 42111,
@@ -24341,7 +24341,7 @@
         "Province": "Busuanga (Palawan)",
         "Distance": 67.0,
         "Degrees": " 44\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 42260,
@@ -24375,7 +24375,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 82.0,
         "Degrees": " 67\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 42293,
@@ -24392,7 +24392,7 @@
         "Province": "La Paz (Leyte)",
         "Distance": 10.0,
         "Degrees": " 59\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 42325,
@@ -24460,7 +24460,7 @@
         "Province": "Dalupiri Island (Calayan) (Cagayan)",
         "Distance": 23.0,
         "Degrees": " 51\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 42545,
@@ -24494,7 +24494,7 @@
         "Province": "San Benito (Surigao Del Norte)",
         "Distance": 16.0,
         "Degrees": " 79\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 42563,
@@ -24528,7 +24528,7 @@
         "Province": "Carrascal (Surigao Del Sur)",
         "Distance": 7.0,
         "Degrees": " 32\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 42626,
@@ -24545,7 +24545,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 167.0,
         "Degrees": " 64\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 42726,
@@ -24562,7 +24562,7 @@
         "Province": "Aguinaldo (Ifugao)",
         "Distance": 15.0,
         "Degrees": " 61\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 42727,
@@ -24579,7 +24579,7 @@
         "Province": "Hinatuan (Surigao Del Sur)",
         "Distance": 39.0,
         "Degrees": " 61\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 42737,
@@ -24596,7 +24596,7 @@
         "Province": "Mulanay (Quezon)",
         "Distance": 22.0,
         "Degrees": " 79\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 42758,
@@ -24664,7 +24664,7 @@
         "Province": "Tulunan (Cotabato)",
         "Distance": 24.0,
         "Degrees": " 18\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 42941,
@@ -24698,7 +24698,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 140.0,
         "Degrees": " 13\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 42983,
@@ -24732,7 +24732,7 @@
         "Province": "City Of Panabo (Davao Del Norte)",
         "Distance": 20.0,
         "Degrees": " 17\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 43010,
@@ -24800,7 +24800,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 10.0,
         "Degrees": " 31\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 43298,
@@ -24987,7 +24987,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 10.0,
         "Degrees": " 47\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 43739,
@@ -25106,7 +25106,7 @@
         "Province": "Maitum (Sarangani)",
         "Distance": 8.0,
         "Degrees": " 83\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 43891,
@@ -25191,7 +25191,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 21.0,
         "Degrees": " 63\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 44083,
@@ -25412,7 +25412,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 22.0,
         "Degrees": " 17\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 44366,
@@ -25446,7 +25446,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 31.0,
         "Degrees": " 37\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 44435,
@@ -25463,7 +25463,7 @@
         "Province": "Calayan (Cagayan)",
         "Distance": 22.0,
         "Degrees": " 40\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 44446,
@@ -25480,7 +25480,7 @@
         "Province": "Cagwait (Surigao Del Sur)",
         "Distance": 5.0,
         "Degrees": " 70\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 44464,
@@ -25514,7 +25514,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 11.0,
         "Degrees": " 66\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 44490,
@@ -25531,7 +25531,7 @@
         "Province": "Carranglan (Nueva Ecija)",
         "Distance": 5.0,
         "Degrees": " 31\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 44543,
@@ -25548,7 +25548,7 @@
         "Province": "Llorente (Eastern Samar)",
         "Distance": 5.0,
         "Degrees": " 51\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 44731,
@@ -25616,7 +25616,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 18.0,
         "Degrees": " 46\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 44854,
@@ -25633,7 +25633,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 16.0,
         "Degrees": " 28\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 44886,
@@ -25684,7 +25684,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 15.0,
         "Degrees": " 73\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 44944,
@@ -25701,7 +25701,7 @@
         "Province": "Capoocan (Leyte)",
         "Distance": 6.0,
         "Degrees": " 32\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 44945,
@@ -25769,7 +25769,7 @@
         "Province": "Loreto (Dinagat Islands)",
         "Distance": 35.0,
         "Degrees": " 68\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 45007,
@@ -25803,7 +25803,7 @@
         "Province": "City Of Passi (Iloilo)",
         "Distance": 5.0,
         "Degrees": " 43\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 45038,
@@ -25820,7 +25820,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 35.0,
         "Degrees": " 27\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 45050,
@@ -25922,7 +25922,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 50.0,
         "Degrees": " 41\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 45226,
@@ -25956,7 +25956,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 193.0,
         "Degrees": " 25\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 45250,
@@ -26007,7 +26007,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 35.0,
         "Degrees": " 61\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 45284,
@@ -26041,7 +26041,7 @@
         "Province": "Luna (La Union)",
         "Distance": 35.0,
         "Degrees": " 24\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 45291,
@@ -26058,7 +26058,7 @@
         "Province": "Pasuquin (Ilocos Norte)",
         "Distance": 70.0,
         "Degrees": " 23\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 45292,
@@ -26177,7 +26177,7 @@
         "Province": "Baganga (Davao Oriental)",
         "Distance": 13.0,
         "Degrees": " 28\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 45595,
@@ -26313,7 +26313,7 @@
         "Province": "Looc (Occidental Mindoro)",
         "Distance": 2.0,
         "Degrees": " 81\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 45735,
@@ -26347,7 +26347,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 31.0,
         "Degrees": " 62\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 45762,
@@ -26381,7 +26381,7 @@
         "Province": "Sarangani (Davao Occidental)",
         "Distance": 246.0,
         "Degrees": " 15\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 45794,
@@ -26466,7 +26466,7 @@
         "Province": "Nueva Era (Ilocos Norte)",
         "Distance": 13.0,
         "Degrees": " 35\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 45910,
@@ -26500,7 +26500,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 20.0,
         "Degrees": " 77\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 46087,
@@ -26551,7 +26551,7 @@
         "Province": "Tabina (Zamboanga Del Sur)",
         "Distance": 33.0,
         "Degrees": " 44\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 46223,
@@ -26789,7 +26789,7 @@
         "Province": "Tarragona (Davao Oriental)",
         "Distance": 103.0,
         "Degrees": " 20\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 46382,
@@ -27180,7 +27180,7 @@
         "Province": "Tarragona (Davao Oriental)",
         "Distance": 164.0,
         "Degrees": " 66\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 46618,
@@ -27231,7 +27231,7 @@
         "Province": "Kananga (Leyte)",
         "Distance": 10.0,
         "Degrees": " 37\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 46786,
@@ -27282,7 +27282,7 @@
         "Province": "Carrascal (Surigao Del Sur)",
         "Distance": 15.0,
         "Degrees": " 60\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 46836,
@@ -27316,7 +27316,7 @@
         "Province": "City Of Tandag (Surigao Del Sur)",
         "Distance": 18.0,
         "Degrees": " 09\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 46853,
@@ -27401,7 +27401,7 @@
         "Province": "Anini-y (Antique)",
         "Distance": 14.0,
         "Degrees": " 23\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 46975,
@@ -27418,7 +27418,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 55.0,
         "Degrees": " 43\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 46985,
@@ -27469,7 +27469,7 @@
         "Province": "San Teodoro (Oriental Mindoro)",
         "Distance": 7.0,
         "Degrees": " 17\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 47069,
@@ -27503,7 +27503,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 15.0,
         "Degrees": " 54\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 47109,
@@ -27520,7 +27520,7 @@
         "Province": "Naval (Biliran)",
         "Distance": 2.0,
         "Degrees": " 44\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 47119,
@@ -27554,7 +27554,7 @@
         "Province": "City Of San Fernando (La Union)",
         "Distance": 15.0,
         "Degrees": " 33\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 47183,
@@ -27571,7 +27571,7 @@
         "Province": "City Of Candon (Ilocos Sur)",
         "Distance": 60.0,
         "Degrees": " 18\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 47208,
@@ -27605,7 +27605,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 148.0,
         "Degrees": " 17\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 47228,
@@ -27724,7 +27724,7 @@
         "Province": "Looc (Occidental Mindoro)",
         "Distance": 35.0,
         "Degrees": " 57\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 47471,
@@ -27758,7 +27758,7 @@
         "Province": "Currimao (Ilocos Norte)",
         "Distance": 51.0,
         "Degrees": " 21\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 47550,
@@ -27843,7 +27843,7 @@
         "Province": "Tinaga Island (Vinzons) (Camarines Norte)",
         "Distance": 19.0,
         "Degrees": " 35\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 47687,
@@ -28098,7 +28098,7 @@
         "Province": "City Of Davao (Davao Del Sur)",
         "Distance": 13.0,
         "Degrees": " 41\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 47986,
@@ -28132,7 +28132,7 @@
         "Province": "Balut Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 284.0,
         "Degrees": " 57\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 48026,
@@ -28149,7 +28149,7 @@
         "Province": "Bayabas (Surigao Del Sur)",
         "Distance": 39.0,
         "Degrees": " 58\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 48034,
@@ -28217,7 +28217,7 @@
         "Province": "City Of Sipalay (Negros Occidental)",
         "Distance": 14.0,
         "Degrees": " 58\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 48090,
@@ -28268,7 +28268,7 @@
         "Province": "Agno (Pangasinan)",
         "Distance": 9.0,
         "Degrees": " 38\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 48176,
@@ -28336,7 +28336,7 @@
         "Province": "Nueva Valencia (Guimaras)",
         "Distance": 20.0,
         "Degrees": " 39\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 48427,
@@ -28387,7 +28387,7 @@
         "Province": "Boston (Davao Oriental)",
         "Distance": 8.0,
         "Degrees": " 72\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 48491,
@@ -28523,7 +28523,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 85.0,
         "Degrees": " 51\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 48736,
@@ -28540,7 +28540,7 @@
         "Province": "Sablayan (Occidental Mindoro)",
         "Distance": 7.0,
         "Degrees": " 53\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 48751,
@@ -28557,7 +28557,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 4.0,
         "Degrees": " 52\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 48829,
@@ -28574,7 +28574,7 @@
         "Province": "San Jose (Tarlac)",
         "Distance": 8.0,
         "Degrees": " 37\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 48847,
@@ -28778,7 +28778,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 11.0,
         "Degrees": " 12\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 49107,
@@ -28812,7 +28812,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 11.0,
         "Degrees": " 45\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 49191,
@@ -28880,7 +28880,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 43.0,
         "Degrees": " 37\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 49251,
@@ -28897,7 +28897,7 @@
         "Province": "Manticao (Misamis Oriental)",
         "Distance": 10.0,
         "Degrees": " 26\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 49301,
@@ -28931,7 +28931,7 @@
         "Province": "Nagtipunan (Quirino)",
         "Distance": 10.0,
         "Degrees": " 32\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 49390,
@@ -28948,7 +28948,7 @@
         "Province": "Malita (Davao Occidental)",
         "Distance": 11.0,
         "Degrees": " 27\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 49423,
@@ -29033,7 +29033,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 37.0,
         "Degrees": " 39\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 49613,
@@ -29067,7 +29067,7 @@
         "Province": "Cortes (Surigao Del Sur)",
         "Distance": 12.0,
         "Degrees": " 75\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 49702,
@@ -29135,7 +29135,7 @@
         "Province": "Sablayan (Occidental Mindoro)",
         "Distance": 25.0,
         "Degrees": " 58\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 49775,
@@ -29220,7 +29220,7 @@
         "Province": "Loreto (Dinagat Islands)",
         "Distance": 27.0,
         "Degrees": " 90\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 49898,
@@ -29390,7 +29390,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 24.0,
         "Degrees": " 20\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 50309,
@@ -29424,7 +29424,7 @@
         "Province": "Cantilan (Surigao Del Sur)",
         "Distance": 22.0,
         "Degrees": " 63\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 50352,
@@ -29526,7 +29526,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 80.0,
         "Degrees": " 79\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 50500,
@@ -29543,7 +29543,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 47.0,
         "Degrees": " 17\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 50511,
@@ -29577,7 +29577,7 @@
         "Province": "Currimao (Ilocos Norte)",
         "Distance": 102.0,
         "Degrees": " 28\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 50593,
@@ -29662,7 +29662,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 10.0,
         "Degrees": " 62\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 50722,
@@ -29713,7 +29713,7 @@
         "Province": "Silago (Southern Leyte)",
         "Distance": 10.0,
         "Degrees": " 13\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 50843,
@@ -29730,7 +29730,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 36.0,
         "Degrees": " 24\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 50846,
@@ -29764,7 +29764,7 @@
         "Province": "Villaba (Leyte)",
         "Distance": 15.0,
         "Degrees": " 02\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 50894,
@@ -29815,7 +29815,7 @@
         "Province": "Sabtang (Batanes)",
         "Distance": 35.0,
         "Degrees": " 41\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 50934,
@@ -29832,7 +29832,7 @@
         "Province": "Ambaguio (Nueva Vizcaya)",
         "Distance": 4.0,
         "Degrees": " 34\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 50936,
@@ -29883,7 +29883,7 @@
         "Province": "Guiuan (Eastern Samar)",
         "Distance": 13.0,
         "Degrees": " 63\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 50976,
@@ -29951,7 +29951,7 @@
         "Province": "Santa Cruz (Occidental Mindoro)",
         "Distance": 6.0,
         "Degrees": " 29\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 51028,
@@ -29968,7 +29968,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 83.0,
         "Degrees": " 23\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 51030,
@@ -30002,7 +30002,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 111.0,
         "Degrees": " 27\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 51051,
@@ -30070,7 +30070,7 @@
         "Province": "Looc (Occidental Mindoro)",
         "Distance": 18.0,
         "Degrees": " 34\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 51156,
@@ -30087,7 +30087,7 @@
         "Province": "Balut Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 423.0,
         "Degrees": " 46\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 51177,
@@ -30104,7 +30104,7 @@
         "Province": "Medellin (Cebu)",
         "Distance": 11.0,
         "Degrees": " 76\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 51290,
@@ -30155,7 +30155,7 @@
         "Province": "Mapanas (Northern Samar)",
         "Distance": 119.0,
         "Degrees": " 51\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 51431,
@@ -30206,7 +30206,7 @@
         "Province": "Anahawan (Southern Leyte)",
         "Distance": 8.0,
         "Degrees": " 30\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 51543,
@@ -30223,7 +30223,7 @@
         "Province": "Lebak (Sultan Kudarat)",
         "Distance": 45.0,
         "Degrees": " 23\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 51586,
@@ -30257,7 +30257,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 103.0,
         "Degrees": " 66\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 51645,
@@ -30342,7 +30342,7 @@
         "Province": "Paracelis (Mountain Province)",
         "Distance": 3.0,
         "Degrees": " 28\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 51739,
@@ -30393,7 +30393,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 18.0,
         "Degrees": " 37\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 51751,
@@ -30427,7 +30427,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 71.0,
         "Degrees": " 37\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 51757,
@@ -30444,7 +30444,7 @@
         "Province": "Dinapigue (Isabela)",
         "Distance": 25.0,
         "Degrees": " 82\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 51763,
@@ -30478,7 +30478,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 89.0,
         "Degrees": " 36\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 51860,
@@ -30512,7 +30512,7 @@
         "Province": "Loreto (Dinagat Islands)",
         "Distance": 14.0,
         "Degrees": " 01\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 51939,
@@ -30597,7 +30597,7 @@
         "Province": "San Fernando (Masbate)",
         "Distance": 11.0,
         "Degrees": " 09\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 52033,
@@ -30614,7 +30614,7 @@
         "Province": "Hernani (Eastern Samar)",
         "Distance": 11.0,
         "Degrees": " 38\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 52110,
@@ -30665,7 +30665,7 @@
         "Province": "Paluan (Occidental Mindoro)",
         "Distance": 23.0,
         "Degrees": " 69\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 52139,
@@ -30682,7 +30682,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 56.0,
         "Degrees": " 55\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 52163,
@@ -30699,7 +30699,7 @@
         "Province": "Talacogon (Agusan Del Sur)",
         "Distance": 12.0,
         "Degrees": " 34\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 52179,
@@ -30716,7 +30716,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 14.0,
         "Degrees": " 83\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 52227,
@@ -30750,7 +30750,7 @@
         "Province": "Carasi (Ilocos Norte)",
         "Distance": 9.0,
         "Degrees": " 10\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 52296,
@@ -30852,7 +30852,7 @@
         "Province": "Tudela (Cebu)",
         "Distance": 14.0,
         "Degrees": " 40\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 52460,
@@ -31073,7 +31073,7 @@
         "Province": "Lubang (Occidental Mindoro)",
         "Distance": 75.0,
         "Degrees": " 22\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 52664,
@@ -31124,7 +31124,7 @@
         "Province": "Lianga (Surigao Del Sur)",
         "Distance": 13.0,
         "Degrees": " 87\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 52882,
@@ -31158,7 +31158,7 @@
         "Province": "Lubang (Occidental Mindoro)",
         "Distance": 102.0,
         "Degrees": " 25\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 53005,
@@ -31464,7 +31464,7 @@
         "Province": "Lubang (Occidental Mindoro)",
         "Distance": 83.0,
         "Degrees": " 64\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 53302,
@@ -31566,7 +31566,7 @@
         "Province": "Cortes (Surigao Del Sur)",
         "Distance": 95.0,
         "Degrees": " 41\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 53482,
@@ -31583,7 +31583,7 @@
         "Province": "Laak (Davao De Oro)",
         "Distance": 31.0,
         "Degrees": " 06\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 53504,
@@ -31617,7 +31617,7 @@
         "Province": "San Isidro (Northern Samar)",
         "Distance": 14.0,
         "Degrees": " 68\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 53526,
@@ -31634,7 +31634,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 25.0,
         "Degrees": " 05\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 53540,
@@ -31668,7 +31668,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 13.0,
         "Degrees": " 30\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 53603,
@@ -31685,7 +31685,7 @@
         "Province": "Cagwait (Surigao Del Sur)",
         "Distance": 31.0,
         "Degrees": " 84\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 53674,
@@ -31702,7 +31702,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 58.0,
         "Degrees": " 19\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 53725,
@@ -31736,7 +31736,7 @@
         "Province": "San Narciso (Zambales)",
         "Distance": 35.0,
         "Degrees": " 14\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 53759,
@@ -31770,7 +31770,7 @@
         "Province": "Cortes (Surigao Del Sur)",
         "Distance": 5.0,
         "Degrees": " 74\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 53807,
@@ -31787,7 +31787,7 @@
         "Province": "City Of Davao (Davao Del Sur)",
         "Distance": 13.0,
         "Degrees": " 35\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 53866,
@@ -31821,7 +31821,7 @@
         "Province": "Las Nieves (Agusan Del Norte)",
         "Distance": 6.0,
         "Degrees": " 52\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 53893,
@@ -31872,7 +31872,7 @@
         "Province": "Casiguran (Aurora)",
         "Distance": 16.0,
         "Degrees": " 51\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 53946,
@@ -31957,7 +31957,7 @@
         "Province": "Tarragona (Davao Oriental)",
         "Distance": 142.0,
         "Degrees": " 46\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 53983,
@@ -32008,7 +32008,7 @@
         "Province": "Manay (Davao Oriental)",
         "Distance": 89.0,
         "Degrees": " 51\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 54007,
@@ -32025,7 +32025,7 @@
         "Province": "Hingyon (Ifugao)",
         "Distance": 10.0,
         "Degrees": " 50\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 54009,
@@ -32042,7 +32042,7 @@
         "Province": "Manay (Davao Oriental)",
         "Distance": 96.0,
         "Degrees": " 28\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 54015,
@@ -32093,7 +32093,7 @@
         "Province": "Tarragona (Davao Oriental)",
         "Distance": 143.0,
         "Degrees": " 53\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 54026,
@@ -32161,7 +32161,7 @@
         "Province": "Manay (Davao Oriental)",
         "Distance": 81.0,
         "Degrees": " 76\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 54056,
@@ -32331,7 +32331,7 @@
         "Province": "Prieto Diaz (Sorsogon)",
         "Distance": 7.0,
         "Degrees": " 50\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 54331,
@@ -32416,7 +32416,7 @@
         "Province": "Santa Elena (Camarines Norte)",
         "Distance": 17.0,
         "Degrees": " 77\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 54410,
@@ -32484,7 +32484,7 @@
         "Province": "Lubang (Occidental Mindoro)",
         "Distance": 104.0,
         "Degrees": " 40\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 54469,
@@ -32569,7 +32569,7 @@
         "Province": "Nasugbu (Batangas)",
         "Distance": 11.0,
         "Degrees": " 01\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 54536,
@@ -32841,7 +32841,7 @@
         "Province": "Libjo (Dinagat Islands)",
         "Distance": 11.0,
         "Degrees": " 53\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 54757,
@@ -32892,7 +32892,7 @@
         "Province": "Nueva Valencia (Guimaras)",
         "Distance": 20.0,
         "Degrees": " 37\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 54798,
@@ -32977,7 +32977,7 @@
         "Province": "Cortes (Surigao Del Sur)",
         "Distance": 23.0,
         "Degrees": " 02\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 54898,
@@ -33011,7 +33011,7 @@
         "Province": "Gigmoto (Catanduanes)",
         "Distance": 122.0,
         "Degrees": " 25\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 54973,
@@ -33045,7 +33045,7 @@
         "Province": "Cabangan (Zambales)",
         "Distance": 18.0,
         "Degrees": " 55\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55046,
@@ -33062,7 +33062,7 @@
         "Province": "Marihatag (Surigao Del Sur)",
         "Distance": 27.0,
         "Degrees": " 58\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 55056,
@@ -33096,7 +33096,7 @@
         "Province": "Sablayan (Occidental Mindoro)",
         "Distance": 54.0,
         "Degrees": " 43\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55124,
@@ -33113,7 +33113,7 @@
         "Province": "Datu Blah T. Sinsuat (Maguindanao)",
         "Distance": 44.0,
         "Degrees": " 55\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55179,
@@ -33147,7 +33147,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 108.0,
         "Degrees": " 43\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55240,
@@ -33232,7 +33232,7 @@
         "Province": "Manay (Davao Oriental)",
         "Distance": 67.0,
         "Degrees": " 51\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55467,
@@ -33266,7 +33266,7 @@
         "Province": "Jabonga (Agusan Del Norte)",
         "Distance": 6.0,
         "Degrees": " 69\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 55487,
@@ -33283,7 +33283,7 @@
         "Province": "Basco (Batanes)",
         "Distance": 99.0,
         "Degrees": " 22\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55503,
@@ -33317,7 +33317,7 @@
         "Province": "Mapanas (Northern Samar)",
         "Distance": 48.0,
         "Degrees": " 74\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55534,
@@ -33334,7 +33334,7 @@
         "Province": "Palimbang (Sultan Kudarat)",
         "Distance": 191.0,
         "Degrees": " 48\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 55589,
@@ -33351,7 +33351,7 @@
         "Province": "Balut Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 200.0,
         "Degrees": " 32\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55593,
@@ -33385,7 +33385,7 @@
         "Province": "Jasaan (Misamis Oriental)",
         "Distance": 18.0,
         "Degrees": " 30\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55601,
@@ -33419,7 +33419,7 @@
         "Province": "Baganga (Davao Oriental)",
         "Distance": 48.0,
         "Degrees": " 57\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55641,
@@ -33436,7 +33436,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 38.0,
         "Degrees": " 44\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55651,
@@ -33470,7 +33470,7 @@
         "Province": "Tarragona (Davao Oriental)",
         "Distance": 113.0,
         "Degrees": " 52\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55659,
@@ -33487,7 +33487,7 @@
         "Province": "Baganga (Davao Oriental)",
         "Distance": 88.0,
         "Degrees": " 41\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55661,
@@ -33504,7 +33504,7 @@
         "Province": "Tarragona (Davao Oriental)",
         "Distance": 128.0,
         "Degrees": " 55\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55671,
@@ -33521,7 +33521,7 @@
         "Province": "Carrascal (Surigao Del Sur)",
         "Distance": 21.0,
         "Degrees": " 53\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55690,
@@ -33538,7 +33538,7 @@
         "Province": "Bolinao (Pangasinan)",
         "Distance": 25.0,
         "Degrees": " 52\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55702,
@@ -33572,7 +33572,7 @@
         "Province": "Danao (Bohol)",
         "Distance": 5.0,
         "Degrees": " 57\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55715,
@@ -33606,7 +33606,7 @@
         "Province": "San Antonio (Zambales)",
         "Distance": 6.0,
         "Degrees": " 50\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55741,
@@ -33623,7 +33623,7 @@
         "Province": "Tarragona (Davao Oriental)",
         "Distance": 155.0,
         "Degrees": " 46\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55745,
@@ -33640,7 +33640,7 @@
         "Province": "Lubang (Occidental Mindoro)",
         "Distance": 109.0,
         "Degrees": " 54\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 55747,
@@ -33674,7 +33674,7 @@
         "Province": "Abra De Ilog (Occidental Mindoro)",
         "Distance": 13.0,
         "Degrees": " 46\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 55852,
@@ -33691,7 +33691,7 @@
         "Province": "Mercedes (Eastern Samar)",
         "Distance": 30.0,
         "Degrees": " 39\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 55863,
@@ -33861,7 +33861,7 @@
         "Province": "Itbayat (Batanes)",
         "Distance": 187.0,
         "Degrees": " 32\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 56110,
@@ -33878,7 +33878,7 @@
         "Province": "Camiguin Island (Calayan) (Cagayan)",
         "Distance": 25.0,
         "Degrees": " 53\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 56211,
@@ -33895,7 +33895,7 @@
         "Province": "Kayapa (Nueva Vizcaya)",
         "Distance": 10.0,
         "Degrees": " 72\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 56232,
@@ -33912,7 +33912,7 @@
         "Province": "City Of Candon (Ilocos Sur)",
         "Distance": 53.0,
         "Degrees": " 46\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 56299,
@@ -33980,7 +33980,7 @@
         "Province": "Don Marcelino (Davao Occidental)",
         "Distance": 72.0,
         "Degrees": " 20\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 56519,
@@ -33997,7 +33997,7 @@
         "Province": "Anda (Bohol)",
         "Distance": 8.0,
         "Degrees": " 28\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 56578,
@@ -34048,7 +34048,7 @@
         "Province": "Maconacon (Isabela)",
         "Distance": 23.0,
         "Degrees": " 52\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 56675,
@@ -34065,7 +34065,7 @@
         "Province": "Carrascal (Surigao Del Sur)",
         "Distance": 3.0,
         "Degrees": " 66\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 56705,
@@ -34133,7 +34133,7 @@
         "Province": "Luna (La Union)",
         "Distance": 42.0,
         "Degrees": " 40\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 56785,
@@ -34201,7 +34201,7 @@
         "Province": "Cagwait (Surigao Del Sur)",
         "Distance": 19.0,
         "Degrees": " 02\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 56853,
@@ -34218,7 +34218,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 60.0,
         "Degrees": " 58\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 56924,
@@ -34592,7 +34592,7 @@
         "Province": "Batuan (Masbate)",
         "Distance": 4.0,
         "Degrees": " 20\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 57765,
@@ -34677,7 +34677,7 @@
         "Province": "Dinalungan (Aurora)",
         "Distance": 5.0,
         "Degrees": " 06\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 57896,
@@ -34728,7 +34728,7 @@
         "Province": "Hernani (Eastern Samar)",
         "Distance": 18.0,
         "Degrees": " 49\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 57954,
@@ -34762,7 +34762,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 101.0,
         "Degrees": " 44\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 58029,
@@ -34881,7 +34881,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 29.0,
         "Degrees": " 29\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 58226,
@@ -34898,7 +34898,7 @@
         "Province": "Santa Cruz (Occidental Mindoro)",
         "Distance": 18.0,
         "Degrees": " 27\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 58264,
@@ -34915,7 +34915,7 @@
         "Province": "Morong (Bataan)",
         "Distance": 31.0,
         "Degrees": " 37\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 58270,
@@ -34932,7 +34932,7 @@
         "Province": "Lingig (Surigao Del Sur)",
         "Distance": 19.0,
         "Degrees": " 36\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 58296,
@@ -34966,7 +34966,7 @@
         "Province": "Hinatuan (Surigao Del Sur)",
         "Distance": 42.0,
         "Degrees": " 18\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 58355,
@@ -34983,7 +34983,7 @@
         "Province": "Santiago (Agusan Del Norte)",
         "Distance": 14.0,
         "Degrees": " 62\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 58417,
@@ -35136,7 +35136,7 @@
         "Province": "Lingig (Surigao Del Sur)",
         "Distance": 75.0,
         "Degrees": " 58\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 58733,
@@ -35153,7 +35153,7 @@
         "Province": "Nueva Era (Ilocos Norte)",
         "Distance": 8.0,
         "Degrees": " 36\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 58826,
@@ -35170,7 +35170,7 @@
         "Province": "Leyte (Leyte)",
         "Distance": 3.0,
         "Degrees": " 72\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 58854,
@@ -35187,7 +35187,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 10.0,
         "Degrees": " 50\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 58863,
@@ -35204,7 +35204,7 @@
         "Province": "Pilar (Surigao Del Norte)",
         "Distance": 13.0,
         "Degrees": " 31\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 58907,
@@ -35255,7 +35255,7 @@
         "Province": "Los Ba\u00c3\u00b1os (Laguna)",
         "Distance": 1.0,
         "Degrees": " 10\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 58922,
@@ -35357,7 +35357,7 @@
         "Province": "Lubang (Occidental Mindoro)",
         "Distance": 107.0,
         "Degrees": " 38\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 59189,
@@ -35408,7 +35408,7 @@
         "Province": "Mabini (Batangas)",
         "Distance": 4.0,
         "Degrees": " 39\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 59267,
@@ -35476,7 +35476,7 @@
         "Province": "City Of Masbate (Masbate)",
         "Distance": 10.0,
         "Degrees": " 21\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 59357,
@@ -35561,7 +35561,7 @@
         "Province": "Quirino (Ilocos Sur)",
         "Distance": 18.0,
         "Degrees": " 16\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 59505,
@@ -35578,7 +35578,7 @@
         "Province": "Datu Paglas (Maguindanao)",
         "Distance": 7.0,
         "Degrees": " 51\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 59546,
@@ -35663,7 +35663,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 147.0,
         "Degrees": " 42\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 59619,
@@ -35731,7 +35731,7 @@
         "Province": "Magsingal (Ilocos Sur)",
         "Distance": 4.0,
         "Degrees": " 76\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 59710,
@@ -35833,7 +35833,7 @@
         "Province": "Lagangilang (Abra)",
         "Distance": 4.0,
         "Degrees": " 70\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 59875,
@@ -35884,7 +35884,7 @@
         "Province": "Pilar (Abra)",
         "Distance": 5.0,
         "Degrees": " 68\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 60058,
@@ -35901,7 +35901,7 @@
         "Province": "Siaton (Negros Oriental)",
         "Distance": 48.0,
         "Degrees": " 32\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 60226,
@@ -35918,7 +35918,7 @@
         "Province": "Sigay (Ilocos Sur)",
         "Distance": 4.0,
         "Degrees": " 27\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 60300,
@@ -35935,7 +35935,7 @@
         "Province": "Tayum (Abra)",
         "Distance": 9.0,
         "Degrees": " 47\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 60326,
@@ -36105,7 +36105,7 @@
         "Province": "Looc (Occidental Mindoro)",
         "Distance": 16.0,
         "Degrees": " 35\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 60836,
@@ -36122,7 +36122,7 @@
         "Province": "Looc (Occidental Mindoro)",
         "Distance": 14.0,
         "Degrees": " 21\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 60926,
@@ -36207,7 +36207,7 @@
         "Province": "Manabo (Abra)",
         "Distance": 4.0,
         "Degrees": " 33\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 61037,
@@ -36292,7 +36292,7 @@
         "Province": "Calanasan (Apayao)",
         "Distance": 16.0,
         "Degrees": " 10\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 61150,
@@ -36479,7 +36479,7 @@
         "Province": "Currimao (Ilocos Norte)",
         "Distance": 34.0,
         "Degrees": " 14\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 61395,
@@ -36496,7 +36496,7 @@
         "Province": "Bauang (La Union)",
         "Distance": 18.0,
         "Degrees": " 40\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 61442,
@@ -36547,7 +36547,7 @@
         "Province": "Burdeos (Quezon)",
         "Distance": 38.0,
         "Degrees": " 80\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 61541,
@@ -36768,7 +36768,7 @@
         "Province": "Mercedes (Eastern Samar)",
         "Distance": 39.0,
         "Degrees": " 68\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 62317,
@@ -36853,7 +36853,7 @@
         "Province": "Sablayan (Occidental Mindoro)",
         "Distance": 17.0,
         "Degrees": " 54\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 62398,
@@ -36870,7 +36870,7 @@
         "Province": "Lanuza (Surigao Del Sur)",
         "Distance": 4.0,
         "Degrees": " 39\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 62409,
@@ -36921,7 +36921,7 @@
         "Province": "Danglas (Abra)",
         "Distance": 8.0,
         "Degrees": " 55\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 62461,
@@ -36938,7 +36938,7 @@
         "Province": "Ambaguio (Nueva Vizcaya)",
         "Distance": 3.0,
         "Degrees": " 30\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 62480,
@@ -36989,7 +36989,7 @@
         "Province": "Columbio (Sultan Kudarat)",
         "Distance": 12.0,
         "Degrees": " 56\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 62535,
@@ -37006,7 +37006,7 @@
         "Province": "Dinalungan (Aurora)",
         "Distance": 19.0,
         "Degrees": " 48\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 62541,
@@ -37023,7 +37023,7 @@
         "Province": "Cagwait (Surigao Del Sur)",
         "Distance": 41.0,
         "Degrees": " 21\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 62590,
@@ -37057,7 +37057,7 @@
         "Province": "Baganga (Davao Oriental)",
         "Distance": 92.0,
         "Degrees": " 40\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 62621,
@@ -37091,7 +37091,7 @@
         "Province": "Santa Monica (Surigao Del Norte)",
         "Distance": 8.0,
         "Degrees": " 72\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 62681,
@@ -37159,7 +37159,7 @@
         "Province": "Bayabas (Surigao Del Sur)",
         "Distance": 33.0,
         "Degrees": " 33\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 62825,
@@ -37210,7 +37210,7 @@
         "Province": "Loreto (Dinagat Islands)",
         "Distance": 35.0,
         "Degrees": " 08\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 62892,
@@ -37261,7 +37261,7 @@
         "Province": "Tubo (Abra)",
         "Distance": 7.0,
         "Degrees": " 18\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 62968,
@@ -37346,7 +37346,7 @@
         "Province": "Maragusan (Davao De Oro)",
         "Distance": 13.0,
         "Degrees": " 38\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 63092,
@@ -37448,7 +37448,7 @@
         "Province": "Lingig (Surigao Del Sur)",
         "Distance": 36.0,
         "Degrees": " 48\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 63288,
@@ -37533,7 +37533,7 @@
         "Province": "Danglas (Abra)",
         "Distance": 7.0,
         "Degrees": " 89\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 63418,
@@ -37550,7 +37550,7 @@
         "Province": "Tineg (Abra)",
         "Distance": 19.0,
         "Degrees": " 28\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 63428,
@@ -37567,7 +37567,7 @@
         "Province": "Tineg (Abra)",
         "Distance": 9.0,
         "Degrees": " 67\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 63436,
@@ -37686,7 +37686,7 @@
         "Province": "Abra De Ilog (Occidental Mindoro)",
         "Distance": 16.0,
         "Degrees": " 20\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 63824,
@@ -37703,7 +37703,7 @@
         "Province": "Balut Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 163.0,
         "Degrees": " 69\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 63833,
@@ -37788,7 +37788,7 @@
         "Province": "Tagkawayan (Quezon)",
         "Distance": 9.0,
         "Degrees": " 27\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 63941,
@@ -37890,7 +37890,7 @@
         "Province": "Pinili (Ilocos Norte)",
         "Distance": 8.0,
         "Degrees": " 05\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 64054,
@@ -37907,7 +37907,7 @@
         "Province": "Bunawan (Agusan Del Sur)",
         "Distance": 4.0,
         "Degrees": " 31\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 64069,
@@ -37924,7 +37924,7 @@
         "Province": "Langiden (Abra)",
         "Distance": 7.0,
         "Degrees": " 31\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 64082,
@@ -37941,7 +37941,7 @@
         "Province": "Tayum (Abra)",
         "Distance": 10.0,
         "Degrees": " 56\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 64096,
@@ -37958,7 +37958,7 @@
         "Province": "Balut Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 141.0,
         "Degrees": " 25\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 64157,
@@ -37992,7 +37992,7 @@
         "Province": "Patnanungan (Quezon)",
         "Distance": 92.0,
         "Degrees": " 63\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 64202,
@@ -38026,7 +38026,7 @@
         "Province": "Lubang (Occidental Mindoro)",
         "Distance": 22.0,
         "Degrees": " 23\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 64315,
@@ -38043,7 +38043,7 @@
         "Province": "Lagayan (Abra)",
         "Distance": 6.0,
         "Degrees": " 34\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 64552,
@@ -38111,7 +38111,7 @@
         "Province": "Sablayan (Occidental Mindoro)",
         "Distance": 13.0,
         "Degrees": " 31\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 64690,
@@ -38128,7 +38128,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 151.0,
         "Degrees": " 39\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 64697,
@@ -38162,7 +38162,7 @@
         "Province": "San Juan (La Union)",
         "Distance": 9.0,
         "Degrees": " 39\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 64835,
@@ -38196,7 +38196,7 @@
         "Province": "Bangui (Ilocos Norte)",
         "Distance": 43.0,
         "Degrees": " 21\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 64856,
@@ -38349,7 +38349,7 @@
         "Province": "Dinapigue (Isabela)",
         "Distance": 33.0,
         "Degrees": " 75\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 65119,
@@ -38383,7 +38383,7 @@
         "Province": "Claveria (Masbate)",
         "Distance": 19.0,
         "Degrees": " 51\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65132,
@@ -38434,7 +38434,7 @@
         "Province": "Lugait (Misamis Oriental)",
         "Distance": 13.0,
         "Degrees": " 67\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65152,
@@ -38468,7 +38468,7 @@
         "Province": "Casiguran (Aurora)",
         "Distance": 6.0,
         "Degrees": " 79\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65193,
@@ -38485,7 +38485,7 @@
         "Province": "Paluan (Occidental Mindoro)",
         "Distance": 5.0,
         "Degrees": " 88\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 65194,
@@ -38519,7 +38519,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 32.0,
         "Degrees": " 23\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65213,
@@ -38536,7 +38536,7 @@
         "Province": "Concepcion (Romblon)",
         "Distance": 26.0,
         "Degrees": " 28\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65214,
@@ -38587,7 +38587,7 @@
         "Province": "Glan (Sarangani)",
         "Distance": 26.0,
         "Degrees": " 88\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65247,
@@ -38638,7 +38638,7 @@
         "Province": "Tarragona (Davao Oriental)",
         "Distance": 30.0,
         "Degrees": " 26\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65271,
@@ -38655,7 +38655,7 @@
         "Province": "Camiguin Island (Calayan) (Cagayan)",
         "Distance": 13.0,
         "Degrees": " 27\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65281,
@@ -38672,7 +38672,7 @@
         "Province": "Tinaga Island (Vinzons) (Camarines Norte)",
         "Distance": 17.0,
         "Degrees": " 30\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65294,
@@ -38706,7 +38706,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 24.0,
         "Degrees": " 26\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65314,
@@ -38740,7 +38740,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 19.0,
         "Degrees": " 62\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65324,
@@ -38774,7 +38774,7 @@
         "Province": "Porac (Pampanga)",
         "Distance": 16.0,
         "Degrees": " 29\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65333,
@@ -38808,7 +38808,7 @@
         "Province": "Hinoba-an (Negros Occidental)",
         "Distance": 69.0,
         "Degrees": " 28\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65336,
@@ -38910,7 +38910,7 @@
         "Province": "Biri (Northern Samar)",
         "Distance": 17.0,
         "Degrees": " 30\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65374,
@@ -38927,7 +38927,7 @@
         "Province": "Loreto (Dinagat Islands)",
         "Distance": 41.0,
         "Degrees": " 48\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65384,
@@ -38978,7 +38978,7 @@
         "Province": "Tarragona (Davao Oriental)",
         "Distance": 70.0,
         "Degrees": " 31\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 65404,
@@ -39063,7 +39063,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 74.0,
         "Degrees": " 27\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65424,
@@ -39080,7 +39080,7 @@
         "Province": "Cortes (Surigao Del Sur)",
         "Distance": 33.0,
         "Degrees": " 52\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65427,
@@ -39182,7 +39182,7 @@
         "Province": "City Of Kidapawan (Cotabato)",
         "Distance": 11.0,
         "Degrees": " 28\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65458,
@@ -39199,7 +39199,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 11.0,
         "Degrees": " 64\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 65479,
@@ -39216,7 +39216,7 @@
         "Province": "Claveria (Cagayan)",
         "Distance": 25.0,
         "Degrees": " 23\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 65484,
@@ -39233,7 +39233,7 @@
         "Province": "Sarangani Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 411.0,
         "Degrees": " 25\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65487,
@@ -39250,7 +39250,7 @@
         "Province": "Madamba (Lanao Del Sur)",
         "Distance": 7.0,
         "Degrees": " 27\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 65497,
@@ -39267,7 +39267,7 @@
         "Province": "Pili (Camarines Sur)",
         "Distance": 6.0,
         "Degrees": " 31\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65499,
@@ -39301,7 +39301,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 19.0,
         "Degrees": " 52\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65515,
@@ -39335,7 +39335,7 @@
         "Province": "Bacnotan (La Union)",
         "Distance": 44.0,
         "Degrees": " 29\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65521,
@@ -39386,7 +39386,7 @@
         "Province": "San Miguel (Surigao Del Sur)",
         "Distance": 10.0,
         "Degrees": " 29\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65528,
@@ -39403,7 +39403,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 36.0,
         "Degrees": " 30\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 65533,
@@ -39420,7 +39420,7 @@
         "Province": "Don Marcelino (Davao Occidental)",
         "Distance": 16.0,
         "Degrees": " 28\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65538,
@@ -39437,7 +39437,7 @@
         "Province": "Inabanga (Bohol)",
         "Distance": 8.0,
         "Degrees": " 28\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65539,
@@ -39454,7 +39454,7 @@
         "Province": "Paluan (Occidental Mindoro)",
         "Distance": 17.0,
         "Degrees": " 31\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65541,
@@ -39471,7 +39471,7 @@
         "Province": "Balut Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 349.0,
         "Degrees": " 26\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 65542,
@@ -39641,7 +39641,7 @@
         "Province": "Santa Maria (Davao Occidental)",
         "Distance": 9.0,
         "Degrees": " 48\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 65864,
@@ -39658,7 +39658,7 @@
         "Province": "Sarangani Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 111.0,
         "Degrees": " 33\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 65964,
@@ -39777,7 +39777,7 @@
         "Province": "Batuan (Masbate)",
         "Distance": 12.0,
         "Degrees": " 14\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 66187,
@@ -39794,7 +39794,7 @@
         "Province": "Sarangani Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 128.0,
         "Degrees": " 49\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 66195,
@@ -39845,7 +39845,7 @@
         "Province": "Siaton (Negros Oriental)",
         "Distance": 59.0,
         "Degrees": " 35\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 66319,
@@ -39896,7 +39896,7 @@
         "Province": "Tarragona (Davao Oriental)",
         "Distance": 43.0,
         "Degrees": " 23\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 66326,
@@ -39913,7 +39913,7 @@
         "Province": "Siocon (Zamboanga Del Norte)",
         "Distance": 48.0,
         "Degrees": " 59\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 66342,
@@ -39964,7 +39964,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 53.0,
         "Degrees": " 03\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 66368,
@@ -40236,7 +40236,7 @@
         "Province": "Dinapigue (Isabela)",
         "Distance": 11.0,
         "Degrees": " 22\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 66810,
@@ -40270,7 +40270,7 @@
         "Province": "Balaoan (La Union)",
         "Distance": 4.0,
         "Degrees": " 49\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 66891,
@@ -40355,7 +40355,7 @@
         "Province": "Polillo (Quezon)",
         "Distance": 20.0,
         "Degrees": " 66\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 66955,
@@ -40372,7 +40372,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 2.0,
         "Degrees": " 29\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 67009,
@@ -40423,7 +40423,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 13.0,
         "Degrees": " 22\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 67109,
@@ -40661,7 +40661,7 @@
         "Province": "Monreal (Masbate)",
         "Distance": 6.0,
         "Degrees": " 66\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 67479,
@@ -40712,7 +40712,7 @@
         "Province": "Besao (Mountain Province)",
         "Distance": 6.0,
         "Degrees": " 68\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 67594,
@@ -40831,7 +40831,7 @@
         "Province": "Abra De Ilog (Occidental Mindoro)",
         "Distance": 16.0,
         "Degrees": " 38\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 67673,
@@ -40865,7 +40865,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 49.0,
         "Degrees": " 22\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 67774,
@@ -40933,7 +40933,7 @@
         "Province": "Sablayan (Occidental Mindoro)",
         "Distance": 20.0,
         "Degrees": " 19\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 67919,
@@ -40967,7 +40967,7 @@
         "Province": "Hinatuan (Surigao Del Sur)",
         "Distance": 40.0,
         "Degrees": " 61\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 68000,
@@ -41035,7 +41035,7 @@
         "Province": "New Bataan (Davao De Oro)",
         "Distance": 9.0,
         "Degrees": " 76\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 68224,
@@ -41137,7 +41137,7 @@
         "Province": "Kiangan (Ifugao)",
         "Distance": 4.0,
         "Degrees": " 61\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 68352,
@@ -41188,7 +41188,7 @@
         "Province": "Dimasalang (Masbate)",
         "Distance": 5.0,
         "Degrees": " 16\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 68378,
@@ -41222,7 +41222,7 @@
         "Province": "Cortes (Surigao Del Sur)",
         "Distance": 9.0,
         "Degrees": " 57\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 68584,
@@ -41239,7 +41239,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 42.0,
         "Degrees": " 61\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 68606,
@@ -41392,7 +41392,7 @@
         "Province": "Sogod (Southern Leyte)",
         "Distance": 11.0,
         "Degrees": " 30\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 68789,
@@ -41409,7 +41409,7 @@
         "Province": "San Felipe (Zambales)",
         "Distance": 26.0,
         "Degrees": " 25\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 68795,
@@ -41477,7 +41477,7 @@
         "Province": "Busuanga (Palawan)",
         "Distance": 36.0,
         "Degrees": " 39\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 68945,
@@ -41528,7 +41528,7 @@
         "Province": "Looc (Occidental Mindoro)",
         "Distance": 29.0,
         "Degrees": " 69\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 69030,
@@ -41562,7 +41562,7 @@
         "Province": "New Bataan (Davao De Oro)",
         "Distance": 10.0,
         "Degrees": " 54\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 69089,
@@ -41613,7 +41613,7 @@
         "Province": "Tinaga Island (Vinzons) (Camarines Norte)",
         "Distance": 12.0,
         "Degrees": " 42\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 69215,
@@ -41630,7 +41630,7 @@
         "Province": "Basay (Negros Oriental)",
         "Distance": 37.0,
         "Degrees": " 18\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 69328,
@@ -41647,7 +41647,7 @@
         "Province": "Ambaguio (Nueva Vizcaya)",
         "Distance": 10.0,
         "Degrees": " 24\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 69351,
@@ -41664,7 +41664,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 40.0,
         "Degrees": " 37\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 69384,
@@ -41766,7 +41766,7 @@
         "Province": "Batuan (Masbate)",
         "Distance": 7.0,
         "Degrees": " 82\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 69477,
@@ -41783,7 +41783,7 @@
         "Province": "Dumingag (Zamboanga Del Sur)",
         "Distance": 3.0,
         "Degrees": " 80\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 69482,
@@ -41800,7 +41800,7 @@
         "Province": "Dumingag (Zamboanga Del Sur)",
         "Distance": 3.0,
         "Degrees": " 85\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 69599,
@@ -42072,7 +42072,7 @@
         "Province": "Jose Abad Santos (Davao Occidental)",
         "Distance": 90.0,
         "Degrees": " 29\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 69860,
@@ -42106,7 +42106,7 @@
         "Province": "Socorro (Surigao Del Norte)",
         "Distance": 7.0,
         "Degrees": " 09\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 69949,
@@ -42242,7 +42242,7 @@
         "Province": "Malungon (Sarangani)",
         "Distance": 9.0,
         "Degrees": " 45\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 70252,
@@ -42344,7 +42344,7 @@
         "Province": "Santa Monica (Surigao Del Norte)",
         "Distance": 7.0,
         "Degrees": " 05\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 70434,
@@ -42378,7 +42378,7 @@
         "Province": "Pandan (Catanduanes)",
         "Distance": 35.0,
         "Degrees": " 29\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 70516,
@@ -42531,7 +42531,7 @@
         "Province": "Maconacon (Isabela)",
         "Distance": 24.0,
         "Degrees": " 12\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 70671,
@@ -42582,7 +42582,7 @@
         "Province": "Maconacon (Isabela)",
         "Distance": 25.0,
         "Degrees": " 46\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 70783,
@@ -42599,7 +42599,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 11.0,
         "Degrees": " 49\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 70790,
@@ -42633,7 +42633,7 @@
         "Province": "Nueva Era (Ilocos Norte)",
         "Distance": 1.0,
         "Degrees": " 19\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 70797,
@@ -42667,7 +42667,7 @@
         "Province": "Sarangani Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 90.0,
         "Degrees": " 24\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 70842,
@@ -42718,7 +42718,7 @@
         "Province": "Llorente (Eastern Samar)",
         "Distance": 17.0,
         "Degrees": " 82\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 70964,
@@ -42752,7 +42752,7 @@
         "Province": "Don Marcelino (Davao Occidental)",
         "Distance": 60.0,
         "Degrees": " 55\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 71112,
@@ -42786,7 +42786,7 @@
         "Province": "Cantilan (Surigao Del Sur)",
         "Distance": 15.0,
         "Degrees": " 43\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 71140,
@@ -42939,7 +42939,7 @@
         "Province": "San Felipe (Zambales)",
         "Distance": 6.0,
         "Degrees": " 40\u00b0 E",
-        "y": 1
+        "y": 3
     },
     {
         "id": 71330,
@@ -42956,7 +42956,7 @@
         "Province": "Burgos (Ilocos Norte)",
         "Distance": 40.0,
         "Degrees": " 66\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 71345,
@@ -43075,7 +43075,7 @@
         "Province": "Ambaguio (Nueva Vizcaya)",
         "Distance": 2.0,
         "Degrees": " 51\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 71528,
@@ -43177,7 +43177,7 @@
         "Province": "San Fernando (Masbate)",
         "Distance": 7.0,
         "Degrees": " 54\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 71700,
@@ -43211,7 +43211,7 @@
         "Province": "Dinapigue (Isabela)",
         "Distance": 4.0,
         "Degrees": " 28\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 71719,
@@ -43245,7 +43245,7 @@
         "Province": "Infanta (Quezon)",
         "Distance": 9.0,
         "Degrees": " 10\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 71744,
@@ -43330,7 +43330,7 @@
         "Province": "Balut Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 391.0,
         "Degrees": " 05\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 71934,
@@ -43381,7 +43381,7 @@
         "Province": "Tineg (Abra)",
         "Distance": 1.0,
         "Degrees": " 18\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 71995,
@@ -43415,7 +43415,7 @@
         "Province": "Quinapondan (Eastern Samar)",
         "Distance": 4.0,
         "Degrees": " 34\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 72039,
@@ -43449,7 +43449,7 @@
         "Province": "Tineg (Abra)",
         "Distance": 8.0,
         "Degrees": " 36\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 72090,
@@ -43483,7 +43483,7 @@
         "Province": "Cortes (Surigao Del Sur)",
         "Distance": 19.0,
         "Degrees": " 55\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 72227,
@@ -43636,7 +43636,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 35.0,
         "Degrees": " 62\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 72393,
@@ -43653,7 +43653,7 @@
         "Province": "Bayabas (Surigao Del Sur)",
         "Distance": 27.0,
         "Degrees": " 34\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 72437,
@@ -43857,7 +43857,7 @@
         "Province": "Caoayan (Ilocos Sur)",
         "Distance": 18.0,
         "Degrees": " 34\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 72818,
@@ -43942,7 +43942,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 19.0,
         "Degrees": " 56\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 72966,
@@ -44078,7 +44078,7 @@
         "Province": "Abra De Ilog (Occidental Mindoro)",
         "Distance": 12.0,
         "Degrees": " 10\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 73258,
@@ -44112,7 +44112,7 @@
         "Province": "Adams (Ilocos Norte)",
         "Distance": 7.0,
         "Degrees": " 65\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 73281,
@@ -44214,7 +44214,7 @@
         "Province": "Ragay (Camarines Sur)",
         "Distance": 4.0,
         "Degrees": " 40\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 73452,
@@ -44265,7 +44265,7 @@
         "Province": "Tubod (Surigao Del Norte)",
         "Distance": 4.0,
         "Degrees": " 22\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 73610,
@@ -44299,7 +44299,7 @@
         "Province": "Mondragon (Northern Samar)",
         "Distance": 2.0,
         "Degrees": " 60\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 73654,
@@ -44316,7 +44316,7 @@
         "Province": "Sogod (Southern Leyte)",
         "Distance": 12.0,
         "Degrees": " 56\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 73689,
@@ -44350,7 +44350,7 @@
         "Province": "Unisan (Quezon)",
         "Distance": 19.0,
         "Degrees": " 54\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 73733,
@@ -44367,7 +44367,7 @@
         "Province": "Governor Generoso (Davao Oriental)",
         "Distance": 43.0,
         "Degrees": " 18\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 73736,
@@ -44384,7 +44384,7 @@
         "Province": "Monkayo (Davao De Oro)",
         "Distance": 2.0,
         "Degrees": " 27\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 73759,
@@ -44469,7 +44469,7 @@
         "Province": "Calatagan (Batangas)",
         "Distance": 9.0,
         "Degrees": " 73\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 73844,
@@ -44486,7 +44486,7 @@
         "Province": "Gigmoto (Catanduanes)",
         "Distance": 96.0,
         "Degrees": " 27\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 73912,
@@ -44537,7 +44537,7 @@
         "Province": "Sibagat (Agusan Del Sur)",
         "Distance": 15.0,
         "Degrees": " 32\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 73951,
@@ -44554,7 +44554,7 @@
         "Province": "Dalupiri Island (Calayan) (Cagayan)",
         "Distance": 115.0,
         "Degrees": " 58\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 73963,
@@ -44690,7 +44690,7 @@
         "Province": "Sarangani Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 10.0,
         "Degrees": " 60\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 74211,
@@ -44792,7 +44792,7 @@
         "Province": "Homonhon Island (Guiuan) (Eastern Samar)",
         "Distance": 84.0,
         "Degrees": " 08\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 74405,
@@ -44809,7 +44809,7 @@
         "Province": "Balut Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 21.0,
         "Degrees": " 44\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 74437,
@@ -44826,7 +44826,7 @@
         "Province": "Basilisa (Dinagat Islands)",
         "Distance": 10.0,
         "Degrees": " 21\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 74438,
@@ -45013,7 +45013,7 @@
         "Province": "Abra De Ilog (Occidental Mindoro)",
         "Distance": 18.0,
         "Degrees": " 29\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 74780,
@@ -45030,7 +45030,7 @@
         "Province": "San Isidro (Davao Oriental)",
         "Distance": 2.0,
         "Degrees": " 26\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 74809,
@@ -45064,7 +45064,7 @@
         "Province": "Alegria (Surigao Del Norte)",
         "Distance": 6.0,
         "Degrees": " 62\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 74936,
@@ -45132,7 +45132,7 @@
         "Province": "Capoocan (Leyte)",
         "Distance": 5.0,
         "Degrees": " 27\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 74987,
@@ -45234,7 +45234,7 @@
         "Province": "Bolinao (Pangasinan)",
         "Distance": 28.0,
         "Degrees": " 24\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 75101,
@@ -45251,7 +45251,7 @@
         "Province": "Tubo (Abra)",
         "Distance": 11.0,
         "Degrees": " 56\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 75109,
@@ -45302,7 +45302,7 @@
         "Province": "Dasol (Pangasinan)",
         "Distance": 8.0,
         "Degrees": " 19\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 75199,
@@ -45472,7 +45472,7 @@
         "Province": "Sarangani Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 22.0,
         "Degrees": " 33\u00b0 W",
-        "y": 1
+        "y": 3
     },
     {
         "id": 75544,
@@ -45591,7 +45591,7 @@
         "Province": "City Of Sipalay (Negros Occidental)",
         "Distance": 32.0,
         "Degrees": " 29\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 75971,
@@ -45625,7 +45625,7 @@
         "Province": "Batuan (Masbate)",
         "Distance": 7.0,
         "Degrees": " 09\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 75994,
@@ -45659,7 +45659,7 @@
         "Province": "Balut Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 248.0,
         "Degrees": " 27\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 76027,
@@ -45727,7 +45727,7 @@
         "Province": "Sarangani Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 179.0,
         "Degrees": " 74\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 76221,
@@ -45846,7 +45846,7 @@
         "Province": "Cortes (Surigao Del Sur)",
         "Distance": 38.0,
         "Degrees": " 45\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 76465,
@@ -45863,7 +45863,7 @@
         "Province": "Sogod (Southern Leyte)",
         "Distance": 9.0,
         "Degrees": " 27\u00b0 W",
-        "y": 3
+        "y": 2
     },
     {
         "id": 76472,
@@ -45880,7 +45880,7 @@
         "Province": "Don Marcelino (Davao Occidental)",
         "Distance": 86.0,
         "Degrees": " 41\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 76534,
@@ -45897,7 +45897,7 @@
         "Province": "Burgos (Surigao Del Norte)",
         "Distance": 60.0,
         "Degrees": " 80\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 76547,
@@ -45931,7 +45931,7 @@
         "Province": "Balut Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 142.0,
         "Degrees": " 25\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 76589,
@@ -45965,7 +45965,7 @@
         "Province": "Manay (Davao Oriental)",
         "Distance": 32.0,
         "Degrees": " 13\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 76653,
@@ -45999,7 +45999,7 @@
         "Province": "Boston (Davao Oriental)",
         "Distance": 4.0,
         "Degrees": " 55\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 76701,
@@ -46016,7 +46016,7 @@
         "Province": "General Luna (Surigao Del Norte)",
         "Distance": 10.0,
         "Degrees": " 65\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 76712,
@@ -46050,7 +46050,7 @@
         "Province": "Agno (Pangasinan)",
         "Distance": 4.0,
         "Degrees": " 68\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 76818,
@@ -46118,7 +46118,7 @@
         "Province": "Sarangani Island (Municipality Of Sarangani) (Davao Occidental)",
         "Distance": 358.0,
         "Degrees": " 13\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 76926,
@@ -46169,7 +46169,7 @@
         "Province": "San Isidro (Surigao Del Norte)",
         "Distance": 23.0,
         "Degrees": " 69\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 77177,
@@ -46186,7 +46186,7 @@
         "Province": "Nasugbu (Batangas)",
         "Distance": 23.0,
         "Degrees": " 40\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 77287,
@@ -46271,7 +46271,7 @@
         "Province": "Don Marcelino (Davao Occidental)",
         "Distance": 52.0,
         "Degrees": " 67\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 77382,
@@ -46322,7 +46322,7 @@
         "Province": "Socorro (Surigao Del Norte)",
         "Distance": 2.0,
         "Degrees": " 57\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 77494,
@@ -46339,7 +46339,7 @@
         "Province": "Basay (Negros Oriental)",
         "Distance": 66.0,
         "Degrees": " 59\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 77558,
@@ -47529,7 +47529,7 @@
         "Province": "Lingig (Surigao Del Sur)",
         "Distance": 46.0,
         "Degrees": " 43\u00b0 E",
-        "y": 3
+        "y": 2
     },
     {
         "id": 79395,
@@ -47614,7 +47614,7 @@
         "Province": "Hinatuan (Surigao Del Sur)",
         "Distance": 37.0,
         "Degrees": " 42\u00b0 W",
-        "y": 2
+        "y": 1
     },
     {
         "id": 79570,
@@ -48685,7 +48685,7 @@
         "Province": "Hinatuan (Surigao Del Sur)",
         "Distance": 40.0,
         "Degrees": " 40\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 80873,
@@ -48855,7 +48855,7 @@
         "Province": "Cagwait (Surigao Del Sur)",
         "Distance": 23.0,
         "Degrees": " 86\u00b0 E",
-        "y": 2
+        "y": 1
     },
     {
         "id": 80915,

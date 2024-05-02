@@ -155,9 +155,11 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
         if (Objects.equals(model, "Mini Batch K-Means")) {
             setOtherModelsForMiniBatch();
             setMiniBatch();
+            setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_1.7.1.json", map);
         } else if (Objects.equals(model, "DBSCAN")) {
             setMiniBatch();
             setOtherModelsForDBSCAN();
+            setDatabaseFromJSON("database/DBSCANmodels/clustering_dbscan1.1.json", map);
         }
         //setMiniBatch();
         //setOtherModelsForMiniBatch();
@@ -199,7 +201,7 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
         mapController.animateTo(userPoint);
         //mapController.setCenter(userPoint);
         mapController.zoomTo(5.5);//6.5
-        setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_1.7.1.json", map);
+        //setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_1.7.1.json", map);
 
         map.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -277,6 +279,7 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
             int cluster = earthquake.getY(); // Assuming `y` holds the cluster value
             double mag = earthquake.getMagnitude();
             double depth = earthquake.getDepth();
+            String province = earthquake.getProvince();
 
             int color = getColor(cluster);
             int radius = 18;//getRadius(earthquake.getMagnitude()); // Assuming `getMagnitude` exists
@@ -301,9 +304,9 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
     private int getColor(int cluster) {
         switch (cluster) {
             case 0:
-                return Color.YELLOW;
-            case 1:
                 return Color.argb(255, 204, 85, 0);
+            case 1:
+                return Color.YELLOW;
             case 2:
                 return Color.GREEN;
             case 3:
@@ -337,7 +340,6 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
         Log.d("ClusterFragment", "Marker Icon created");
         return new BitmapDrawable(requireContext().getResources(), markerBitmap);
     }
-
 
 
     public void setMiniBatch() {
@@ -514,7 +516,7 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
         SharedPreferenceDataSource sharedPrefDataSource = SharedPreferenceDataSource.getInstance(sharedPreferences);
 
         String model = sharedPrefDataSource.getClusteringAlgorithm();
-        Log.d("ClusterFragment", "Model: " + model);
+        Log.d("Model", "Model: " + model);
 
         if (Objects.equals(model, "Mini Batch K-Means")) {
             if (childPosition == 0) {
@@ -533,17 +535,27 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
                 Toast.makeText(getContext(), "Model 2.7 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
                 Log.d("ClusterFragment", "Model 2.7 is selected, please wait for the map to load");
             }
-        } else if (Objects.equals(model, "DBSCAN")) {
-            //onDBSCANClicked(parentPosition, childPosition);
+        } else {
+            if (childPosition == 0) {
+                //map.getOverlays().clear();
+                setDatabaseFromJSON("database/DBSCANmodels/clustering_dbscan1.1.json", map);
+                Toast.makeText(getContext(), "Model 1.1 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
+                Log.d("ClusterFragment", "Model 1.1 is selected, please wait for the map to load");
+            } else if (childPosition == 1) {
+                //map.getOverlays().clear();
+                setDatabaseFromJSON("database/DBSCANmodels/clustering_dbscan1.4.json", map);
+                Toast.makeText(getContext(), "Model 1.4 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
+                Log.d("ClusterFragment", "Model 1.4 is selected, please wait for the map to load");
+
+            }
         }
-        //return parentPosition;
     }
 
 
-    private void handleError(Throwable throwable) {
-        // Handle data retrieval or filtering error (e.g., display Toast message)
-        Log.e("MyFragment", "Error setting database from JSON", throwable);
+        private void handleError (Throwable throwable){
+            // Handle data retrieval or filtering error (e.g., display Toast message)
+            Log.e("MyFragment", "Error setting database from JSON", throwable);
+        }
+
+
     }
-
-
-}
