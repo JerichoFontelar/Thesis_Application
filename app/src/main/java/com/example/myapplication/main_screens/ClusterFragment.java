@@ -37,6 +37,7 @@ import com.example.myapplication.recycler_view_vertical.VerticalParentModelClass
 import com.example.myapplication.recycler_view_horizontal.ChildItemListener;
 import com.example.myapplication.shared_preferences.SharedPreferenceDataSource;
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import org.osmdroid.api.IMapController;
 import org.osmdroid.config.Configuration;
@@ -46,12 +47,17 @@ import org.osmdroid.views.CustomZoomButtonsController;
 import org.osmdroid.views.MapView;
 import org.osmdroid.views.overlay.Marker;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
+import java.util.Set;
 
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.disposables.Disposable;
@@ -143,6 +149,17 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
     }
 
     @Override
+    public void onDestroy() {
+        super.onDestroy();
+
+        // Clear references and potentially unsubscribe from RxJava disposables
+        verticalRecyclerView = null;
+        if (mapOverlayDisposable != null && !mapOverlayDisposable.isDisposed()) {
+            mapOverlayDisposable.dispose();
+        }
+    }
+
+    @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
@@ -154,11 +171,14 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
 
         if (Objects.equals(model, "Mini Batch K-Means")) {
             setOtherModelsForMiniBatch();
-            setMiniBatch();
+            //setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_1.7.1.json", map);
+            setDBSCAN("database/ClusterModels/MiniBatch_Model_1.7.1.json");
+            //setMiniBatch();
             setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_1.7.1.json", map);
         } else if (Objects.equals(model, "DBSCAN")) {
-            setMiniBatch();
+            //setMiniBatch();
             setOtherModelsForDBSCAN();
+            setDBSCAN("database/DBSCANmodels/clustering_dbscan1.1.json");
             setDatabaseFromJSON("database/DBSCANmodels/clustering_dbscan1.1.json", map);
         }
         //setMiniBatch();
@@ -201,7 +221,7 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
         mapController.animateTo(userPoint);
         //mapController.setCenter(userPoint);
         mapController.zoomTo(5.5);//6.5
-        //setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_1.7.1.json", map);
+
 
         map.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -275,6 +295,7 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
 
     private void createMapOverlays(MapView mapView, List<ClusterData> filteredData) {
         mapView.getOverlays().clear(); // Clear existing overlays
+        //setDBSCAN(filteredData);
         for (ClusterData earthquake : filteredData) {
             int cluster = earthquake.getY(); // Assuming `y` holds the cluster value
             double mag = earthquake.getMagnitude();
@@ -282,7 +303,7 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
             String province = earthquake.getProvince();
 
             int color = getColor(cluster);
-            int radius = 18;//getRadius(earthquake.getMagnitude()); // Assuming `getMagnitude` exists
+            int radius = 10;//getRadius(earthquake.getMagnitude()); // Assuming `getMagnitude` exists
 
             //mapView.getOverlays().clear();
             Marker marker = new Marker(mapView); // Replace context with appropriate reference
@@ -340,6 +361,158 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
         Log.d("ClusterFragment", "Marker Icon created");
         return new BitmapDrawable(requireContext().getResources(), markerBitmap);
     }
+
+
+    @Override
+    public void onChildItemClicked(int parentPosition, int childPosition) {
+
+        SharedPreferences sharedPreferences = requireActivity().getSharedPreferences("earthquake_setting", Context.MODE_PRIVATE);
+        SharedPreferenceDataSource sharedPrefDataSource = SharedPreferenceDataSource.getInstance(sharedPreferences);
+
+        String model = sharedPrefDataSource.getClusteringAlgorithm();
+        Log.d("Model", "Model: " + model);
+
+        if (Objects.equals(model, "Mini Batch K-Means")) {
+            if (childPosition == 0) {
+                //map.getOverlays().clear();
+                Log.d("ClusterFragment", "Model 1.7 is selected, please wait for the map to load");
+                setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_1.7.1.json", map);
+                setDBSCAN("database/ClusterModels/MiniBatch_Model_1.7.1.json");
+                Toast.makeText(getContext(), "Model 1.7 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
+            } else if (childPosition == 1) {
+                //map.getOverlays().clear();
+                Log.d("ClusterFragment", "Model 2.5 is selected, please wait for the map to load");
+                setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_2.5.1.json", map);
+                setDBSCAN("database/ClusterModels/MiniBatch_Model_2.5.1.json");
+                Toast.makeText(getContext(), "Model 2.5 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
+            } else if (childPosition == 2) {
+                //map.getOverlays().clear();
+                Log.d("ClusterFragment", "Model 2.7 is selected, please wait for the map to load");
+                setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_2.7.1.json", map);
+                setDBSCAN("database/ClusterModels/MiniBatch_Model_2.7.1.json");
+                Toast.makeText(getContext(), "Model 2.7 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
+            }
+        } else {
+            if (childPosition == 0) {
+                //map.getOverlays().clear();
+                Log.d("ClusterFragment", "Model 1.1 is selected, please wait for the map to load");
+                setDatabaseFromJSON("database/DBSCANmodels/clustering_dbscan1.1.json", map);
+                setDBSCAN("database/DBSCANmodels/clustering_dbscan1.1.json");
+                Toast.makeText(getContext(), "Model 1.1 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
+            } else if (childPosition == 1) {
+                //map.getOverlays().clear();
+                Log.d("ClusterFragment", "Model 1.4 is selected, please wait for the map to load");
+                setDatabaseFromJSON("database/DBSCANmodels/clustering_dbscan1.4.json", map);
+                setDBSCAN("database/DBSCANmodels/clustering_dbscan1.4.json");
+                Toast.makeText(getContext(), "Model 1.4 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
+            }
+        }
+    }
+
+    public void setDBSCAN(String path) {
+        verticalRecyclerView = getActivity().findViewById(R.id.rv_vertical); // Find by ID
+
+        VerticalParentAdapter verticalParentAdapter;
+
+        // Initialize empty Lists for parent and child data
+        List<VerticalChildModelClass> verticalChildModelClassArrayList = new ArrayList<>();
+        List<VerticalParentModelClass> verticalParentModelClassArrayList = new ArrayList<>();
+
+        // HashMap to store clusters (key) and their unique child data (value)
+        HashMap<Integer, HashSet<String>> uniqueProvincesPerCluster = new HashMap<>();
+
+        // Set to store processed cluster numbers (for unique clusters)
+        Set<Integer> processedClusters = new HashSet<>();
+
+        // Map to track encountered provinces and their lowest cluster number
+        HashMap<String, Integer> provinceClusterMap = new HashMap<>();
+
+        // Load data from JSON file
+        List<ClusterData> allData = parseDataFromJSON(path);
+
+        // Iterate through allData, collecting unique clusters and building the HashMap
+        for (ClusterData earthquake : allData) {
+            int cluster = earthquake.getY(); // Assuming `y` holds the cluster value
+            String province = earthquake.getProvince();
+
+            // Check if cluster already exists in the HashMap
+            if (!uniqueProvincesPerCluster.containsKey(cluster)) {
+                uniqueProvincesPerCluster.put(cluster, new HashSet<>()); // Create a new HashSet for unique provinces
+            }
+
+            // Add province to the corresponding cluster's HashSet (only if unique within the cluster)
+            if (!uniqueProvincesPerCluster.get(cluster).contains(province)) {
+                uniqueProvincesPerCluster.get(cluster).add(province);
+            }
+
+            // Update provinceClusterMap (if not present or if lower cluster encountered)
+            if (!provinceClusterMap.containsKey(province) || cluster < provinceClusterMap.get(province)) {
+                provinceClusterMap.put(province, cluster);
+            }
+        }
+
+        // **Explicitly handle Cluster 0**
+        if (uniqueProvincesPerCluster.containsKey(0)) {
+            String clusterName = "Cluster 1"; // Assuming clusters start from 1 (adjust as needed)
+            List<VerticalChildModelClass> childData = new ArrayList<>();
+            for (String uniqueProvince : uniqueProvincesPerCluster.get(0)) {
+                childData.add(new VerticalChildModelClass(uniqueProvince));
+            }
+            verticalParentModelClassArrayList.add(new VerticalParentModelClass(clusterName, childData, 0));
+        }
+
+        // List to store cluster numbers in the order they appear
+        List<Integer> clusterOrder = new ArrayList<>();
+        for (ClusterData earthquake : allData) {
+            int cluster = earthquake.getY(); // Assuming `y` holds the cluster value
+            if (!processedClusters.contains(cluster)) {
+                processedClusters.add(cluster);
+                clusterOrder.add(cluster);
+            }
+        }
+
+        // Create and add VerticalParentModelClass objects based on clusterOrder and uniqueProvincesPerCluster
+        for (int clusterNumber : clusterOrder) {
+            if (clusterNumber == 0) { // Skip Cluster 0 as it was handled explicitly
+                continue;
+            }
+            String clusterName = "Cluster " + (clusterNumber + 1); // Assuming clusters start from 1
+            List<VerticalChildModelClass> childData = new ArrayList<>();
+            for (String uniqueProvince : uniqueProvincesPerCluster.get(clusterNumber)) {
+                // Check if province is not already encountered in a lower cluster
+                if (!provinceClusterMap.containsKey(uniqueProvince) || provinceClusterMap.get(uniqueProvince) == clusterNumber) {
+                    childData.add(new VerticalChildModelClass(uniqueProvince));
+                }
+            }
+            verticalParentModelClassArrayList.add(new VerticalParentModelClass(clusterName, childData, 0));
+        }
+
+        verticalClusters = new ArrayList<>(); // Not used in this approach
+
+        verticalParentAdapter = new VerticalParentAdapter(verticalParentModelClassArrayList, ClusterFragment.this.getContext());
+        verticalRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        //verticalRecyclerView.setLayoutManager(new CustomLayoutManager(ClusterFragment.this.getContext(), 5, LinearLayoutManager.HORIZONTAL, false));
+        verticalRecyclerView.setAdapter(verticalParentAdapter);
+        verticalParentAdapter.notifyDataSetChanged();
+    }
+
+    private List<ClusterData> parseDataFromJSON(String path) {
+        List<ClusterData> earthquakeDataArray = new ArrayList<>();
+        try {
+            AssetManager assetManager = getContext().getAssets();
+            InputStream inputStream = assetManager.open(path);
+            Gson gson = new Gson();
+            Reader reader = new InputStreamReader(inputStream);
+
+            earthquakeDataArray = gson.fromJson(reader, new TypeToken<List<ClusterData>>() {}.getType());
+            inputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return earthquakeDataArray;
+    }
+
 
 
     public void setMiniBatch() {
@@ -410,11 +583,6 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
         //verticalRecyclerView.setLayoutManager(new CustomLayoutManager(ClusterFragment.this.getContext(), 5, LinearLayoutManager.HORIZONTAL, false));
         verticalRecyclerView.setAdapter(verticalParentAdapter);
         verticalParentAdapter.notifyDataSetChanged();
-
-    }
-
-    public void setDBSCAN() {
-
 
     }
 
@@ -508,54 +676,8 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
 
     }
 
-
-    @Override
-    public void onChildItemClicked(int parentPosition, int childPosition) {
-
-        SharedPreferences sharedPreferences = requireActivity().getSharedPreferences("earthquake_setting", Context.MODE_PRIVATE);
-        SharedPreferenceDataSource sharedPrefDataSource = SharedPreferenceDataSource.getInstance(sharedPreferences);
-
-        String model = sharedPrefDataSource.getClusteringAlgorithm();
-        Log.d("Model", "Model: " + model);
-
-        if (Objects.equals(model, "Mini Batch K-Means")) {
-            if (childPosition == 0) {
-                //map.getOverlays().clear();
-                setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_1.7.1.json", map);
-                Toast.makeText(getContext(), "Model 1.7 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
-                Log.d("ClusterFragment", "Model 1.7 is selected, please wait for the map to load");
-            } else if (childPosition == 1) {
-                //map.getOverlays().clear();
-                setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_2.5.1.json", map);
-                Toast.makeText(getContext(), "Model 2.5 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
-                Log.d("ClusterFragment", "Model 2.5 is selected, please wait for the map to load");
-            } else if (childPosition == 2) {
-                //map.getOverlays().clear();
-                setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_2.7.1.json", map);
-                Toast.makeText(getContext(), "Model 2.7 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
-                Log.d("ClusterFragment", "Model 2.7 is selected, please wait for the map to load");
-            }
-        } else {
-            if (childPosition == 0) {
-                //map.getOverlays().clear();
-                setDatabaseFromJSON("database/DBSCANmodels/clustering_dbscan1.1.json", map);
-                Toast.makeText(getContext(), "Model 1.1 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
-                Log.d("ClusterFragment", "Model 1.1 is selected, please wait for the map to load");
-            } else if (childPosition == 1) {
-                //map.getOverlays().clear();
-                setDatabaseFromJSON("database/DBSCANmodels/clustering_dbscan1.4.json", map);
-                Toast.makeText(getContext(), "Model 1.4 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
-                Log.d("ClusterFragment", "Model 1.4 is selected, please wait for the map to load");
-
-            }
-        }
-    }
-
-
         private void handleError (Throwable throwable){
             // Handle data retrieval or filtering error (e.g., display Toast message)
             Log.e("MyFragment", "Error setting database from JSON", throwable);
         }
-
-
     }
