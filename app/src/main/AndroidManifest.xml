@@ -21,10 +21,10 @@
         android:usesCleartextTraffic="true"
         android:networkSecurityConfig="@xml/network_security_config">
         <activity
-            android:name=".SettingsActivity"
+            android:name=".shared_preferences.SettingsActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".main_screens.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -135,4 +135,14 @@
     <string name="sil_des">SS:</string>
     <string name="no_clusters">Clusters:</string>
 
+    <string name="cluster">Cluster</string>
+    <string name="cluster_analysis">Clustering Visualization</string>
+
+    <string name="models">Other Models:</string>
+    <string name="data_source">PHIVOLCS</string>
+
+    <!-- Progress Related -->
+    <string name="loading">Updating Open Street Map...</string>
+    <string name="settings">Settings</string>
+
 </resources>

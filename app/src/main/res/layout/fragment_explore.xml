@@ -5,20 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ExploreFragment">
+    tools:context=".main_screens.ExploreFragment">
 
 
     <org.osmdroid.views.MapView
         android:id="@+id/map"
-        android:layout_width="0dp"  android:layout_height="0dp"  app:layout_constraintBottom_toTopOf="@id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/coordinatorLayout" />
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"
         android:layout_width="0dp"
-        android:layout_height="45dp"
+        android:layout_height="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -26,8 +28,7 @@
         <include
             layout="@layout/layout_bottom_sheet"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="50dp"/>
+            android:layout_height="match_parent"/>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -35,14 +36,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="40dp"
         android:contentDescription="@string/fab"
         android:src="@drawable/baseline_location_on_24"
-        app:tint="@color/gray"
         android:visibility="visible"
         app:backgroundTint="@color/white"
-        app:layout_constraintBottom_toTopOf="@id/coordinatorLayout"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/gray" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_settings"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClusterFragment">
+    tools:context=".main_screens.ClusterFragment">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scrollview"
@@ -15,7 +15,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <org.osmdroid.views.MapView
                 android:id="@+id/map_cluster"
@@ -23,7 +23,8 @@
                 android:layout_height="400dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/cluster_text"/>
 
             <TextView
                 android:id="@+id/cluster_text"
@@ -31,21 +32,50 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:gravity="center"
-                android:text="@string/tab_2"
+                android:text="@string/cluster_analysis"
                 android:textColor="@color/blue"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/map_cluster" />
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/other_models"
+                app:layout_constraintTop_toBottomOf="@+id/cluster_text">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/other_models"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/models"
+                android:textColor="@color/blue"
+                android:textSize="25sp"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/rv_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_vertical"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_parent"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_constraintTop_toBottomOf="@+id/cluster_text"
-                android:paddingBottom="65dp">
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/other_models">
 
             </androidx.recyclerview.widget.RecyclerView>
+
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 

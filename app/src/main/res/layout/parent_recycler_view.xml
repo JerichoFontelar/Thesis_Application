@@ -9,15 +9,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="@string/model_description"
-            android:textColor="@color/gray"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:id="@+id/tv_parent_title"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"

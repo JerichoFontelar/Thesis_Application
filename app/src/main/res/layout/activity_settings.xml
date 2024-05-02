@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    >
+    android:paddingBottom="30dp">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -14,7 +14,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:title="@string/settingsActivity"
-        app:titleTextColor="@color/white"/>
+        app:titleTextColor="@color/white"
+        />
 
     <FrameLayout
         android:id="@+id/preference_container"

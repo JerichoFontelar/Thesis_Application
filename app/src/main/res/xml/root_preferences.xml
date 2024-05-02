@@ -2,11 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-    <PreferenceCategory app:title="@string/blank">
-        <EditTextPreference
-            app:key="blank"
-            app:title="@string/blank" />
-    </PreferenceCategory>
+
     <PreferenceCategory app:title="@string/customize">
         <Preference
             app:defaultValue="4.0-7.4"
@@ -32,8 +28,8 @@
 
         <ListPreference
             android:entries="@array/cluster_options"
-            android:entryValues="@array/cluster_values"
-            app:defaultValue="@string/clusteringdescription"
+            android:entryValues="@array/cluster_options"
+            app:defaultValue="@string/clustering2"
             app:key="cluster_algorithm"
             app:title="@string/clustering"
             app:useSimpleSummaryProvider="true" />
@@ -41,8 +37,8 @@
 
         <ListPreference
             android:entries="@array/time_series_options"
-            android:entryValues="@array/time_series_values"
-            app:defaultValue="@string/choose_algo"
+            android:entryValues="@array/time_series_options"
+            app:defaultValue="@string/tsa1"
             app:key="tsa_algorithm"
             app:title="@string/tsa"
             app:useSimpleSummaryProvider="true" />
@@ -51,23 +47,12 @@
     </PreferenceCategory>
 
 
-    <PreferenceCategory app:title="@string/datasetCategory">
-
-        <ListPreference
-            android:defaultValue="@string/phivolcs"
-            android:enabled="false"
-            android:entries="@array/data_source_options"
-            android:entryValues="@array/data_source_values"
-            app:key="dataset_source"
-            app:title="@string/datasetSource"
-            app:useSimpleSummaryProvider="true"
-            />
-    </PreferenceCategory>
-
     <PreferenceCategory android:title="About">
         <Preference
             android:summary="1.0.0"
-            android:title="Version" />
+            android:title="Version"
+            />
     </PreferenceCategory>
+
 
 </PreferenceScreen>
