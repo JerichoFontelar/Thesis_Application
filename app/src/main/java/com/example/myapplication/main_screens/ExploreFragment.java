@@ -7,7 +7,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
@@ -23,6 +22,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -31,13 +31,13 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.preference.Preference;
 
+import com.example.myapplication.MapListener.MapHelper;
 import com.example.myapplication.MapListener.MapSettingsViewModel;
 import com.example.myapplication.MapListener.RequiresMapReload;
 import com.example.myapplication.earthquake_data_retrieval.EarthquakeData;
 import com.example.myapplication.R;
-import com.example.myapplication.shared_preferences.SettingsActivity;
+import com.example.myapplication.earthquake_data_retrieval.VolcanoDataProcessor;
 import com.example.myapplication.shared_preferences.SharedPreferenceDataSource;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -47,6 +47,7 @@ import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.gson.Gson;
 
+import org.json.JSONException;
 import org.osmdroid.api.IMapController;
 import org.osmdroid.bonuspack.kml.KmlDocument;
 import org.osmdroid.config.Configuration;
@@ -71,7 +72,6 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.disposables.Disposable;
@@ -83,7 +83,7 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
     private MyLocationNewOverlay mLocationOverlay;
     private MapView map = null;
 
-
+    private Dialog dialog;
     private final int FINE_PERMISSION_CODE = 1;
     Location currentLocation;
     private SharedPreferenceDataSource sharedPrefDataSource;
@@ -154,9 +154,22 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
 
         double[] magnitudeRange = sharedPrefDataSource.getMagnitudeRange();
         double minMag = magnitudeRange[0]; // Access the first element (index 0) for minimum value
+        TextView min_mag = view.findViewById(R.id.min_mag);
+        String minimum_magnitude = String.format("%.1f", minMag);
+        min_mag.setText(minimum_magnitude);
+        TextView max_mag = view.findViewById(R.id.max_mag);
         double maxMag = magnitudeRange[1]; // Access the second element (index 1) for maximum value
+        String maximum_magnitude = String.format("%.1f", maxMag);
+        max_mag.setText(maximum_magnitude);
         Log.d("MyFragment", "Magnitude Range: " + minMag + "-" + maxMag);
 
+        int[] depthRange = sharedPrefDataSource.getDepthRange();
+        int minDepth = depthRange[0];
+        TextView minimum_depth = view.findViewById(R.id.min_depth);
+        int maxDepth = depthRange[1];
+        TextView maximum_depth = view.findViewById(R.id.max_depth);
+        minimum_depth.setText(String.format("%d", maxDepth));
+        maximum_depth.setText(String.format("%d", minDepth));
 
         //Map initialization
         MapView map = view.findViewById(R.id.map);
@@ -164,6 +177,8 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
 
 
         setDatabaseFromJSON();
+        MapHelper.addFaultLinesToMap(ctx, map, "assets/database/active_faults_2015.json");
+
         //Location Identification
         //Set all properties for location request
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(act);
@@ -171,9 +186,14 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
 
         // Set map tile source, enable zoom controls, and multi-touch zooming
         map.setTileSource(TileSourceFactory.MAPNIK);
-        map.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.ALWAYS);
+        map.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.NEVER);
         map.setMultiTouchControls(true);
 
+        try {
+            VolcanoDataProcessor.addDarkVioletTrianglesFromJSON(ctx, map);
+        } catch (JSONException e) {
+            throw new RuntimeException(e);
+        }
         //request permission
         requestRuntimePermission();
 
@@ -186,7 +206,10 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
 //        GeoPoint geoPoint = new GeoPoint(currentLocation.getLatitude(),currentLocation.getLongitude());
 //        Marker marker = new Marker(map);
 //        marker.setPosition(geoPoint);
-//        marker.setIcon(R.drawable.home_pin_fill0_wght400_grad0_opsz24);
+//        // Get the drawable using Context's getDrawable method
+//        Drawable drawable = ctx.getDrawable(R.drawable.home_pin_fill0_wght400_grad0_opsz24);
+//        marker.setIcon(drawable);
+
 
         this.mLocationOverlay = new MyLocationNewOverlay(new GpsMyLocationProvider(ctx), map);
         this.mLocationOverlay.enableMyLocation();
@@ -220,34 +243,26 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
         //Floating Action Button Initiation
         FloatingActionButton fabLocation = view
                 .findViewById(R.id.fab_location);
-        FloatingActionButton fabSetting = view
-                .findViewById(R.id.fab_settings);
         //Bottom Navigation Initialization
-        BottomAppBar bar = view.findViewById(R.id.bottomAppBar);
-
-
-
+        //BottomAppBar bar = view.findViewById(R.id.bottomAppBar);
 
 
         fabLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showDialog();
+                //zoom in user location
+                // Access the current location from the MyLocationNewOverlay
+                GeoPoint currentLocation = mLocationOverlay.getMyLocation();
+                if (currentLocation != null) {
+                    mapController.setZoom(9.0);
+                    mapController.animateTo(currentLocation);
+                } else {
+                    Toast.makeText(ctx, "Location not found", Toast.LENGTH_SHORT).show();
+                }
 
             }
         });
 
-        fabSetting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(requireContext(), SettingsActivity.class));
-//                try {
-//                    setDatabaseFromJson();
-//                } catch (IOException e) {
-//                    throw new RuntimeException(e);
-//                }
-            }
-        });
 
 //        mapReloadDisposable = mapSettingsViewModel.getMapReloadObservable()
 //                .subscribe(needsReload -> {
@@ -265,25 +280,31 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
         return view;
     }
 
-    private void showDialog() {
+    private void showDialog(boolean show) {
+        if (show) {
+            dialog = new Dialog(requireContext());
+            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+            dialog.setContentView(R.layout.loading_map);
 
-        final Dialog dialog = new Dialog(requireContext());
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.chooser);
+            dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
+            dialog.getWindow().setGravity(Gravity.CENTER);
 
+            // Set touch listener to prevent dismissal
 
-        dialog.show();
-        Objects.requireNonNull(dialog.getWindow()).setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
-        dialog.getWindow().setGravity(Gravity.TOP);
+            dialog.setCanceledOnTouchOutside(false);
 
-        //map.getOverlays().clear();
-
+            dialog.show();
+        } else {
+            if (dialog != null && dialog.isShowing()) {
+                dialog.dismiss();
+            }
+        }
     }
 
 
-    public void wave_progress(){
+    public void wave_progress() {
 
     }
 
@@ -402,7 +423,7 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
     }
 
     public void setDatabaseFromJSON() {
-        //showDialog();
+        showDialog(true);
         SharedPreferences sharedPreferences = requireActivity().getSharedPreferences("earthquake_setting", Context.MODE_PRIVATE);
         sharedPrefDataSource = SharedPreferenceDataSource.getInstance(sharedPreferences);
 
@@ -466,6 +487,10 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
             map.getOverlays().add(marker);
         }
         //waitForProgress();
+        requireActivity().runOnUiThread(() -> {
+            map.invalidate(); // Refresh map view after adding markers
+            showDialog(false);
+        });
     }
 
     private void handleError(Throwable throwable) {
@@ -477,7 +502,6 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
     private int getColor(int depth, int[] depthRange) {
         // Normalize depth to range between 0 and 1 (invert for lighter-to-darker)
         double normalizedDepth = 1.0 - ((depth - depthRange[0]) / (double) (depthRange[1] - depthRange[0]));
-
 
 
         // Define color gradient (e.g., yellow to red) based on normalized depth
@@ -516,7 +540,7 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
         //double normalizedMagnitude = (magnitude - 1.0) / (7.4 - 1.0);
         // Define radius range based on normalized magnitude (e.g., larger for higher magnitudes)
         int minRadius = 10;
-        int maxRadius = 50;
+        int maxRadius = 40;
         return (int) (minRadius + (normalizedMagnitude * (maxRadius - minRadius)));
     }
 
@@ -546,4 +570,6 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
     public void onMapReload() throws IOException {
         map.getOverlays().clear();
     }
+
+
 }

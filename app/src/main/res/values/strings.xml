@@ -142,7 +142,27 @@
     <string name="data_source">PHIVOLCS</string>
 
     <!-- Progress Related -->
-    <string name="loading">Updating Open Street Map...</string>
+    <string name="loading">Plotting Points on Open Street Map…</string>
+    <string name="loading1">Plotting Points from the Model…</string>
     <string name="settings">Settings</string>
+
+
+    <!-- Article Screen -->
+
+    <string name="kmeans_article">K-means clustering groups similar data points. The standard approach can be slow for enormous datasets. Mini-batch K-means tackles this by processing data in smaller batches. Instead of using all the data at once to update cluster centers, it samples a small portion (mini-batch) and updates centers based on that sample. This speeds things up significantly, but might result in slightly less accurate clustering compared to the traditional method. It\'s a good choice for massive datasets where faster processing is a priority.</string>
+    <string name="what_to_know">What to Know?</string>
+    <string name="tap_description">Tap on a model to load its details</string>
+
+
+    <!-- map legend -->
+    <string name="depthinkm">Depth (Km)</string>
+    <string name="magnitude_item">Magnitude</string>
+    <string name="depth_item">Depth</string>
+    <string name="legend">Earthquake Legend</string>
+    <string name="min_mag">3</string>
+    <string name="max_mag">7.4</string>
+    <string name="min_depth">0</string>
+    <string name="max_depth">0</string>
+    <string name="volcano">Active Volcanoes</string>
 
 </resources>

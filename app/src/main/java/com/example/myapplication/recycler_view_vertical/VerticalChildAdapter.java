@@ -46,8 +46,6 @@ public class VerticalChildAdapter extends RecyclerView.Adapter<VerticalChildAdap
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             province = itemView.findViewById(R.id.province);
-
-
         }
     }
 }

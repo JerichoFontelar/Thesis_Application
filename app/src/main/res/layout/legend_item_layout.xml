@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/magnitude_range_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/magnitude_item"
+        android:textStyle="bold"
+        android:textColor="@color/blue"/>
+
+    <View
+        android:id="@+id/size_indicator"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/depth_range_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/depth_item"
+        android:textStyle="bold"
+        android:textColor="@color/blue"/>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:id="@+id/color_indicator"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="5dp" />
+
+</LinearLayout>

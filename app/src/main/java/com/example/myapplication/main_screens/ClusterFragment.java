@@ -1,6 +1,7 @@
 package com.example.myapplication.main_screens;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.AssetManager;
@@ -9,14 +10,19 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
+import android.util.TypedValue;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -27,6 +33,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
 import com.example.myapplication.earthquake_data_retrieval.ClusterData;
+import com.example.myapplication.earthquake_data_retrieval.VolcanoDataProcessor;
 import com.example.myapplication.recycler_view_horizontal.ChildModelClass;
 import com.example.myapplication.recycler_view_horizontal.ParentAdapter;
 import com.example.myapplication.recycler_view_horizontal.ParentItemListener;
@@ -35,10 +42,14 @@ import com.example.myapplication.recycler_view_vertical.VerticalChildModelClass;
 import com.example.myapplication.recycler_view_vertical.VerticalParentAdapter;
 import com.example.myapplication.recycler_view_vertical.VerticalParentModelClass;
 import com.example.myapplication.recycler_view_horizontal.ChildItemListener;
+import com.example.myapplication.recycler_views_articles.ArticleChildModelClass;
+import com.example.myapplication.recycler_views_articles.ArticleParentAdapter;
+import com.example.myapplication.recycler_views_articles.ArticleParentModelClass;
 import com.example.myapplication.shared_preferences.SharedPreferenceDataSource;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import org.json.JSONException;
 import org.osmdroid.api.IMapController;
 import org.osmdroid.config.Configuration;
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
@@ -71,6 +82,7 @@ import io.reactivex.rxjava3.schedulers.Schedulers;
 public class ClusterFragment extends Fragment implements ChildItemListener {
 
 
+    Dialog dialog;
     RecyclerView verticalRecyclerView;
     ArrayList<VerticalParentModelClass> verticalParentModelClassArrayList;
     ArrayList<VerticalChildModelClass> verticalChildModelClassArrayList;
@@ -78,6 +90,8 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
     ArrayList<VerticalChildModelClass> verticalClusters;
 
     RecyclerView recyclerView;
+
+    RecyclerView articleRecyclerView;
     ArrayList<ParentModelClass> parentModelClassArrayList;
     ArrayList<ChildModelClass> childModelClassArrayList;
 
@@ -87,10 +101,12 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
     ArrayList<ChildModelClass> latestList;
 
     ParentItemListener parentItemListener;
+    TextView clusterTextView;
 
-    //private MarkerOverlayDisposable mapOverlayDisposable;
-    private SharedPreferences sharedPreferences;
-    private SharedPreferenceDataSource sharedPrefDataSource;
+    TextView modelDescription;
+
+    ArrayList<ArticleParentModelClass> articleParentModelClassArrayList;
+    ArrayList<ArticleChildModelClass> articleChildModelClassArrayList;
 
     private MapView map = null;
 
@@ -106,7 +122,6 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    String retrievedData = "";
 
     public ClusterFragment() {
         // Required empty public constructor
@@ -169,17 +184,44 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
         String model = sharedPrefDataSource.getClusteringAlgorithm();
         Log.d("ClusterFragment", "Model: " + model);
 
+        clusterTextView = getActivity().findViewById(R.id.cluster_text);
+        modelDescription = getActivity().findViewById(R.id.model_description);
+
+        // Modify text content
+        //clusterTextView.setText("New Cluster Analysis");
+
+
+        // Modify text size (in density-independent pixels - dp)
+        //clusterTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
+
+
         if (Objects.equals(model, "Mini Batch K-Means")) {
+            setTextView("Mini Batch K-Means Model 1.7");
+            setArticlesForMiniBatch();
+            setModelDescription("Best Performing Model in Silhouette Score Criteria");
             setOtherModelsForMiniBatch();
             //setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_1.7.1.json", map);
             setDBSCAN("database/ClusterModels/MiniBatch_Model_1.7.1.json");
             //setMiniBatch();
             setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_1.7.1.json", map);
+            try {
+                VolcanoDataProcessor.addDarkVioletTrianglesFromJSON(getContext(), map);
+            } catch (JSONException e) {
+                throw new RuntimeException(e);
+            }
         } else if (Objects.equals(model, "DBSCAN")) {
             //setMiniBatch();
+            setTextView("DBSCAN Model 1.1");
+            setArticlesForDBSCAN();
+            setModelDescription("Best Performing Model in Silhouette Score Criteria");
             setOtherModelsForDBSCAN();
             setDBSCAN("database/DBSCANmodels/clustering_dbscan1.1.json");
             setDatabaseFromJSON("database/DBSCANmodels/clustering_dbscan1.1.json", map);
+            try {
+                VolcanoDataProcessor.addDarkVioletTrianglesFromJSON(getContext(), map);
+            } catch (JSONException e) {
+                throw new RuntimeException(e);
+            }
         }
         //setMiniBatch();
         //setOtherModelsForMiniBatch();
@@ -213,6 +255,8 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
         map.setTileSource(TileSourceFactory.MAPNIK);
         map.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.SHOW_AND_FADEOUT);
         map.setMultiTouchControls(true);
+
+
 
         //map.setNestedScrollingEnabled(false);
 
@@ -318,6 +362,12 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
         }
         //waitForProgress();
         Log.d("ClusterFragment", "Map Overlays created, filtered data: " + filteredData.size());
+
+        //waitForProgress();
+        requireActivity().runOnUiThread(() -> {
+            mapView.invalidate(); // Refresh map view after adding markers
+            showDialog(false);
+        });
     }
 
     // Helper functions for color and radius calculation
@@ -375,41 +425,52 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
         if (Objects.equals(model, "Mini Batch K-Means")) {
             if (childPosition == 0) {
                 //map.getOverlays().clear();
+                setTextView("Mini Batch K-Means Model 1.7");
+                setModelDescription("Best Performing Model in Silhouette Score Criteria");
                 Log.d("ClusterFragment", "Model 1.7 is selected, please wait for the map to load");
-                setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_1.7.1.json", map);
                 setDBSCAN("database/ClusterModels/MiniBatch_Model_1.7.1.json");
+                setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_1.7.1.json", map);
                 Toast.makeText(getContext(), "Model 1.7 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
             } else if (childPosition == 1) {
                 //map.getOverlays().clear();
+                setTextView("Mini Batch K-Means Model 2.5");
+                setModelDescription("Best Performing Model in Davies-Bouldin Index Criteria");
                 Log.d("ClusterFragment", "Model 2.5 is selected, please wait for the map to load");
-                setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_2.5.1.json", map);
                 setDBSCAN("database/ClusterModels/MiniBatch_Model_2.5.1.json");
+                setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_2.5.1.json", map);
                 Toast.makeText(getContext(), "Model 2.5 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
             } else if (childPosition == 2) {
                 //map.getOverlays().clear();
+                setTextView("Mini Batch K-Means Model 2.7");
+                setModelDescription("Best Performing Model in Model Inertia Criteria");
                 Log.d("ClusterFragment", "Model 2.7 is selected, please wait for the map to load");
-                setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_2.7.1.json", map);
                 setDBSCAN("database/ClusterModels/MiniBatch_Model_2.7.1.json");
+                setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_2.7.1.json", map);
                 Toast.makeText(getContext(), "Model 2.7 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
             }
         } else {
             if (childPosition == 0) {
                 //map.getOverlays().clear();
+                setTextView("DBSCAN Model 1.1");
+                setModelDescription("Best Performing Model in Silhouette Score Criteria");
                 Log.d("ClusterFragment", "Model 1.1 is selected, please wait for the map to load");
-                setDatabaseFromJSON("database/DBSCANmodels/clustering_dbscan1.1.json", map);
                 setDBSCAN("database/DBSCANmodels/clustering_dbscan1.1.json");
+                setDatabaseFromJSON("database/DBSCANmodels/clustering_dbscan1.1.json", map);
                 Toast.makeText(getContext(), "Model 1.1 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
             } else if (childPosition == 1) {
                 //map.getOverlays().clear();
+                setTextView("DBSCAN Model 1.4");
+                setModelDescription("Best Performing Model in Davies-Bouldin Index Criteria");
                 Log.d("ClusterFragment", "Model 1.4 is selected, please wait for the map to load");
-                setDatabaseFromJSON("database/DBSCANmodels/clustering_dbscan1.4.json", map);
                 setDBSCAN("database/DBSCANmodels/clustering_dbscan1.4.json");
+                setDatabaseFromJSON("database/DBSCANmodels/clustering_dbscan1.4.json", map);
                 Toast.makeText(getContext(), "Model 1.4 is selected, please wait for the map to load", Toast.LENGTH_LONG).show();
             }
         }
     }
 
     public void setDBSCAN(String path) {
+        showDialog(true);
         verticalRecyclerView = getActivity().findViewById(R.id.rv_vertical); // Find by ID
 
         VerticalParentAdapter verticalParentAdapter;
@@ -418,75 +479,57 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
         List<VerticalChildModelClass> verticalChildModelClassArrayList = new ArrayList<>();
         List<VerticalParentModelClass> verticalParentModelClassArrayList = new ArrayList<>();
 
-        // HashMap to store clusters (key) and their unique child data (value)
-        HashMap<Integer, HashSet<String>> uniqueProvincesPerCluster = new HashMap<>();
+        // Set to store encountered provinces (for uniqueness check)
+        Set<String> encounteredProvinces = new HashSet<>();
 
-        // Set to store processed cluster numbers (for unique clusters)
-        Set<Integer> processedClusters = new HashSet<>();
+        try {
+            // Load data from JSON file
+            List<ClusterData> allData = parseDataFromJSON(path);
 
-        // Map to track encountered provinces and their lowest cluster number
-        HashMap<String, Integer> provinceClusterMap = new HashMap<>();
+            // Map clusters to their unique provinces (alternative approach)
+            Map<Integer, List<String>> uniqueProvincesPerCluster = new HashMap<>();
 
-        // Load data from JSON file
-        List<ClusterData> allData = parseDataFromJSON(path);
+            // Iterate through allData
+            for (ClusterData earthquake : allData) {
+                int cluster = earthquake.getY(); // Assuming `y` holds the cluster value
+                String province = earthquake.getProvince();
 
-        // Iterate through allData, collecting unique clusters and building the HashMap
-        for (ClusterData earthquake : allData) {
-            int cluster = earthquake.getY(); // Assuming `y` holds the cluster value
-            String province = earthquake.getProvince();
+                // Check if province is unique (not encountered before)
+                if (!encounteredProvinces.contains(province)) {
+                    encounteredProvinces.add(province); // Mark province as encountered
 
-            // Check if cluster already exists in the HashMap
-            if (!uniqueProvincesPerCluster.containsKey(cluster)) {
-                uniqueProvincesPerCluster.put(cluster, new HashSet<>()); // Create a new HashSet for unique provinces
-            }
+                    // Add province to child data list
+                    List<VerticalChildModelClass> childData = new ArrayList<>();
+                    childData.add(new VerticalChildModelClass(province));
 
-            // Add province to the corresponding cluster's HashSet (only if unique within the cluster)
-            if (!uniqueProvincesPerCluster.get(cluster).contains(province)) {
-                uniqueProvincesPerCluster.get(cluster).add(province);
-            }
-
-            // Update provinceClusterMap (if not present or if lower cluster encountered)
-            if (!provinceClusterMap.containsKey(province) || cluster < provinceClusterMap.get(province)) {
-                provinceClusterMap.put(province, cluster);
-            }
-        }
-
-        // **Explicitly handle Cluster 0**
-        if (uniqueProvincesPerCluster.containsKey(0)) {
-            String clusterName = "Cluster 1"; // Assuming clusters start from 1 (adjust as needed)
-            List<VerticalChildModelClass> childData = new ArrayList<>();
-            for (String uniqueProvince : uniqueProvincesPerCluster.get(0)) {
-                childData.add(new VerticalChildModelClass(uniqueProvince));
-            }
-            verticalParentModelClassArrayList.add(new VerticalParentModelClass(clusterName, childData, 0));
-        }
-
-        // List to store cluster numbers in the order they appear
-        List<Integer> clusterOrder = new ArrayList<>();
-        for (ClusterData earthquake : allData) {
-            int cluster = earthquake.getY(); // Assuming `y` holds the cluster value
-            if (!processedClusters.contains(cluster)) {
-                processedClusters.add(cluster);
-                clusterOrder.add(cluster);
-            }
-        }
-
-        // Create and add VerticalParentModelClass objects based on clusterOrder and uniqueProvincesPerCluster
-        for (int clusterNumber : clusterOrder) {
-            if (clusterNumber == 0) { // Skip Cluster 0 as it was handled explicitly
-                continue;
-            }
-            String clusterName = "Cluster " + (clusterNumber + 1); // Assuming clusters start from 1
-            List<VerticalChildModelClass> childData = new ArrayList<>();
-            for (String uniqueProvince : uniqueProvincesPerCluster.get(clusterNumber)) {
-                // Check if province is not already encountered in a lower cluster
-                if (!provinceClusterMap.containsKey(uniqueProvince) || provinceClusterMap.get(uniqueProvince) == clusterNumber) {
-                    childData.add(new VerticalChildModelClass(uniqueProvince));
+                    // Update cluster-province mapping (if cluster doesn't exist, create a new list)
+                    if (!uniqueProvincesPerCluster.containsKey(cluster)) {
+                        uniqueProvincesPerCluster.put(cluster, new ArrayList<>());
+                    }
+                    uniqueProvincesPerCluster.get(cluster).add(province);
                 }
             }
-            verticalParentModelClassArrayList.add(new VerticalParentModelClass(clusterName, childData, 0));
-        }
 
+            // Create VerticalParentModelClass objects based on uniqueProvincesPerCluster
+            for (Map.Entry<Integer, List<String>> entry : uniqueProvincesPerCluster.entrySet()) {
+                int clusterNumber = entry.getKey();
+                List<String> uniqueProvinces = entry.getValue();
+                String clusterName = "Cluster " + (clusterNumber + 1); // Assuming clusters start from 1
+
+                // Create child data list
+                List<VerticalChildModelClass> childData = new ArrayList<>();
+                for (String uniqueProvince : uniqueProvinces) {
+                    childData.add(new VerticalChildModelClass(uniqueProvince));
+                }
+
+                verticalParentModelClassArrayList.add(new VerticalParentModelClass(clusterName, childData, 0));
+            }
+
+        } catch (Exception e) {
+            // Handle the exception
+            Log.d("ClusterFragment", "Error parsing JSON data: " + e.getMessage()); // Log error message with tag
+            throw new RuntimeException("Error parsing JSON data. Please check the file format or data integrity.");
+        }
         verticalClusters = new ArrayList<>(); // Not used in this approach
 
         verticalParentAdapter = new VerticalParentAdapter(verticalParentModelClassArrayList, ClusterFragment.this.getContext());
@@ -508,83 +551,12 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
             inputStream.close();
         } catch (IOException e) {
             e.printStackTrace();
+            Log.d("ClusterFragment", String.valueOf(e));
         }
 
         return earthquakeDataArray;
     }
 
-
-
-    public void setMiniBatch() {
-        verticalRecyclerView = getActivity().findViewById(R.id.rv_vertical); // Find by ID
-        verticalChildModelClassArrayList = new ArrayList<>();
-        verticalParentModelClassArrayList = new ArrayList<>();
-        verticalClusters = new ArrayList<>();
-        VerticalParentAdapter verticalParentAdapter;
-//
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Dipolog City (Zamboanga del Norte)"));
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Dipolog City (Zamboanga del Norte)"));
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Dipolog City (Zamboanga del Norte)"));
-
-        verticalParentModelClassArrayList.add(new VerticalParentModelClass("Cluster 1", verticalClusters, 1));
-
-        verticalClusters.clear();
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Dipolog City (Zamboanga del Norte)"));
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Dipolog City (Zamboanga del Norte)"));
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Dipolog City (Zamboanga del Norte)"));
-
-        verticalParentModelClassArrayList.add(new VerticalParentModelClass("Cluster 2", verticalClusters, 0));
-
-        verticalClusters.clear();
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Dipolog City (Zamboanga del Norte)"));
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Dipolog City (Zamboanga del Norte)"));
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Sarangani (Davao Occidental)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Maganoy (Shariff Aguak) (Capital) (Maguindanao)"));
-        verticalClusters.add(new VerticalChildModelClass("Dipolog City (Zamboanga del Norte)"));
-
-        verticalParentModelClassArrayList.add(new VerticalParentModelClass("Cluster 3", verticalClusters, 0));
-
-        verticalParentAdapter = new VerticalParentAdapter(verticalParentModelClassArrayList, ClusterFragment.this.getContext());
-        verticalRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        //verticalRecyclerView.setLayoutManager(new CustomLayoutManager(ClusterFragment.this.getContext(), 5, LinearLayoutManager.HORIZONTAL, false));
-        verticalRecyclerView.setAdapter(verticalParentAdapter);
-        verticalParentAdapter.notifyDataSetChanged();
-
-    }
 
     public void setOtherModelsForDBSCAN() {
         recyclerView = getActivity().findViewById(R.id.rv_parent); // Find by ID
@@ -622,6 +594,14 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
         recyclerView.setAdapter(parentAdapter);
         parentAdapter.notifyDataSetChanged();
 
+    }
+
+    public void setTextView(String text) {
+        clusterTextView.setText(text);
+    }
+
+    public void setModelDescription(String text) {
+        modelDescription.setText(text);
     }
 
     public void setOtherModelsForMiniBatch() {
@@ -676,8 +656,87 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
 
     }
 
-        private void handleError (Throwable throwable){
+    private void showDialog(boolean show) {
+        if (show) {
+            dialog = new Dialog(requireContext());
+            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+            dialog.setContentView(R.layout.loading_map_cluster);
+
+            dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
+            dialog.getWindow().setGravity(Gravity.CENTER);
+
+            // Set touch listener to prevent dismissal
+
+            dialog.setCanceledOnTouchOutside(false);
+
+            dialog.show();
+        } else {
+            if (dialog != null && dialog.isShowing()) {
+                dialog.dismiss();
+            }
+        }
+    }
+
+    public void setArticlesForMiniBatch() {
+        articleRecyclerView = getActivity().findViewById(R.id.article_rv_vertical); // Find by ID
+        childModelClassArrayList = new ArrayList<>();
+        articleParentModelClassArrayList = new ArrayList<>();
+        articleChildModelClassArrayList = new ArrayList<>();
+
+        //articleParentModelClassArrayList;
+        //articleChildModelClassArrayList;
+
+        ArticleParentAdapter parentAdapter;
+
+        articleChildModelClassArrayList.add(new ArticleChildModelClass("K-means clustering groups similar data points. The standard approach can be slow for enormous datasets. Mini-batch K-means tackles this by processing data in smaller batches. Instead of using all the data at once to update cluster centers, it samples a small portion (mini-batch) and updates centers based on that sample. This speeds things up significantly, but might result in slightly less accurate clustering compared to the traditional method. It's a good choice for massive datasets where faster processing is a priority.", "MiniBatch Kmeans"));
+        articleChildModelClassArrayList.add(new ArticleChildModelClass("In minibatch k-means measures how well data points are clustered. It considers both how close points are within a cluster (good) and how far away they are from points in other clusters (also good). Scores range from -1 to 1, with values closer to 1 indicating a well-separated, tightly packed clustering. Analyzing the average silhouette score across all minibatch data points helps evaluate the overall clustering quality. ", "Silhouette Score"));
+        articleChildModelClassArrayList.add(new ArticleChildModelClass("The Davies-Bouldin Index (DBI) is a metric used to assess the validity of clustering solutions. It evaluates both the separation between clusters and their compactness. DBI calculates a ratio between the within-cluster scatter (average distance between points within a cluster) and the between-cluster separation (distance between cluster centroids). Lower DBI values indicate better clustering, meaning clusters are well-separated with points within each cluster being relatively close together. Conversely, higher DBI values suggest poorly separated clusters or clusters with uneven point distribution.", "Davies-Bouldin Index"));
+        articleChildModelClassArrayList.add(new ArticleChildModelClass("Model inertia, in clustering, measures the total distance between data points and their assigned cluster centers. Lower inertia indicates tighter clusters, where points are on average closer to their cluster's center. However, inertia doesn't consider separation between clusters. It can be useful when comparing models with the same number of clusters (lower inertia suggests better compactness) or when combined with other metrics that address separation for a more complete picture of clustering quality.", "Model Inertia"));
+        articleParentModelClassArrayList.add(new ArticleParentModelClass(articleChildModelClassArrayList));
+
+        parentAdapter = new ArticleParentAdapter(articleParentModelClassArrayList, ClusterFragment.this.getContext());
+        articleRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        articleRecyclerView.setAdapter(parentAdapter);
+        parentAdapter.notifyDataSetChanged();
+
+    }
+
+
+    public void setArticlesForDBSCAN() {
+        articleRecyclerView = getActivity().findViewById(R.id.article_rv_vertical); // Find by ID
+        childModelClassArrayList = new ArrayList<>();
+        articleParentModelClassArrayList = new ArrayList<>();
+        articleChildModelClassArrayList = new ArrayList<>();
+
+        //articleParentModelClassArrayList;
+        //articleChildModelClassArrayList;
+
+        ArticleParentAdapter parentAdapter;
+
+        articleChildModelClassArrayList.add(new ArticleChildModelClass("DBScan (Density-Based Spatial Clustering of Applications with Noise) is a data clustering algorithm that groups data points based on density. It identifies high-density regions as clusters, separated by areas with fewer points. Unlike K-Means, DBScan doesn't require predefining the number of clusters and can handle outliers by classifying them as noise. However, it requires careful selection of parameters and can be computationally expensive for very large datasets. DBScan is useful for tasks like image segmentation, anomaly detection, and customer segmentation.", "DBSCAN"));
+        articleChildModelClassArrayList.add(new ArticleChildModelClass("The silhouette score, while not directly involved in DBScan's clustering process, helps evaluate the quality of the formed clusters afterwards. It considers how tightly packed points are within a cluster (cohesion) and how far away they are from other clusters (separation). Scores range from -1 to 1, with values closer to 1 indicating well-separated clusters with points tightly packed within each cluster. By calculating the average silhouette score across all points, you can assess the overall clustering quality and potentially refine DBScan's parameters for better results. ", "Silhouette Score"));
+        articleChildModelClassArrayList.add(new ArticleChildModelClass("The Davies-Bouldin Index (DBI) is a metric used to assess the validity of clustering solutions. It evaluates both the separation between clusters and their compactness. DBI calculates a ratio between the within-cluster scatter (average distance between points within a cluster) and the between-cluster separation (distance between cluster centroids). Lower DBI values indicate better clustering, meaning clusters are well-separated with points within each cluster being relatively close together. Conversely, higher DBI values suggest poorly separated clusters or clusters with uneven point distribution.", "Davies-Bouldin Index"));
+        //articleChildModelClassArrayList.add(new ArticleChildModelClass("Model inertia, in clustering, measures the total distance between data points and their assigned cluster centers. Lower inertia indicates tighter clusters, where points are on average closer to their cluster's center. However, inertia doesn't consider separation between clusters. It can be useful when comparing models with the same number of clusters (lower inertia suggests better compactness) or when combined with other metrics that address separation for a more complete picture of clustering quality.", "Model Inertia"));
+        articleParentModelClassArrayList.add(new ArticleParentModelClass(articleChildModelClassArrayList));
+
+        parentAdapter = new ArticleParentAdapter(articleParentModelClassArrayList, ClusterFragment.this.getContext());
+        articleRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        articleRecyclerView.setAdapter(parentAdapter);
+        parentAdapter.notifyDataSetChanged();
+
+    }
+
+
+    private void handleError (Throwable throwable){
             // Handle data retrieval or filtering error (e.g., display Toast message)
             Log.e("MyFragment", "Error setting database from JSON", throwable);
         }
+
     }
+
+
+
+
+

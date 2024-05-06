@@ -7,6 +7,8 @@ import androidx.fragment.app.FragmentTransaction;
 import java.util.ArrayList;
 
 import android.content.res.AssetManager;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -43,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        // Set window background color (optional)
+        getWindow().setBackgroundDrawable(new ColorDrawable(Color.WHITE));
 //        try {
 //            setDatabaseFromJson();
 //        } catch (IOException e) {

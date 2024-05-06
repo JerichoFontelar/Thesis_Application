@@ -22,8 +22,8 @@ public class SettingsActivity extends AppCompatActivity{
 
 
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+//        Toolbar toolbar = findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
 //        ActionBar menu = getSupportActionBar();
 //        menu.setDisplayShowHomeEnabled(true);
 //        menu.setDisplayHomeAsUpEnabled(true);

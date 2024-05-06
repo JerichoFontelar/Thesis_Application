@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main_screens.ClusterFragment">
+    tools:context=".main_screens.ClusterFragment"
+    android:paddingBottom="40dp">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scrollview"
@@ -17,11 +18,39 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+
+            <TextView
+                android:id="@+id/tap_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/tap_description"
+                android:textColor="@color/gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/other_models" />
+
+            <TextView
+                android:id="@+id/what_to_know"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="@string/what_to_know"
+                android:textColor="@color/blue"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_vertical"
+                app:layout_constraintVertical_bias="0.0" />
+
             <org.osmdroid.views.MapView
                 android:id="@+id/map_cluster"
                 android:layout_width="wrap_content"
                 android:layout_height="400dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="7dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toTopOf="@id/cluster_text"/>
@@ -34,45 +63,69 @@
                 android:gravity="center"
                 android:text="@string/cluster_analysis"
                 android:textColor="@color/blue"
-                android:textSize="25sp"
+                android:textSize="23sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/map_cluster" />
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/article_rv_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/what_to_know" />
+
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@id/other_models"
-                app:layout_constraintTop_toBottomOf="@+id/cluster_text">
-            </androidx.recyclerview.widget.RecyclerView>
+                app:layout_constraintBottom_toTopOf="@id/article_rv_vertical"
+                app:layout_constraintTop_toBottomOf="@+id/model_description"
+                app:layout_constraintVertical_bias="0.077"
+                tools:layout_editor_absoluteX="0dp" />
 
             <TextView
                 android:id="@+id/other_models"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:text="@string/models"
                 android:textColor="@color/blue"
                 android:textSize="25sp"
-                android:layout_marginStart="10dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@id/rv_parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/rv_vertical"
+                app:layout_constraintTop_toBottomOf="@id/article_rv_vertical"
                 app:layout_constraintVertical_bias="0.0" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_parent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:paddingBottom="5dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/other_models">
 
             </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/model_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/models"
+                android:textColor="@color/gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cluster_text" />
+
 
 
 
