@@ -34,8 +34,13 @@ public class ArticleChildAdapter extends RecyclerView.Adapter<ArticleChildAdapte
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.article.setText(childModelClassList.get(position).article);
-        holder.term.setText(childModelClassList.get(position).term);
+        if (holder.article != null) {
+            holder.article.setText(childModelClassList.get(position).article);
+        }
+        if(holder.term != null){
+            holder.term.setText(childModelClassList.get(position).term);
+        }
+        //holder.term.setText(childModelClassList.get(position).term);
     }
 
 
@@ -52,8 +57,8 @@ public class ArticleChildAdapter extends RecyclerView.Adapter<ArticleChildAdapte
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            term = itemView.findViewById(R.id.article_term);
-            article = itemView.findViewById(R.id.article_paragraph);
+            term = itemView.findViewById(R.id.forecast_article_term);
+            article = itemView.findViewById(R.id.forecast_article_paragraph);
         }
 
     }

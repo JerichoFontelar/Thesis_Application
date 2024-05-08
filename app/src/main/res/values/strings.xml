@@ -2,7 +2,7 @@
     <string name="app_name">SeisMap PH</string>
     <string name="tab_1">Explore</string>
     <string name="tab_2">Clustering</string>
-    <string name="tab_3">Trends</string>
+    <string name="tab_3">Time Series</string>
     <string name="tab_4">About</string>
     <string name="fab">Your Location</string>
 
@@ -164,5 +164,20 @@
     <string name="min_depth">0</string>
     <string name="max_depth">0</string>
     <string name="volcano">Active Volcanoes</string>
+
+
+    <!-- map legend clusters -->
+    <string name="cluster_legend">Cluster List</string>
+    <string name="cluster_0">Outliers</string>
+    <string name="cluster_1">Cluster 1</string>
+    <string name="cluster_2">Cluster 2</string>
+    <string name="cluster_3">Cluster 3</string>
+    <string name="cluster_4">Cluster 4</string>
+    <string name="cluster_5">Cluster 5</string>
+    <string name="cluster_color">Color</string>
+
+
+    <!-- Time Series Screen -->
+    <string name="arima">Model Name: ARIMA(1,1,2)</string>
 
 </resources>

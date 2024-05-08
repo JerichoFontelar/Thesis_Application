@@ -43,6 +43,8 @@ public class VerticalParentAdapter extends RecyclerView.Adapter<VerticalParentAd
     @Override
     public void onBindViewHolder(@NonNull VerticalParentAdapter.ViewHolder holder, int position) {
         holder.vertical_tv_parent_title.setText(verticalParentModelClassList.get(position).title);
+        holder.vertical_tv_magnitude_range.setText(verticalParentModelClassList.get(position).magnitude_range);
+        holder.vertical_tv_depth_range.setText(verticalParentModelClassList.get(position).depth_range);
 
         int spanCount = calculateSpanCount(verticalParentModelClassList.get(position).verticalChildModelClass.size()); // Calculate span count based on child count
 
@@ -90,11 +92,15 @@ public class VerticalParentAdapter extends RecyclerView.Adapter<VerticalParentAd
     public class ViewHolder extends RecyclerView.ViewHolder{
         RecyclerView vertical_rv_child;
         TextView vertical_tv_parent_title;
+        TextView vertical_tv_magnitude_range;
+        TextView vertical_tv_depth_range;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             vertical_rv_child = itemView.findViewById(R.id.vertical_rv_child);
             vertical_tv_parent_title = itemView.findViewById(R.id.vertical_tv_parent_title);
+            vertical_tv_magnitude_range = itemView.findViewById(R.id.vertical_tv_parent_magnitude);
+            vertical_tv_depth_range = itemView.findViewById(R.id.vertical_tv_parent_depth);
             // Set OnClickListener for the parent title view
 
         }

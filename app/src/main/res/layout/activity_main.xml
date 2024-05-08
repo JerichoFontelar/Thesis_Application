@@ -32,6 +32,8 @@
         android:backgroundTintMode="@color/white"
         app:itemBackground="@color/white"
         android:foregroundTintMode="@color/white"
+        app:itemRippleColor="@color/white"
+
         app:itemPaddingTop="3dp"
         app:itemTextColor="@drawable/onselectcolors"
         app:labelVisibilityMode="labeled"

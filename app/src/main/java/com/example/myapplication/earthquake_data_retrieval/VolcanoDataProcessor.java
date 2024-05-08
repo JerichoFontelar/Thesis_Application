@@ -1,6 +1,7 @@
 package com.example.myapplication.earthquake_data_retrieval;
 
 import android.content.Context;
+import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -76,7 +77,8 @@ public class VolcanoDataProcessor {
 
     private static String readJsonDataFromAsset(Context context) {
         try {
-            InputStream inputStream = context.getAssets().open("database/volcanoes_phivolcs.json"); // Replace with your filename
+            AssetManager assetManager = context.getAssets();
+            InputStream inputStream = assetManager.open("database/volcanoes_phivolcs.json"); // Replace with your filename
             int size = inputStream.available();
             byte[] buffer = new byte[size];
             inputStream.read(buffer);

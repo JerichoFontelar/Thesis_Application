@@ -85,9 +85,9 @@
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <View
 
-        android:layout_marginTop="55dp"
+    <View
+        android:layout_marginTop="0dp"
         android:layout_marginEnd="3dp"
         android:id="@+id/view"
         android:layout_width="135dp"
@@ -242,7 +242,7 @@
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:layout_constraintVertical_bias="0.19999999"
-        app:tint="@color/color_yellow_orange"/>
+        app:tint="@color/color_orange"/>
 
     <ImageView
         android:id="@+id/imageView12"

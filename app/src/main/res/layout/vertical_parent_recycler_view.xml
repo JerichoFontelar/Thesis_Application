@@ -19,9 +19,26 @@
             android:textStyle="bold"
             android:id="@+id/vertical_tv_parent_title"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/cluster"
+            android:textColor="@color/gray"
+            android:textSize="17sp"
+            android:id="@+id/vertical_tv_parent_magnitude"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/cluster"
+            android:textColor="@color/gray"
+            android:textSize="17sp"
+            android:id="@+id/vertical_tv_parent_depth"/>
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
             android:padding="5dp"
             android:id="@+id/vertical_rv_child"/>
 

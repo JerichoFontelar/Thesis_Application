@@ -408,7 +408,7 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
         paint.setColor(color | (0x00000000));  // Combine color with alpha (0 for fully transparent)
         paint.setAlpha(128);                 // Set transparency (optional, adjust as needed)
         canvas.drawCircle(radius, radius, radius - strokeWidth, paint); // Draw filled circle
-        Log.d("ClusterFragment", "Marker Icon created");
+        //Log.d("ClusterFragment", "Marker Icon created");
         return new BitmapDrawable(requireContext().getResources(), markerBitmap);
     }
 
@@ -489,10 +489,16 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
             // Map clusters to their unique provinces (alternative approach)
             Map<Integer, List<String>> uniqueProvincesPerCluster = new HashMap<>();
 
+            // Track minimum and maximum values for each cluster (separately for magnitude and depth)
+            Map<Integer, Double[]> clusterMagnitudeMinMax = new HashMap<>();
+            Map<Integer, Double[]> clusterDepthMinMax = new HashMap<>();
+
             // Iterate through allData
             for (ClusterData earthquake : allData) {
                 int cluster = earthquake.getY(); // Assuming `y` holds the cluster value
                 String province = earthquake.getProvince();
+                double magnitude = earthquake.getMagnitude(); // Assuming a getter exists (or replace with actual value)
+                double depth = earthquake.getDepth(); // Assuming a getter exists (or replace with actual value)
 
                 // Check if province is unique (not encountered before)
                 if (!encounteredProvinces.contains(province)) {
@@ -508,13 +514,33 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
                     }
                     uniqueProvincesPerCluster.get(cluster).add(province);
                 }
+
+                // Update cluster-specific min/max values (initialize if not existing)
+                Double[] currentMagnitudeMinMax = clusterMagnitudeMinMax.get(cluster);
+                if (currentMagnitudeMinMax == null) {
+                    currentMagnitudeMinMax = new Double[]{Double.MAX_VALUE, Double.MIN_VALUE}; // Initialize with max and min values
+                }
+                clusterMagnitudeMinMax.put(cluster, new Double[]{Math.min(currentMagnitudeMinMax[0], magnitude), Math.max(currentMagnitudeMinMax[1], magnitude)});
+
+                Double[] currentDepthMinMax = clusterDepthMinMax.get(cluster);
+                if (currentDepthMinMax == null) {
+                    currentDepthMinMax = new Double[]{Double.MAX_VALUE, Double.MIN_VALUE}; // Initialize with max and min values
+                }
+                clusterDepthMinMax.put(cluster, new Double[]{Math.min(currentDepthMinMax[0], depth), Math.max(currentDepthMinMax[1], depth)});
             }
 
             // Create VerticalParentModelClass objects based on uniqueProvincesPerCluster
             for (Map.Entry<Integer, List<String>> entry : uniqueProvincesPerCluster.entrySet()) {
                 int clusterNumber = entry.getKey();
                 List<String> uniqueProvinces = entry.getValue();
-                String clusterName = "Cluster " + (clusterNumber + 1); // Assuming clusters start from 1
+                String clusterName = "Cluster " + (clusterNumber + 1);
+
+                // Get min/max values for magnitude and depth from separate maps
+                Double[] magnitudeMinMax = clusterMagnitudeMinMax.get(clusterNumber);
+                Double[] depthMinMax = clusterDepthMinMax.get(clusterNumber);
+
+                String magnitudeRange = String.format("Magnitude Range: %.2f - %.2f", magnitudeMinMax[0], magnitudeMinMax[1]); // Format magnitude range with 2 decimals
+                String depthRange = String.format("Depth Range: %.2f - %.2f", depthMinMax[0], depthMinMax[1]); // Swap order for depth range (assuming depth increases downwards)
 
                 // Create child data list
                 List<VerticalChildModelClass> childData = new ArrayList<>();
@@ -522,7 +548,8 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
                     childData.add(new VerticalChildModelClass(uniqueProvince));
                 }
 
-                verticalParentModelClassArrayList.add(new VerticalParentModelClass(clusterName, childData, 0));
+                // Update VerticalParentModelClass constructor to include magnitude_range and depth_range
+                verticalParentModelClassArrayList.add(new VerticalParentModelClass(clusterName, childData, magnitudeRange, depthRange));
             }
 
         } catch (Exception e) {
@@ -716,6 +743,7 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
         ArticleParentAdapter parentAdapter;
 
         articleChildModelClassArrayList.add(new ArticleChildModelClass("DBScan (Density-Based Spatial Clustering of Applications with Noise) is a data clustering algorithm that groups data points based on density. It identifies high-density regions as clusters, separated by areas with fewer points. Unlike K-Means, DBScan doesn't require predefining the number of clusters and can handle outliers by classifying them as noise. However, it requires careful selection of parameters and can be computationally expensive for very large datasets. DBScan is useful for tasks like image segmentation, anomaly detection, and customer segmentation.", "DBSCAN"));
+        articleChildModelClassArrayList.add(new ArticleChildModelClass("DBSCAN excels at finding clusters of high density in your data, but it also identifies points that don't belong to any well-defined cluster: these are outliers", "Cluster 0"));
         articleChildModelClassArrayList.add(new ArticleChildModelClass("The silhouette score, while not directly involved in DBScan's clustering process, helps evaluate the quality of the formed clusters afterwards. It considers how tightly packed points are within a cluster (cohesion) and how far away they are from other clusters (separation). Scores range from -1 to 1, with values closer to 1 indicating well-separated clusters with points tightly packed within each cluster. By calculating the average silhouette score across all points, you can assess the overall clustering quality and potentially refine DBScan's parameters for better results. ", "Silhouette Score"));
         articleChildModelClassArrayList.add(new ArticleChildModelClass("The Davies-Bouldin Index (DBI) is a metric used to assess the validity of clustering solutions. It evaluates both the separation between clusters and their compactness. DBI calculates a ratio between the within-cluster scatter (average distance between points within a cluster) and the between-cluster separation (distance between cluster centroids). Lower DBI values indicate better clustering, meaning clusters are well-separated with points within each cluster being relatively close together. Conversely, higher DBI values suggest poorly separated clusters or clusters with uneven point distribution.", "Davies-Bouldin Index"));
         //articleChildModelClassArrayList.add(new ArticleChildModelClass("Model inertia, in clustering, measures the total distance between data points and their assigned cluster centers. Lower inertia indicates tighter clusters, where points are on average closer to their cluster's center. However, inertia doesn't consider separation between clusters. It can be useful when comparing models with the same number of clusters (lower inertia suggests better compactness) or when combined with other metrics that address separation for a more complete picture of clustering quality.", "Model Inertia"));

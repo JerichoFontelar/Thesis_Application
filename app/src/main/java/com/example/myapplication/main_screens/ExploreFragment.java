@@ -14,6 +14,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
@@ -83,6 +84,7 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
     private MyLocationNewOverlay mLocationOverlay;
     private MapView map = null;
 
+    private static final int REQUEST_LOCATION_CODE = 1;
     private Dialog dialog;
     private final int FINE_PERMISSION_CODE = 1;
     Location currentLocation;
@@ -177,7 +179,7 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
 
 
         setDatabaseFromJSON();
-        MapHelper.addFaultLinesToMap(ctx, map, "assets/database/active_faults_2015.json");
+//        MapHelper.addFaultLinesToMap(ctx, map, "assets/database/active_faults_2015.json");
 
         //Location Identification
         //Set all properties for location request
@@ -247,19 +249,34 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
         //BottomAppBar bar = view.findViewById(R.id.bottomAppBar);
 
 
+        LocationManager locationManager = (LocationManager) ctx.getSystemService(Context.LOCATION_SERVICE);
+
         fabLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //zoom in user location
-                // Access the current location from the MyLocationNewOverlay
-                GeoPoint currentLocation = mLocationOverlay.getMyLocation();
-                if (currentLocation != null) {
-                    mapController.setZoom(9.0);
+                // Check permission before accessing location
+                if (ActivityCompat.checkSelfPermission(ctx, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                    ActivityCompat.requestPermissions(act, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION_CODE);
+                    return;
+                }
+
+                // Access current location using LocationManager
+                Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+
+                if (location != null) {
+                    GeoPoint currentLocation = new GeoPoint(location.getLatitude(), location.getLongitude());
+
+                    Marker marker = new Marker(map); // Assuming map is a MapView instance
+                    marker.setPosition(currentLocation);
+                    marker.setTitle("My Location"); // Optional title for the marker
+
+                    map.getOverlays().add(marker);
+
+                    mapController.setZoom(9.0f);
                     mapController.animateTo(currentLocation);
                 } else {
                     Toast.makeText(ctx, "Location not found", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
 
