@@ -51,6 +51,7 @@ public class ForecastChildAdapter extends RecyclerView.Adapter<ForecastChildAdap
         ImageView image;
         TextView title;
 
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             image = itemView.findViewById(R.id.arima_image);

@@ -71,7 +71,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import io.reactivex.rxjava3.core.Observable;
@@ -487,6 +489,18 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
         for (EarthquakeData earthquake : filteredData) {
             double magnitude = earthquake.getMagnitude();
             int depth = earthquake.getDepth();
+            long dateInMilliseconds = earthquake.getDate(); // Assuming date is a long in milliseconds
+
+            // Format date for human-readable display (modify as needed)
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy");
+            String formattedDate = dateFormat.format(new Date(dateInMilliseconds));
+
+            String location = earthquake.getLocation(); // Assuming 'location' is a String getter in EarthquakeData
+
+            // Check if location is available, otherwise use a default message
+            if (location == null || location.isEmpty()) {
+                location = "Location Not Available";
+            }
 
             int color = getColor(depth, sharedPrefDataSource.getDepthRange());
             int radius = getRadius(magnitude, sharedPrefDataSource.getMagnitudeRange());
@@ -495,11 +509,13 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
 
             // Set marker position based on earthquake coordinates (assuming getters exist)
             marker.setPosition(new GeoPoint(earthquake.getLatitude(), earthquake.getLongitude()));
-            marker.setTitle(String.format("M: %.1f, Depth: %d km", magnitude, depth)); // Set marker title
+
+            // Create detailed title string
+            String title = String.format("Date: %s\nM: %.1f, Depth: %d km\nLocation: %s", formattedDate, magnitude, depth, location);
+            marker.setTitle(title);
 
             // Set marker color and radius based on calculated values
             marker.setIcon(createMarkerIcon(color, radius));
-
 
             map.getOverlays().add(marker);
         }
@@ -509,6 +525,8 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
             showDialog(false);
         });
     }
+
+
 
     private void handleError(Throwable throwable) {
         // Handle data retrieval or filtering error (e.g., display Toast message)

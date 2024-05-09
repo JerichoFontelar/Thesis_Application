@@ -4,6 +4,7 @@ public class ForecastChildModelClass {
     int image;
     String title;
 
+
     public ForecastChildModelClass(int image, String title) {
         this.image = image;
         this.title = title;

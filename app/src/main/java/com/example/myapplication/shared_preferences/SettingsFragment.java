@@ -112,7 +112,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
                 //String value = newValue.toString();
-                preference.setSummary(newValue.toString());
+                //preference.setSummary(newValue.toString());
                 sharedPrefDataSource.setTimeSeriesAlgorithm(newValue.toString());
                 return true;
             }

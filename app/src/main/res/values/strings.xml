@@ -88,13 +88,13 @@
     <string-array name="time_series_options">
         <item>LSTM</item>
         <item>ARIMA</item>
-        <item>SARIMA</item>
+<!--        <item>SARIMA</item>-->
     </string-array>
 
     <string-array name="time_series_values">
         <item>lstm</item>
         <item>arima</item>
-        <item>sarima</item>
+<!--        <item>sarima</item>-->
     </string-array>
 
     <string name="phivolcs">PHIVOLCS</string>
