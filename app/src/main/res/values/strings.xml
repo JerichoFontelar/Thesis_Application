@@ -180,4 +180,19 @@
     <!-- Time Series Screen -->
     <string name="arima">Model Name: ARIMA(1,1,2)</string>
 
+
+    //Headings
+    <string name="heading_one">Discover Earthquakes</string>
+    <string name="heading_two">Unveiling Patterns</string>
+    <string name="heading_three">Analyze Trends</string>
+    <string name="heading_fourth">SeisMap PH: Experience</string>
+
+    //Description
+    <string name="desc_one">Dive into seismic activity across the Philippines to understand patterns and trends.</string>
+    <string name="desc_two">Explore in-depth analysis techniques to uncover clusters and patterns within earthquake data, providing valuable insights into seismic behavior.</string>
+    <string name="desc_three">Utilize advanced time series analysis to forecast earthquake occurrences and understand temporal dynamics for better preparedness.</string>
+    <string name="desc_fourth">Seamlessly integrate your exploration with SeisMap PH, the comprehensive app offering cluster analysis, time series insights, and earthquake exploration. Try it now for a holistic seismic experience!</string>
+
+
+
 </resources>

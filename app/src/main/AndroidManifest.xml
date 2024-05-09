@@ -23,8 +23,9 @@
         <activity
             android:name=".shared_preferences.SettingsActivity"
             android:exported="false" />
+        <activity android:name=".main_screens.MainActivity"></activity>
         <activity
-            android:name=".main_screens.MainActivity"
+            android:name=".onboarding.MainOnboarding"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
