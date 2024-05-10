@@ -190,7 +190,7 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
 
         // Set map tile source, enable zoom controls, and multi-touch zooming
         map.setTileSource(TileSourceFactory.MAPNIK);
-        map.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.NEVER);
+        //map.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.NEVER);
         map.setMultiTouchControls(true);
 
         try {
@@ -263,16 +263,17 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
                 }
 
                 // Access current location using LocationManager
+                LocationManager locationManager = (LocationManager) ctx.getSystemService(Context.LOCATION_SERVICE);
                 Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
 
                 if (location != null) {
                     GeoPoint currentLocation = new GeoPoint(location.getLatitude(), location.getLongitude());
 
-                    Marker marker = new Marker(map); // Assuming map is a MapView instance
-                    marker.setPosition(currentLocation);
-                    marker.setTitle("My Location"); // Optional title for the marker
-
-                    map.getOverlays().add(marker);
+                    // Add marker and move map to user location
+//                    Marker marker = new Marker(map);
+//                    marker.setPosition(currentLocation);
+//                    marker.setTitle("My Location"); // Optional title for the marker
+//                    map.getOverlays().add(marker);
 
                     mapController.setZoom(9.0f);
                     mapController.animateTo(currentLocation);
@@ -281,6 +282,7 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
                 }
             }
         });
+
 
 
 //        mapReloadDisposable = mapSettingsViewModel.getMapReloadObservable()
