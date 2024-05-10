@@ -500,8 +500,11 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
                 double magnitude = earthquake.getMagnitude(); // Assuming a getter exists (or replace with actual value)
                 double depth = earthquake.getDepth(); // Assuming a getter exists (or replace with actual value)
 
+                // Create a copy of encounteredProvinces for iteration
+                Set<String> encounteredProvincesCopy = new HashSet<>(encounteredProvinces);
+
                 // Check if province is unique (not encountered before)
-                if (!encounteredProvinces.contains(province)) {
+                if (!encounteredProvincesCopy.contains(province)) {
                     encounteredProvinces.add(province); // Mark province as encountered
 
                     // Add province to child data list
@@ -527,14 +530,17 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
                     currentDepthMinMax = new Double[]{Double.MAX_VALUE, Double.MIN_VALUE}; // Initialize with max and min values
                 }
                 clusterDepthMinMax.put(cluster, new Double[]{Math.min(currentDepthMinMax[0], depth), Math.max(currentDepthMinMax[1], depth)});
+                // Log message with cluster number as tag and province information
+                Log.d("CLUSTER_" + cluster, province);
             }
 
-            // Create VerticalParentModelClass objects based on uniqueProvincesPerCluster
+// Create VerticalParentModelClass objects based on uniqueProvincesPerCluster
             for (Map.Entry<Integer, List<String>> entry : uniqueProvincesPerCluster.entrySet()) {
                 int clusterNumber = entry.getKey();
                 List<String> uniqueProvinces = entry.getValue();
                 String clusterName = "Cluster " + (clusterNumber + 1);
 
+                // Log.d("CLUSTER_" + clusterNumber + 1, uniqueProvinces.toString());
                 // Get min/max values for magnitude and depth from separate maps
                 Double[] magnitudeMinMax = clusterMagnitudeMinMax.get(clusterNumber);
                 Double[] depthMinMax = clusterDepthMinMax.get(clusterNumber);
