@@ -199,7 +199,7 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
             setTextView("Mini Batch K-Means Model 1.7");
             setArticlesForMiniBatch();
             setModelDescription("Best Performing Model in Silhouette Score Criteria");
-            setOtherModelsForMiniBatch();
+            //setOtherModelsForMiniBatch();
             //setDatabaseFromJSON("database/ClusterModels/MiniBatch_Model_1.7.1.json", map);
             setDBSCAN("database/ClusterModels/MiniBatch_Model_1.7.1.json");
             //setMiniBatch();
@@ -214,7 +214,7 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
             setTextView("DBSCAN Model 1.1");
             setArticlesForDBSCAN();
             setModelDescription("Best Performing Model in Silhouette Score Criteria");
-            setOtherModelsForDBSCAN();
+            //setOtherModelsForDBSCAN();
             setDBSCAN("database/DBSCANmodels/clustering_dbscan1.1.json");
             setDatabaseFromJSON("database/DBSCANmodels/clustering_dbscan1.1.json", map);
             try {
@@ -346,6 +346,13 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
             double depth = earthquake.getDepth();
             String province = earthquake.getProvince();
 
+            String clusterLabel;
+            if (cluster == -1) {
+                clusterLabel = "Outlier";
+            } else {
+                clusterLabel = String.valueOf(cluster + 1); // Convert cluster to string (add 1 for display)
+            }
+
             int color = getColor(cluster);
             int radius = 10;//getRadius(earthquake.getMagnitude()); // Assuming `getMagnitude` exists
 
@@ -354,7 +361,7 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
 
             // Set marker position based on earthquake coordinates (assuming getters exist)
             marker.setPosition(new GeoPoint(earthquake.getLatitude(), earthquake.getLongitude()));
-            marker.setTitle(String.format("Cluster: %d Magnitude: %.2f Depth: %.2f", cluster + 1, mag, depth)); // Set marker title
+            marker.setTitle(String.format("Cluster: %s Magnitude: %.2f Depth: %.2f", clusterLabel, mag, depth)); // Set marker title
 
             // Set marker color and radius based on calculated values
             marker.setIcon(createMarkerIcon(color, radius));
@@ -369,6 +376,7 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
             showDialog(false);
         });
     }
+
 
     // Helper functions for color and radius calculation
 
@@ -531,6 +539,13 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
                 }
                 clusterDepthMinMax.put(cluster, new Double[]{Math.min(currentDepthMinMax[0], depth), Math.max(currentDepthMinMax[1], depth)});
                 // Log message with cluster number as tag and province information
+                // Update cluster title based on cluster value
+                String clusterTitle;
+                if (cluster == -1) {
+                    clusterTitle = "Outlier";
+                } else {
+                    clusterTitle = "Cluster " + (cluster + 1); // Add 1 for display (assuming numbering starts from 0)
+                }
                 Log.d("CLUSTER_" + cluster, province);
             }
 
@@ -538,7 +553,7 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
             for (Map.Entry<Integer, List<String>> entry : uniqueProvincesPerCluster.entrySet()) {
                 int clusterNumber = entry.getKey();
                 List<String> uniqueProvinces = entry.getValue();
-                String clusterName = "Cluster " + (clusterNumber + 1);
+                String clusterName = clusterNumber == -1 ? "Outlier" : "Cluster " + (clusterNumber + 1); // Set name based on cluster value
 
                 // Log.d("CLUSTER_" + clusterNumber + 1, uniqueProvinces.toString());
                 // Get min/max values for magnitude and depth from separate maps

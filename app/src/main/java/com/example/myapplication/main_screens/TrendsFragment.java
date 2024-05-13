@@ -107,6 +107,9 @@ public class TrendsFragment extends Fragment {
         }else if(Objects.equals(model, "LSTM")){
             setLSTM(rootView);
             textView.setText("Model Name: LSTM");
+        }else if(Objects.equals(model, "SARIMA")) {
+            setSARIMA(rootView);
+            textView.setText("Model Name: SARIMA");
         }
         return rootView;
     }
@@ -117,9 +120,9 @@ public class TrendsFragment extends Fragment {
         arima_forecast = new ArrayList<>();
         parentModelClassArrayList = new ArrayList<>();
 
-        arima_forecast.add(new ForecastChildModelClass(R.drawable.lstm_1, "December 15-30 Forecast"));
+        arima_forecast.add(new ForecastChildModelClass(R.drawable.lstm_1, "December 17-31 Forecast"));
         arima_forecast.add(new ForecastChildModelClass(R.drawable.lstm_2, "January 1-15 Forecast"));
-        arima_forecast.add(new ForecastChildModelClass(R.drawable.lstm_3, "January 17-31 Forecast"));
+        arima_forecast.add(new ForecastChildModelClass(R.drawable.lstm_3, "January 16-31 Forecast"));
         arima_forecast.add(new ForecastChildModelClass(R.drawable.lstm_4, "February 1-15 Forecast"));
         arima_forecast.add(new ForecastChildModelClass(R.drawable.lstm_5, "February 17- March 1 Forecast"));
         arima_forecast.add(new ForecastChildModelClass(R.drawable.lstm_6, "March 2-16 Forecast"));
@@ -150,20 +153,61 @@ public class TrendsFragment extends Fragment {
         forecastArticleParentAdapter.notifyDataSetChanged();
     }
 
+    public void setSARIMA(View rootView){
+        recyclerView = rootView.findViewById(R.id.image_horizontal_recycler_view); // Find by ID
+
+        arima_forecast = new ArrayList<>();
+        parentModelClassArrayList = new ArrayList<>();
+
+        arima_forecast.add(new ForecastChildModelClass(R.drawable.sarima_1, "December 17-31 Forecast"));
+        arima_forecast.add(new ForecastChildModelClass(R.drawable.sarima_2, "January 1-15 Forecast"));
+        arima_forecast.add(new ForecastChildModelClass(R.drawable.sarima_3, "January 16-31 Forecast"));
+        arima_forecast.add(new ForecastChildModelClass(R.drawable.sarima_4, "February 1-15 Forecast"));
+        arima_forecast.add(new ForecastChildModelClass(R.drawable.sarima_5, "February 17- March 1 Forecast"));
+        arima_forecast.add(new ForecastChildModelClass(R.drawable.sarima_6, "March 2-16 Forecast"));
+        arima_forecast.add(new ForecastChildModelClass(R.drawable.sarima_7, "March 17-31 Forecast"));
+        arima_forecast.add(new ForecastChildModelClass(R.drawable.sarima_8, "April 1-15 Forecast"));
+        parentModelClassArrayList.add(new ForecastParentModelClass(arima_forecast));
+
+        ForecastParentAdapter parentAdapter;
+        parentAdapter = new ForecastParentAdapter(parentModelClassArrayList, TrendsFragment.this.getContext());
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setAdapter(parentAdapter);
+        parentAdapter.notifyDataSetChanged();
+
+
+        articleParentModelClassArrayList = new ArrayList<>();
+        forecast_articles = new ArrayList<>();
+        RecyclerView recyclerViewForecastArticles = rootView.findViewById(R.id.forecast_articles);
+
+        //forecast_articles.add(new ForecastArticleChildModelClass("Examining the provided earthquake data visualizations reveals a potential long-term increase in earthquake frequency . However, predicting the exact number of earthquakes for each day remains a formidable task . While the model exhibits some success in capturing the overall upward trend in earthquake occurrences , there are clear discrepancies between the predicted and actual values on a day-to-day basis. These discrepancies highlight the inherent limitations of current earthquake prediction models. Even though the model shows promise in capturing broader trends, it struggles with pinpointing the precise number of earthquakes that will occur on any given day.  To gain a more comprehensive understanding of the model's effectiveness, additional information regarding the specific timeframe it analyzes, the targeted magnitude range of earthquakes, and its performance metrics (like mean squared error) would be beneficial.", "Model Interpretation"));
+        forecast_articles.add(new ForecastArticleChildModelClass("SARIMA, or Seasonal Autoregressive Integrated Moving Average, is a statistical method specifically designed for time series forecasting when the data exhibits seasonality. It builds upon the foundation of ARIMA (Autoregressive Integrated Moving Average) by incorporating additional parameters to account for predictable fluctuations within a specific period.", "SARIMA"));
+        forecast_articles.add(new ForecastArticleChildModelClass("Earthquake research presents a unique challenge for time series forecasting. While earthquakes themselves are not predictable in the short term, the frequency of earthquakes might exhibit patterns over time. SARIMA (Seasonal Autoregressive Integrated Moving Average) can be a valuable tool in analyzing these patterns, particularly when considering potential seasonality in earthquake occurrences.", "SARIMA in Earthquake Research"));
+
+        articleParentModelClassArrayList.add(new ForecastArticleParentModelClass("SARIMA", forecast_articles));
+        ForecastArticleParentAdapter forecastArticleParentAdapter;
+        forecastArticleParentAdapter = new ForecastArticleParentAdapter(articleParentModelClassArrayList, TrendsFragment.this.getContext());
+        recyclerViewForecastArticles.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerViewForecastArticles.setAdapter(forecastArticleParentAdapter);
+        forecastArticleParentAdapter.notifyDataSetChanged();
+
+    }
+
+
     public void setARIMA(View rootView){
         recyclerView = rootView.findViewById(R.id.image_horizontal_recycler_view); // Find by ID
 
         arima_forecast = new ArrayList<>();
         parentModelClassArrayList = new ArrayList<>();
 
-        arima_forecast.add(new ForecastChildModelClass(R.drawable.arima_december_15_30, "December 15-30 Forecast"));
+        arima_forecast.add(new ForecastChildModelClass(R.drawable.arima_december_15_30, "December 17-31 Forecast"));
         arima_forecast.add(new ForecastChildModelClass(R.drawable.arima_january1_15, "January 1-15 Forecast"));
-        arima_forecast.add(new ForecastChildModelClass(R.drawable.arima_january17_31, "January 17-31 Forecast"));
-        arima_forecast.add(new ForecastChildModelClass(R.drawable.arima_february1_15, "February 1-15 Forecast"));
-        arima_forecast.add(new ForecastChildModelClass(R.drawable.arima_february2_16, "February 17- March 1 Forecast"));
-        arima_forecast.add(new ForecastChildModelClass(R.drawable.arima_march2_16, "March 2-16 Forecast"));
-        arima_forecast.add(new ForecastChildModelClass(R.drawable.arima_march17_31, "March 17-31 Forecast"));
-        arima_forecast.add(new ForecastChildModelClass(R.drawable.arima_april1_15, "April 1-15 Forecast"));
+        arima_forecast.add(new ForecastChildModelClass(R.drawable.arima_jan16, "January 17-31 Forecast"));
+        arima_forecast.add(new ForecastChildModelClass(R.drawable.arima_3, "February 1-15 Forecast"));
+        arima_forecast.add(new ForecastChildModelClass(R.drawable.arima_4, "February 16- March 1 Forecast"));
+        arima_forecast.add(new ForecastChildModelClass(R.drawable.arima_5, "March 2-16 Forecast"));
+        arima_forecast.add(new ForecastChildModelClass(R.drawable.arima_6, "March 17-31 Forecast"));
+        arima_forecast.add(new ForecastChildModelClass(R.drawable.arima_7, "April 1-15 Forecast"));
         parentModelClassArrayList.add(new ForecastParentModelClass(arima_forecast));
 
         ForecastParentAdapter parentAdapter;

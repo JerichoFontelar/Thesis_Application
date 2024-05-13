@@ -93,7 +93,7 @@ public class SharedPreferenceDataSource{
     }
 
     public String getTimeSeriesAlgorithm() {
-        return sharedPreferences.getString("timeSeriesAlgorithm", "LSTM");
+        return sharedPreferences.getString("timeSeriesAlgorithm", "ARIMA");
     }
 
     public void registerOnSharedPreferenceChangeListener(SharedPreferences.OnSharedPreferenceChangeListener listener) {

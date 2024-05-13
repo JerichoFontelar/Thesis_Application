@@ -291,7 +291,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="0dp"
                 android:gravity="center"
                 android:text="@string/models"
                 android:textColor="@color/blue"
@@ -300,6 +300,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/rv_parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/article_rv_vertical"
+                android:visibility="invisible"
                 app:layout_constraintVertical_bias="0.0" />
 
             <androidx.recyclerview.widget.RecyclerView
