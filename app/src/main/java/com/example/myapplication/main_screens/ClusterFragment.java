@@ -539,13 +539,6 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
                 }
                 clusterDepthMinMax.put(cluster, new Double[]{Math.min(currentDepthMinMax[0], depth), Math.max(currentDepthMinMax[1], depth)});
                 // Log message with cluster number as tag and province information
-                // Update cluster title based on cluster value
-                String clusterTitle;
-                if (cluster == -1) {
-                    clusterTitle = "Outlier";
-                } else {
-                    clusterTitle = "Cluster " + (cluster + 1); // Add 1 for display (assuming numbering starts from 0)
-                }
                 Log.d("CLUSTER_" + cluster, province);
             }
 
@@ -553,7 +546,7 @@ public class ClusterFragment extends Fragment implements ChildItemListener {
             for (Map.Entry<Integer, List<String>> entry : uniqueProvincesPerCluster.entrySet()) {
                 int clusterNumber = entry.getKey();
                 List<String> uniqueProvinces = entry.getValue();
-                String clusterName = clusterNumber == -1 ? "Outlier" : "Cluster " + (clusterNumber + 1); // Set name based on cluster value
+                String clusterName = "Cluster " + (clusterNumber + 1);
 
                 // Log.d("CLUSTER_" + clusterNumber + 1, uniqueProvinces.toString());
                 // Get min/max values for magnitude and depth from separate maps

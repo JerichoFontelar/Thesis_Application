@@ -181,7 +181,7 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
 
 
         setDatabaseFromJSON();
-//        MapHelper.addFaultLinesToMap(ctx, map, "assets/database/active_faults_2015.json");
+        //MapHelper.addFaultLinesToMap(ctx, map, "C:/Users/Gerald/Desktop/4th - 1st Sem/CS 123 - Thesis 1/MyApplication3/app/src/main/assets/active_faults_2015.json");
 
         //Location Identification
         //Set all properties for location request
@@ -513,7 +513,8 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
             marker.setPosition(new GeoPoint(earthquake.getLatitude(), earthquake.getLongitude()));
 
             // Create detailed title string
-            String title = String.format("Date: %s\nM: %.1f, Depth: %d km\nLocation: %s", formattedDate, magnitude, depth, location);
+            //String title = String.format("Date: %s\nM: %.1f, Depth: %d km\nLocation: %s", formattedDate, magnitude, depth, location);
+            String title = String.format("Date: %s\nM: %.1f, Depth: %d km", formattedDate, magnitude, depth);
             marker.setTitle(title);
 
             // Set marker color and radius based on calculated values
@@ -543,6 +544,7 @@ public class ExploreFragment extends Fragment implements RequiresMapReload {
 
         // Define color gradient (e.g., yellow to red) based on normalized depth
         int[] colors = {Color.YELLOW, 0xFFFF9900, 0xFF800000}; // Darker red
+        //int[] colors = {Color.CYAN, Color.YELLOW, 0xFF800000};
 
         int color1 = colors[0]; // Starting color
         int color2 = colors[colors.length - 1]; // Ending color
